@@ -7,10 +7,15 @@ import Projects from './pages/Projects'
 import Other from './pages/Other'
 import Contact from './pages/Contact'
 import './App.css'
+import Education from './pages/Education'
+import EducationDetail from './pages/EducationDetail'
+import ExperienceDetail from './pages/ExperienceDetail'
+import ProjectDetail from './pages/ProjectDetail'
 
 const pages = {
   home: Home,
   about: About,
+  education: Education,
   experience: Experiences,
   stack: Stack,
   projects: Projects,
@@ -28,7 +33,14 @@ function App() {
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
-  const Page = pages[page] || Home
+  const [route, slug] = page.split('/')
+  const Page = route === 'experience' && slug
+    ? ExperienceDetail
+    : route === 'education' && slug
+      ? EducationDetail
+      : route === 'projects' && slug
+        ? ProjectDetail
+        : pages[route] || Home
 
   return (
     <div className="site-shell">
@@ -38,6 +50,7 @@ function App() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#about">About</a>
+          <a href="#education">Education</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#stack">Stack</a>
@@ -47,7 +60,7 @@ function App() {
       </header>
 
       <main key={page} className="page-enter">
-        <Page />
+        <Page slug={slug} />
       </main>
 
       <footer>

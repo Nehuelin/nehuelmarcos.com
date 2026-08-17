@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <section className="hero-section">
-        <div className="eyebrow"><i /> Buenos Aires, Argentina <span>Available for opportunities</span></div>
+        <div className="eyebrow"><i /> Buenos Aires, Argentina <span>---</span></div>
         <h1>Hi, I’m Nehuel.<br />I build things for the <em>web.</em></h1>
         <div className="hero-bottom">
           <p>I’m a Computer Engineering student focused on backend development, automation and useful, human-centered software.</p>

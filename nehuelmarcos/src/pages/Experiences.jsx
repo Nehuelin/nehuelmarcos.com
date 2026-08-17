@@ -15,7 +15,13 @@ function Experiences() {
             <h2>{item.role}</h2>
             <h3>{item.company}</h3>
           </div>
-          <ul>{item.points.map(point => <li key={point}>{point}</li>)}</ul>
+          <div>
+            <ul>{item.points.map(point => 
+              <li key={point}>{point}</li>
+              )}
+            </ul>
+            <a className="text-link timeline-link" href={`#experience/${item.slug}`}>View role <span>↗</span></a>
+          </div>
         </article>)}
       </div>
     </section>

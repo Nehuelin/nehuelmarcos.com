@@ -1,5 +1,6 @@
 export const experiences = [
   { 
+    slug: 'operations-intern',
     period: 'Aug 2026 — Present', 
     role: 'Operations Intern', 
     company: 'Globant', 
@@ -10,6 +11,7 @@ export const experiences = [
     ] 
   },
   { 
+    slug: 'atlassian-engineer-intern',
     period: 'Dec 2025 — Jul 2026', 
     role: 'Atlassian Engineer Intern', 
     company: 'Globant', 
