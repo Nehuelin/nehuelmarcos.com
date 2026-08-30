@@ -1,5 +1,6 @@
 import PageIntro from '../components/ui/PageIntro'
 import { experiences } from '../data/experiences'
+import globantLogo from '../assets/images/logo-globant.png'
 
 function Experiences() { 
     return (
@@ -13,7 +14,10 @@ function Experiences() {
           <div>
             <p>{item.period}</p>
             <h2>{item.role}</h2>
-            <h3>{item.company}</h3>
+            <div className="company-info">
+              <img src={globantLogo} alt={item.company} className="timeline-logo" />
+              {/* <h3>{item.company}</h3> */}
+            </div>
           </div>
           <div>
             <ul>{item.points.map(point => 

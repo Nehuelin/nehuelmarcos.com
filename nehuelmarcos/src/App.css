@@ -48,7 +48,7 @@ h1, h2, h3, p { margin-top: 0; }
 .timeline-number { color: #77902f; font-size: 12px; }
 .timeline article p { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
 .timeline h2 { font-size: 30px; font-weight: 500; margin: 16px 0 5px; letter-spacing: -.04em; }
-.timeline h3 { font-size: 15px; color: #64831c; }
+.timeline h3 { font-size: 15px; color: #64831c; margin: 0; }
 .timeline ul { margin: 28px 0 0; padding: 0; list-style: none; color: #555a53; }
 .timeline li { padding: 9px 0; border-bottom: 1px solid #dedfd8; }
 .timeline li::before { content: '↳'; margin-right: 10px; color: #738d2a; }
@@ -111,6 +111,14 @@ footer p { text-align: center; }
 .footer-links a { text-decoration: none; color: var(--ink); }
 .page-enter { animation: enter .45s ease both; }
 @keyframes enter { from { opacity: 0; transform: translateY(8px); } }
+
+/* Logo Styles */
+.education-logo { height: 110px; width: auto; margin-bottom: 16px; object-fit: contain; }
+.course-logo { height: 70px; width: auto; margin-right: 12px; object-fit: contain; }
+.company-logo { height: 100px; width: auto; margin-bottom: 10px; object-fit: contain; }
+.school-logo { height: 70px; width: auto; margin-right: 16px; object-fit: contain; }
+.timeline-logo { height: 120px; width: auto; margin: 0 0 10px; object-fit: contain; vertical-align: middle; }
+.company-info { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 12px; }
 
 @media (max-width: 800px) {
   .site-shell { padding: 0 22px; }

@@ -1,4 +1,5 @@
 import { experiences } from '../data/experiences'
+import globantLogo from '../assets/images/logo-globant.png'
 
 function ExperienceDetail({ slug }) {
   const item = experiences.find((experience) => experience.slug === slug)
@@ -18,6 +19,7 @@ function ExperienceDetail({ slug }) {
       <p className="section-label">{item.period}</p>
       <h1>{item.role}<em>.</em></h1>
       <div className="detail-meta">
+        <img src={globantLogo} alt={item.company} className="company-logo" />
         <p>{item.company}</p>
         <p>Buenos Aires, Argentina</p>
       </div>
