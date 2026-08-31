@@ -11,6 +11,8 @@ import Education from './pages/Education'
 import EducationDetail from './pages/EducationDetail'
 import ExperienceDetail from './pages/ExperienceDetail'
 import ProjectDetail from './pages/ProjectDetail'
+import AcademicJourney from './pages/AcademicJourney'
+import AcademicCourseDetail from './pages/AcademicCourseDetail'
 
 const pages = {
   home: Home,
@@ -33,14 +35,18 @@ function App() {
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
-  const [route, slug] = page.split('/')
+  const [route, slug, courseSlug] = page.split('/')
   const Page = route === 'experience' && slug
     ? ExperienceDetail
-    : route === 'education' && slug
-      ? EducationDetail
+    : route === 'education' && slug === 'computer-engineering' && courseSlug
+      ? AcademicCourseDetail
+      : route === 'education' && slug === 'computer-engineering'
+        ? AcademicJourney
+        : route === 'education' && slug
+          ? EducationDetail
       : route === 'projects' && slug
         ? ProjectDetail
-        : pages[route] || Home
+          : pages[route] || Home
 
   return (
     <div className="site-shell">
@@ -60,7 +66,7 @@ function App() {
       </header>
 
       <main key={page} className="page-enter">
-        <Page slug={slug} />
+        <Page slug={courseSlug || slug} />
       </main>
 
       <footer>
