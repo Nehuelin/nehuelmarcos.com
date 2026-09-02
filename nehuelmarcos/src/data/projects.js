@@ -1,3 +1,9 @@
+export const featuredProjectSlugs = [
+  'jira-people-report-generator',
+  'robot-live-dashboard',
+  'municipal-help-center-frontend',
+]
+
 export const projects = [
   {
     slug: 'robot-live-dashboard',

@@ -69,12 +69,25 @@ function PageContent({ page }) {
 function App() {
   const getPage = () => window.location.hash.slice(1) || 'home'
   const [page, setPage] = useState(getPage)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
-    const onHashChange = () => setPage(getPage())
+    const onHashChange = () => {
+      setPage(getPage())
+      setMenuOpen(false)
+    }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
+
+  useEffect(() => {
+    if (!menuOpen) return undefined
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') setMenuOpen(false)
+    }
+    window.addEventListener('keydown', closeOnEscape)
+    return () => window.removeEventListener('keydown', closeOnEscape)
+  }, [menuOpen])
 
   return (
     <div className="site-shell">
@@ -82,13 +95,17 @@ function App() {
         <a className="wordmark" href="#home" aria-label="Nehuel Marcos, home">
           NAM<span>.</span>
         </a>
-        <nav aria-label="Primary navigation">
+        <button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen((open) => !open)}>
+          <span>{menuOpen ? 'Close' : 'Menu'}</span><i aria-hidden="true" />
+        </button>
+        <nav id="primary-navigation" className={menuOpen ? 'is-open' : ''} aria-label="Primary navigation" onClick={() => setMenuOpen(false)}>
           <a href="#about">About</a>
           <a href="#education">Education</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#stack">Stack</a>
           <a href="#other">Other</a>
+          <a className="mobile-contact-link" href="#contact">Contact</a>
         </nav>
         <a className="contact-link" href="#contact">Let's talk <span>↗</span></a>
       </header>
@@ -101,8 +118,8 @@ function App() {
         <a className="wordmark wordmark-small" href="#home">NAM<span>.</span></a>
         <p>Computer Engineering student building thoughtful software.</p>
         <div className="footer-links">
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/nehuel-adolfo-marcos-834020254/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/Nehuelin" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </footer>
     </div>

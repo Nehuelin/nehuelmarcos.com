@@ -7,8 +7,9 @@ export const experiences = [
     location: 'Buenos Aires, Argentina · Remote',
     status: 'Current role',
 
-    summary:
-      'Operations analyst within Globant’s Financial Services sector, supporting operational visibility, reporting and follow-up across account and delivery activities.',
+    summary: 'Operations analyst within Globant’s Financial Services sector, supporting operational visibility, reporting and follow-up across account and delivery activities.',
+
+    homeSummary: 'Supporting operational analysis, reporting and Financial Services delivery activities through accurate data, process follow-up and stakeholder coordination.',
 
     points: [
       'Support operational analysis and reporting within Globant’s Financial Services sector, helping provide clear and timely information for account and delivery decision-making.',
@@ -51,8 +52,9 @@ export const experiences = [
     location: 'Buenos Aires, Argentina · Hybrid',
     status: 'Previous role',
 
-    summary:
-      'Provided technical support and administration across Atlassian environments for Globant, resolving client requests, managing platform configurations and permissions, and developing automation solutions for operational and governance needs.',
+    summary: 'Provided technical support and administration across Atlassian environments for Globant, resolving client requests, managing platform configurations and permissions, and developing automation solutions for operational and governance needs.',
+    
+    homeSummary: 'Administered Atlassian environments, resolved 199 technical-support tickets and developed Python automations for access reporting and user-management workflows.',
 
     points: [
       'Resolved 199 technical support tickets within the Technical Help queue in line with SLAs, analyzing requirements and making technical decisions to reach effective resolutions.',
