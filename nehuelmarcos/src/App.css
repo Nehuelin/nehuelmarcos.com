@@ -148,7 +148,7 @@ h1, h2, h3, p { margin-top: 0; }
 .technology-detail-heading button { align-self: start; border: 0; border-bottom: 1px solid var(--ink); padding: 3px 0; background: transparent; font: 600 11px 'DM Sans', sans-serif; cursor: pointer; }
 .technology-detail-heading button span { margin-left: 7px; color: #64831c; font-size: 16px; }
 .technology-description { max-width: 690px; color: #50554e; font-size: 16px; line-height: 1.65; }
-.technology-evidence { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 45px; margin-top: 30px; padding-top: 24px; border-top: 1px solid #c5c7bf; }
+.technology-evidence { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 45px; margin-top: 30px; padding-top: 24px; border-top: 1px solid #c5c7bf; }
 .technology-evidence h4 { margin: 0 0 10px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
 .technology-evidence ul { margin: 0; padding: 0; list-style: none; }
 .technology-evidence li { border-bottom: 1px solid #d0d1ca; }
