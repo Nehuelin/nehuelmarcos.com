@@ -13,16 +13,57 @@ import ExperienceDetail from './pages/ExperienceDetail'
 import ProjectDetail from './pages/ProjectDetail'
 import AcademicJourney from './pages/AcademicJourney'
 import AcademicCourseDetail from './pages/AcademicCourseDetail'
+import { experiences } from './data/experiences'
+import { projects } from './data/projects'
+import { courses } from './data/education'
+import { academicCourses } from './data/academicCourses'
 
-const pages = {
-  home: Home,
-  about: About,
-  education: Education,
-  experience: Experiences,
-  stack: Stack,
-  projects: Projects,
-  other: Other,
-  contact: Contact,
+function NotFound() {
+  const goBack = () => {
+    if (window.history.length > 1) {
+      window.history.back()
+      return
+    }
+
+    window.location.hash = '#home'
+  }
+
+  return (
+    <section className="content-page not-found-page">
+      <p className="section-label">404 · Not found</p>
+      <h1>This page doesn’t exist.</h1>
+      <p>The route you followed is not supported.</p>
+      <button type="button" className="text-link not-found-back" onClick={goBack}>← Go back</button>
+    </section>
+  )
+}
+
+function PageContent({ page }) {
+  const [route, slug, courseSlug, extraSegment] = page.split('/')
+
+  if (extraSegment) return <NotFound />
+  if (courseSlug) {
+    return route === 'education' && slug === 'computer-engineering' && academicCourses.some((item) => item.slug === courseSlug)
+      ? <AcademicCourseDetail slug={courseSlug} />
+      : <NotFound />
+  }
+  if (slug) {
+    if (route === 'experience' && experiences.some((item) => item.slug === slug)) return <ExperienceDetail slug={slug} />
+    if (route === 'projects' && projects.some((item) => item.slug === slug)) return <ProjectDetail slug={slug} />
+    if (route === 'education' && slug === 'computer-engineering') return <AcademicJourney />
+    if (route === 'education' && courses.some((item) => item.slug === slug)) return <EducationDetail slug={slug} />
+    return <NotFound />
+  }
+
+  if (route === 'home') return <Home />
+  if (route === 'about') return <About />
+  if (route === 'education') return <Education />
+  if (route === 'experience') return <Experiences />
+  if (route === 'stack') return <Stack />
+  if (route === 'projects') return <Projects />
+  if (route === 'other') return <Other />
+  if (route === 'contact') return <Contact />
+  return <NotFound />
 }
 
 function App() {
@@ -34,19 +75,6 @@ function App() {
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
-
-  const [route, slug, courseSlug] = page.split('/')
-  const Page = route === 'experience' && slug
-    ? ExperienceDetail
-    : route === 'education' && slug === 'computer-engineering' && courseSlug
-      ? AcademicCourseDetail
-      : route === 'education' && slug === 'computer-engineering'
-        ? AcademicJourney
-        : route === 'education' && slug
-          ? EducationDetail
-      : route === 'projects' && slug
-        ? ProjectDetail
-          : pages[route] || Home
 
   return (
     <div className="site-shell">
@@ -66,7 +94,7 @@ function App() {
       </header>
 
       <main key={page} className="page-enter">
-        <Page slug={courseSlug || slug} />
+        <PageContent page={page} />
       </main>
 
       <footer>
