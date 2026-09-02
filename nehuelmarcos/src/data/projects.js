@@ -8,7 +8,7 @@ export const projects = [
     summary: 'A real-time dashboard for observing robot activity, status and telemetry from a focused web interface.',
     challenge: 'Make a stream of robot events easy to monitor without losing the current operational context.',
     solution: 'The dashboard turns incoming updates into an at-a-glance interface for tracking state and activity as they change.',
-    stack: ['JavaScript', 'React', 'Websockets', 'REST APIs'],
+    stack: ['JavaScript', 'React', 'WebSockets', 'REST APIs'],
     sourceUrl: 'https://github.com/Nehuelin/robot-live-dashboard',
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
     summary: 'A backend service for managing citizen requests, complaints and reports across a modular municipal platform.',
     challenge: 'Coordinate ticket lifecycles, assignments and cross-module interactions while preserving a clear service contract for the frontend.',
     solution: 'A layered Spring Boot API models the help-center domain and provides secure, persistence-backed endpoints for operational workflows.',
-    stack: ['Java', 'Spring Boot', 'Docker', 'PostgreSQL'],
+    stack: ['Java', 'Spring Boot', 'Docker', 'PostgreSQL', 'Layered architecture', 'API integration'],
     sourceUrl: 'https://github.com/JuanmaGuida/Backend-DAMII',
   },
   {
@@ -116,7 +116,7 @@ export const projects = [
     summary: 'The service layer for an interactive application, designed to expose structured data through clear endpoints.',
     challenge: 'Provide a dependable contract between the user-facing client and the application data.',
     solution: 'A REST-oriented backend centralizes request handling, domain rules and persistence for the companion frontend.',
-    stack: ['Java', 'Spring Boot', 'Spring Data JPA', 'JWT'],
+    stack: ['Java', 'Spring Boot', 'Spring Data JPA', 'JWT', 'Layered architecture'],
     sourceUrl: 'https://github.com/SantiMussi/TPO-APIs',
   },
   {

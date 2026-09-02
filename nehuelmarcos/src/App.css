@@ -124,11 +124,48 @@ h1, h2, h3, p { margin-top: 0; }
 .detail-columns article > p:last-child { font-size: 17px; line-height: 1.65; color: #4e534d; margin-top: 30px; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 10px; }
 .tag-list span { border: 1px solid #b9bcb3; border-radius: 99px; padding: 10px 15px; font-size: 13px; }
-.skill-list article { display: grid; grid-template-columns: .5fr 1.2fr 2fr; gap: 4vw; border-top: 1px solid var(--line); padding: 34px 0; }
+.current-focus { display: grid; grid-template-columns: .5fr 3.2fr; gap: 4vw; padding: 42px; margin-bottom: 85px; background: var(--ink); color: var(--paper); border-top: 3px solid var(--acid); }
+.current-focus .section-label { color: var(--acid); }
+.current-focus h2 { max-width: 880px; font-size: clamp(30px, 3.6vw, 52px); line-height: 1.08; letter-spacing: -.045em; font-weight: 500; }
+.current-focus ul { display: flex; flex-wrap: wrap; gap: 9px; padding: 25px 0 0; margin: 0; list-style: none; border-top: 1px solid #4d544d; }
+.current-focus li { padding: 8px 12px; border: 1px solid #737970; border-radius: 99px; color: #d6d9d2; font-size: 12px; }
+.skill-list article { display: grid; grid-template-columns: .5fr 1.2fr 2fr; gap: 4vw; border-top: 1px solid var(--line); padding: 34px 0 48px; }
 .skill-list article > span { color: #77902f; font-size: 12px; }
 .skill-list h2 { font-size: 28px; font-weight: 500; }
-.skill-list article > div { display: flex; flex-wrap: wrap; gap: 10px; }
-.skill-list article p { padding: 10px 15px; border: 1px solid #b9bcb3; border-radius: 99px; font-size: 13px; }
+.skill-heading { min-width: 0; }
+.skill-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 28px; }
+.skill-logos img { width: 42px; height: 42px; object-fit: contain; }
+.technology-list { display: flex; flex-wrap: wrap; gap: 10px; align-content: start; min-width: 0; }
+.technology-list > button { display: inline-flex; align-items: center; justify-content: space-between; gap: 15px; max-width: 100%; padding: 10px 14px; border: 1px solid #b9bcb3; border-radius: 99px; background: transparent; color: var(--ink); font: 500 13px 'DM Sans', sans-serif; text-align: left; cursor: pointer; transition: background .18s, border-color .18s, transform .18s; }
+.technology-list > button:hover { border-color: #71882f; transform: translateY(-1px); }
+.technology-list > button.selected { background: var(--acid); border-color: var(--ink); }
+.technology-list > button:focus-visible, .technology-detail button:focus-visible, .technology-detail a:focus-visible { outline: 3px solid rgba(100, 131, 28, .35); outline-offset: 3px; }
+.technology-list > button span { color: #64831c; font-size: 17px; line-height: 1; }
+.technology-detail { flex-basis: 100%; margin-top: 18px; padding: 32px; border: 1px solid var(--line); border-top: 3px solid #78952c; background: #ebebe4; }
+.technology-detail-heading { display: flex; justify-content: space-between; gap: 30px; }
+.technology-detail-heading .section-label { margin-bottom: 12px; color: #64831c; }
+.technology-detail h3 { font-size: clamp(31px, 3vw, 44px); font-weight: 500; letter-spacing: -.045em; }
+.technology-detail-heading button { align-self: start; border: 0; border-bottom: 1px solid var(--ink); padding: 3px 0; background: transparent; font: 600 11px 'DM Sans', sans-serif; cursor: pointer; }
+.technology-detail-heading button span { margin-left: 7px; color: #64831c; font-size: 16px; }
+.technology-description { max-width: 690px; color: #50554e; font-size: 16px; line-height: 1.65; }
+.technology-evidence { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 45px; margin-top: 30px; padding-top: 24px; border-top: 1px solid #c5c7bf; }
+.technology-evidence h4 { margin: 0 0 10px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+.technology-evidence ul { margin: 0; padding: 0; list-style: none; }
+.technology-evidence li { border-bottom: 1px solid #d0d1ca; }
+.technology-evidence a { display: flex; justify-content: space-between; gap: 20px; padding: 11px 0; color: var(--ink); font-size: 13px; line-height: 1.4; text-decoration: none; }
+.technology-evidence a:hover { color: #64831c; }
+.technology-evidence > div > p { color: var(--muted); font-size: 13px; line-height: 1.5; }
+.build-workflows { margin-top: 85px; padding-top: 70px; border-top: 1px solid var(--line); }
+.build-workflows-heading { display: grid; grid-template-columns: 1fr 2fr; gap: 5vw; margin-bottom: 45px; }
+.build-workflows-heading h2 { max-width: 650px; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.08; letter-spacing: -.045em; font-weight: 500; }
+.build-workflows ol { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; padding: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); list-style: none; }
+.build-workflows li { min-width: 0; min-height: 190px; padding: 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.build-workflows li > span { color: #77902f; font-size: 10px; }
+.build-workflows h3 { margin: 42px 0 12px; font-size: 20px; font-weight: 500; }
+.build-workflows li p { color: #596057; line-height: 1.6; overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) {
+  .technology-list > button { transition: none; }
+}
 .fact-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
 .fact-grid article { padding: 50px 0; border-bottom: 1px solid var(--line); }
 .fact-grid article:nth-child(odd) { border-right: 1px solid var(--line); }
@@ -277,6 +314,11 @@ footer p { text-align: center; }
   .two-column-copy { grid-template-columns: 1fr; padding-top: 60px; gap: 25px; }
   .timeline article, .skill-list article { grid-template-columns: 40px 1fr; }
   .timeline article > ul, .skill-list article > div { grid-column: 2; }
+  .current-focus { grid-template-columns: 1fr; padding: 30px 24px; margin-bottom: 65px; }
+  .technology-evidence { grid-template-columns: 1fr; gap: 28px; }
+  .build-workflows-heading { grid-template-columns: 1fr; }
+  .build-workflows ol { grid-template-columns: 1fr; }
+  .build-workflows li { min-height: 160px; }
   .fact-grid { grid-template-columns: 1fr; }
   .fact-grid article:nth-child(odd) { border-right: 0; }
   .fact-grid article:nth-child(even) { padding-left: 0; }

@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import PageIntro from '../components/ui/PageIntro'
 import { experiences } from '../data/experiences'
-import globantLogo from '../assets/images/entity-logos//logo-globant.png'
+import globantLogo from '../assets/images/entity-logos//globant-logo.png'
 
 function Experiences() {
   const [query, setQuery] = useState('')

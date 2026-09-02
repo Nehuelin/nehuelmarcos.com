@@ -23,7 +23,7 @@ export const experiences = [
       'Microsoft Excel',
       'Globant Internal Tools',
       'Python',
-      'PowerBI'
+      'Power BI'
     ],
 
     skills: [
