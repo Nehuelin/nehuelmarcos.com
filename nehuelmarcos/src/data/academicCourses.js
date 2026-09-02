@@ -1081,7 +1081,12 @@ export const academicCourses = [
       'Jacobian linearization',
       'Parametric analysis'
     ],
-    []
+    [{
+      title: "Aerial Pursuit Simulation",
+      description: "A computational model that explores the changing positions and outcome of an aerial pursuit scenario.",
+      technologies: ['TypeScript', 'HTML', 'CSS'],
+      url: "https://github.com/matiasfelau/persecucion-aerea"
+    }]
   ),
   course(
     'application-integration',

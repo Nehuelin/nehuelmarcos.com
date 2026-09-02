@@ -1,7 +1,7 @@
 import PageIntro from '../components/ui/PageIntro'
 import { courses, education } from '../data/education'
-import uadeLogo from '../assets/images/logo-uade.jpg'
-import coderhouseLogo from '../assets/images/logo-coderhouse.jpg'
+import uadeLogo from '../assets/images/entity-logos//logo-uade.jpg'
+import coderhouseLogo from '../assets/images/entity-logos//logo-coderhouse.jpg'
 
 function Education() {
   return <section className="content-page">

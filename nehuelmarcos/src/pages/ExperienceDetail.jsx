@@ -1,5 +1,5 @@
 import { experiences } from '../data/experiences'
-import globantLogo from '../assets/images/logo-globant.png'
+import globantLogo from '../assets/images/entity-logos//logo-globant.png'
 
 function ExperienceDetail({ slug }) {
   const item = experiences.find((experience) => experience.slug === slug)

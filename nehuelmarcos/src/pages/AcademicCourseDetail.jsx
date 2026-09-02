@@ -1,5 +1,7 @@
 import CourseStatusBadge from '../components/academic/CourseStatusBadge'
 import { findAcademicCourse, getUnlockedCourses } from '../data/academicCourses'
+import { projects } from '../data/projects'
+import ProjectPreview from '../components/ui/ProjectPreview'
 
 const List = ({ items = [], empty = 'Details ready to be added in academicCourses.js.' }) => {
   if (!items.length) return <p className="academic-empty">{empty}</p>
@@ -73,13 +75,16 @@ export default function AcademicCourseDetail({ slug }) {
       <div className="detail-block">
         <p className="section-label">Related projects</p>
         <div>{relatedProjects.length ? relatedProjects.map((project) => 
-          <article className="related-project" key={project.title}>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <div className="academic-tags">
-              {project.technologies?.map((item) => <span key={item}>{item}</span>)}
+          <article className={`related-project ${projects.find((item) => item.sourceUrl === project.url)?.previewImage ? 'has-preview' : 'without-preview'}`} key={project.title}>
+            <ProjectPreview project={projects.find((item) => item.sourceUrl === project.url)} className="related-project-preview" />
+            <div>
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
+              <div className="academic-tags">
+                {project.technologies?.map((item) => <span key={item}>{item}</span>)}
+              </div>
+              <a className="text-link" href={project.url} target="_blank" rel="noreferrer">View project ↗</a>
             </div>
-            <a className="text-link" href={project.url} target="_blank" rel="noreferrer">View project ↗</a>
           </article>
           ) : <p className="academic-empty">No related project has been added.</p>}
         </div>

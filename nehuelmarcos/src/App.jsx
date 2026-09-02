@@ -80,7 +80,7 @@ function App() {
     <div className="site-shell">
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Nehuel Marcos, home">
-          NM<span>.</span>
+          NAM<span>.</span>
         </a>
         <nav aria-label="Primary navigation">
           <a href="#about">About</a>
@@ -98,7 +98,7 @@ function App() {
       </main>
 
       <footer>
-        <a className="wordmark wordmark-small" href="#home">NM<span>.</span></a>
+        <a className="wordmark wordmark-small" href="#home">NAM<span>.</span></a>
         <p>Computer Engineering student building thoughtful software.</p>
         <div className="footer-links">
           <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a>
