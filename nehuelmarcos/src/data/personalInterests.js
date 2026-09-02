@@ -1,0 +1,4 @@
+export const personalInterests = [
+  { id: 'basketball', eyebrow: 'On the court', highlight: '12+ years', title: 'Playing basketball', description: 'Basketball has been part of my life for more than twelve years. I value the pace of the game, the shared experience of being part of a team and the constant challenge of improving over time.', image: null },
+  { id: 'aviation', eyebrow: 'Always looking up', highlight: 'Avgeek', title: 'Fascinated by aviation', description: 'I’ve always been fascinated by aviation: the aircraft themselves, the systems behind every flight and the enormous amount of coordination required to move people safely around the world.', image: null },
+]

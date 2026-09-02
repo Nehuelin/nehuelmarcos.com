@@ -1,35 +1,22 @@
 import PageIntro from '../components/ui/PageIntro'
+import { personalInterests } from '../data/personalInterests'
 
-function Other() { 
+function Other() {
   return (
-		<section className="content-page">
-			<PageIntro number="04" label="Other" title={<>Beyond the<br />job title.</>}>
-				A few details that don’t fit neatly into a résumé, but are part of who I am.
-			</PageIntro>
-			<div className="fact-grid">
-				<article>
-					<span>Language</span>
-					<h2>Spanish</h2>
-					<p>Native speaker</p>
-				</article>
-				<article>
-					<span>Language</span>
-					<h2>English</h2>
-					<p>Cambridge C1 · Advanced</p>
-				</article>
-				<article>
-					<span>Based in</span>
-					<h2>Buenos Aires</h2>
-					<p>Argentina</p>
-				</article>
-				<article>
-					<span>Learning now</span>
-					<h2>AI systems</h2>
-					<p>Automation and machine learning</p>
-				</article>
-			</div>
-		</section>
-	)
+		<section className="content-page other-page">
+      <PageIntro number="04" label="Other" title={<>Things that<br />make me, me.</>}>
+        Not everything worth knowing belongs on a résumé. These are a few things that have shaped who I am beyond work and university.
+      </PageIntro>
+      <div className="personal-stories">
+        {personalInterests.map((interest, index) => (
+          <article className={`personal-story personal-story-${interest.id}`} key={interest.id}>
+            <div className="story-highlight" aria-hidden="true"><span>{interest.highlight}</span><i /></div>
+            <div className="story-copy"><p className="section-label">{interest.eyebrow}</p><span className="story-number">0{index + 1}</span><h2>{interest.title}</h2><p>{interest.description}</p></div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
 }
 
 export default Other;
