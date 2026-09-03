@@ -21,7 +21,7 @@ import { academicCourses } from './data/academicCourses'
 import LanguageSwitcher from './components/ui/LanguageSwitcher'
 
 function NotFound() {
-  const { t } = useTranslation()
+  const { t } = useTranslation('common')
 
   const goBack = () => {
     if (window.history.length > 1) {
@@ -71,7 +71,7 @@ function PageContent({ page }) {
 }
 
 function App() {
-  const { t } = useTranslation()
+  const { t } = useTranslation('common')
   const getPage = () => window.location.hash.slice(1) || 'home'
   const getInitialTheme = () => {
     const savedTheme = window.localStorage.getItem('theme')

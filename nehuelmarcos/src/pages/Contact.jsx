@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 function Contact() { 
+  const { t } = useTranslation('contact')
+
   return (
   <section className="contact-page">
     <p className="section-label">05 / Contact</p>
