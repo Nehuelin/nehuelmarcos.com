@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import Home from './pages/Home'
 import About from './pages/About'
 import Experiences from './pages/Experiences'
@@ -78,6 +78,7 @@ function App() {
   const [page, setPage] = useState(getPage)
   const [menuOpen, setMenuOpen] = useState(false)
   const [theme, setTheme] = useState(getInitialTheme)
+  const shouldScrollToTop = useRef(false)
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme
@@ -93,6 +94,25 @@ function App() {
     document.title = metadata.title
     // if (icon) icon.href = metadata.icon
     if (description) description.content = metadata.description
+  }, [page])
+
+  useEffect(() => {
+    const onInternalLinkClick = (event) => {
+      const link = event.target.closest('a[href^="#"]')
+      if (link && link.hash !== window.location.hash) shouldScrollToTop.current = true
+    }
+
+    document.addEventListener('click', onInternalLinkClick)
+    return () => document.removeEventListener('click', onInternalLinkClick)
+  }, [])
+
+  useLayoutEffect(() => {
+    if (!shouldScrollToTop.current) return
+    shouldScrollToTop.current = false
+    const previousScrollBehavior = document.documentElement.style.scrollBehavior
+    document.documentElement.style.scrollBehavior = 'auto'
+    window.scrollTo(0, 0)
+    document.documentElement.style.scrollBehavior = previousScrollBehavior
   }, [page])
 
 
