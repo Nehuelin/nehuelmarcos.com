@@ -17,7 +17,7 @@ import { experiences } from './data/experiences'
 import { projects } from './data/projects'
 import { courses } from './data/education'
 import { academicCourses } from './data/academicCourses'
-import { getPageMetadata } from './utils/pageMetadata'
+import { getPageMetadata } from './utils/pageMetadata' 
 
 function NotFound() {
   const goBack = () => {
@@ -25,7 +25,7 @@ function NotFound() {
       window.history.back()
       return
     }
-
+    
     window.location.hash = '#home'
   }
 
@@ -88,7 +88,7 @@ function App() {
 
   useEffect(() => {
     const metadata = getPageMetadata(page)
-    // const icon = document.querySelector('link[rel~="icon"]')
+    // const icon = document.querySelector('link[rel~="icon"]') // 
     const description = document.querySelector('meta[name="description"]')
 
     document.title = metadata.title
