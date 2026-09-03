@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Home from './pages/Home'
 import About from './pages/About'
 import Experiences from './pages/Experiences'
@@ -17,8 +18,11 @@ import { experiences } from './data/experiences'
 import { projects } from './data/projects'
 import { courses } from './data/education'
 import { academicCourses } from './data/academicCourses'
+import LanguageSwitcher from './components/ui/LanguageSwitcher'
 
 function NotFound() {
+  const { t } = useTranslation()
+
   const goBack = () => {
     if (window.history.length > 1) {
       window.history.back()
@@ -30,10 +34,10 @@ function NotFound() {
 
   return (
     <section className="content-page not-found-page">
-      <p className="section-label">404 · Not found</p>
-      <h1>This page doesn’t exist.</h1>
-      <p>The route you followed is not supported.</p>
-      <button type="button" className="text-link not-found-back" onClick={goBack}>← Go back</button>
+      <p className="section-label">{t('app.notFound.label')}</p>
+      <h1>{t('app.notFound.title')}</h1>
+      <p>{t('app.notFound.description')}</p>
+      <button type="button" className="text-link not-found-back" onClick={goBack}>{t('app.notFound.back')}</button>
     </section>
   )
 }
@@ -67,6 +71,7 @@ function PageContent({ page }) {
 }
 
 function App() {
+  const { t } = useTranslation()
   const getPage = () => window.location.hash.slice(1) || 'home'
   const getInitialTheme = () => {
     const savedTheme = window.localStorage.getItem('theme')
@@ -105,33 +110,34 @@ function App() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Nehuel Marcos, home">
+        <a className="wordmark" href="#home" aria-label={t('app.homeLabel')}>
           NAM<span>.</span>
         </a>
         <button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen((open) => !open)}>
-          <span>{menuOpen ? 'Close' : 'Menu'}</span><i aria-hidden="true" />
+          <span>{menuOpen ? t('app.close') : t('app.menu')}</span><i aria-hidden="true" />
         </button>
-        <nav id="primary-navigation" className={menuOpen ? 'is-open' : ''} aria-label="Primary navigation" onClick={() => setMenuOpen(false)}>
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#stack">Stack</a>
-          <a href="#other">Other</a>
-          <a className="mobile-contact-link" href="#contact">Contact</a>
+        <nav id="primary-navigation" className={menuOpen ? 'is-open' : ''} aria-label={t('app.navigationLabel')} onClick={() => setMenuOpen(false)}>
+          <a href="#about">{t('app.navigation.about')}</a>
+          <a href="#education">{t('app.navigation.education')}</a>
+          <a href="#experience">{t('app.navigation.experience')}</a>
+          <a href="#projects">{t('app.navigation.projects')}</a>
+          <a href="#stack">{t('app.navigation.stack')}</a>
+          <a href="#other">{t('app.navigation.other')}</a>
+          <a className="mobile-contact-link" href="#contact">{t('app.navigation.contact')}</a>
         </nav>
         <div className="header-actions">
+          <LanguageSwitcher />
           <button
             className="theme-toggle"
             type="button"
-            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            aria-label={theme === 'dark' ? t('app.theme.switchToLight') : t('app.theme.switchToDark')}
+            title={theme === 'dark' ? t('app.theme.switchToLight') : t('app.theme.switchToDark')}
             onClick={() => setTheme((currentTheme) => currentTheme === 'dark' ? 'light' : 'dark')}
           >
             <span aria-hidden="true">{theme === 'dark' ? '☀' : '☾'}</span>
-            <span className="theme-label">{theme === 'dark' ? 'Light' : 'Dark'}</span>
+            <span className="theme-label">{theme === 'dark' ? t('app.theme.light') : t('app.theme.dark')}</span>
           </button>
-          <a className="contact-link" href="#contact">Let's talk <span>↗</span></a>
+          <a className="contact-link" href="#contact">{t('app.letsTalk')} <span>↗</span></a>
         </div>
       </header>
 
@@ -140,8 +146,8 @@ function App() {
       </main>
 
       <footer>
-        <a className="wordmark wordmark-small" href="#home">NAM<span>.</span></a>
-        <p>Computer Engineering student building thoughtful software.</p>
+        <a className="wordmark wordmark-small" href="#home" aria-label={t('app.homeLabel')}>NAM<span>.</span></a>
+        <p>{t('app.footer')}</p>
         <div className="footer-links">
           <a href="https://www.linkedin.com/in/nehuel-adolfo-marcos-834020254/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href="https://github.com/Nehuelin" target="_blank" rel="noreferrer">GitHub ↗</a>
