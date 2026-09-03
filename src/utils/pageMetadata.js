@@ -9,7 +9,7 @@ const sections = {
   home: {
     label: 'NM',
     title: 'Home',
-    description: 'Portfolio of Nehuel Marcos, a software developer and Computer Engineering student focused on backend systems, automation and data.',
+    description: 'Software developer and Computer Engineering student in Buenos Aires, focused on backend systems, automation and data. Explore my projects and experience.',
   },
   about: { label: 'A', title: 'About', description: 'Background, capabilities and profile of Nehuel Marcos.' },
   education: { label: 'E', title: 'Education', description: 'Degrees, courses and the Computer Engineering journey of Nehuel Marcos.' },
