@@ -159,10 +159,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(100, 131, 28, .5
 .project-kicker a { color: #64831c; text-decoration: none; }
 .project-preview { display: block; width: 100%; height: auto; margin: 0; border: 1px solid var(--line); }
 .project-preview-mobile-app { display: block; width: 60%; height: auto; margin: 0; border: 1px solid var(--line); }
+.project-preview-wide { display: block; width: 130%; height: auto; margin: 20px -40px; border: 1px solid var(--line); }
 .project-detail-layout { display: grid; grid-template-columns: minmax(280px, 1fr) minmax(0, 1.35fr); gap: 6vw; align-items: start; }
 .project-detail-layout.without-preview { display: block; }
 .project-detail-layout > .project-preview { width: auto; height: 400px; margin: 30px -300px; position: sticky; top: 35px; }
 .project-detail-layout > .project-preview-mobile-app { position: sticky; top: 35px; }
+.project-detail-layout > .project-preview-wide {  width: auto; height: 300px; margin: 30px -250px; position: sticky; top: 35px; }
 .project-detail-copy .detail-lede { margin-top: 0; }
 .detail-page h1 { font-size: clamp(58px, 8vw, 110px); line-height: .95; letter-spacing: -.065em; font-weight: 500; margin: 35px 0 55px; }
 .detail-meta { display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }

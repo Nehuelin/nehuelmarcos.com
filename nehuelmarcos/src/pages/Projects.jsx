@@ -33,7 +33,7 @@ function Projects() {
         && (tool === 'all' || project.stack.includes(tool))
           && (category === 'all' || project.category === category)
     })
-        }, [association, category, query, tool])
+  }, [association, category, query, tool])
 
   return (
     <section className="content-page projects-page">
@@ -46,7 +46,7 @@ function Projects() {
         <div><strong>{associations.length}</strong><span>Courses & initiatives</span></div>
         <div><strong>{tools.length}</strong><span>Tools explored</span></div>
       </div>
-<div className="project-filters" aria-label="Project filter controls">
+      <div className="project-filters" aria-label="Project filter controls">
         <label className="project-field project-search">
           <span>Search</span>
           <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Project, course, tool..." />

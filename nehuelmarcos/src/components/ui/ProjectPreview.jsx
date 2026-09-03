@@ -28,7 +28,15 @@ export default function ProjectPreview({ project }) {
 				alt={`${project.title} preview`}
 			/>
     )  
-  }
+  } else if (project.slug == 'jira-people-report-generator'){
+    return (
+			<img
+				className={`project-preview-wide`.trim()}
+				src={imageUrl}
+				alt={`${project.title} preview`}
+			/>
+    )  		
+	}
 
 
 	return (

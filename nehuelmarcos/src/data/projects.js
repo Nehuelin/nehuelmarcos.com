@@ -10,7 +10,7 @@ export const projects = [
     title: 'Robot Live Dashboard',
     category: 'Academic project',
     associatedTo: 'Application Integration',
-    previewImage: 'robodog.png',
+    previewImage: 'robodog.jpeg',
     summary: 'A real-time dashboard for observing robot activity, status and telemetry from a focused web interface.',
     challenge: 'Make a stream of robot events easy to monitor without losing the current operational context.',
     solution: 'The dashboard turns incoming updates into an at-a-glance interface for tracking state and activity as they change.',
