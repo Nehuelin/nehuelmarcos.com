@@ -50,7 +50,7 @@ export default function DependencyGraph({ courses }) {
         <span><i className="pending" /> Pending</span>
       </div>
       <div className="graph-scroll" aria-label="Interactive course prerequisite graph">
-        <svg viewBox={`0 0 1320 ${height}`} width="1320" height={height} role="img">
+        <svg viewBox={`0 0 1320 ${height}`} width="1240" height={height} role="img">
           <defs>
             <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
               <path d="M 0 0 L 10 5 L 0 10 z" />

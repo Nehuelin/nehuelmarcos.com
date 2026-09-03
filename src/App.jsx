@@ -17,6 +17,7 @@ import { experiences } from './data/experiences'
 import { projects } from './data/projects'
 import { courses } from './data/education'
 import { academicCourses } from './data/academicCourses'
+import { getPageMetadata } from './utils/pageMetadata'
 
 function NotFound() {
   const goBack = () => {
@@ -83,6 +84,17 @@ function App() {
     document.documentElement.style.colorScheme = theme
     window.localStorage.setItem('theme', theme)
   }, [theme])
+
+  useEffect(() => {
+    const metadata = getPageMetadata(page)
+    // const icon = document.querySelector('link[rel~="icon"]')
+    const description = document.querySelector('meta[name="description"]')
+
+    document.title = metadata.title
+    // if (icon) icon.href = metadata.icon
+    if (description) description.content = metadata.description
+  }, [page])
+
 
   useEffect(() => {
     const onHashChange = () => {
