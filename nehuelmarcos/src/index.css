@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&display=swap');
 
-:root { font-family: 'DM Sans', sans-serif; color: #182019; background: #f4f3ed; font-synthesis: none; text-rendering: optimizeLegibility; }
+:root { font-family: 'DM Sans', sans-serif; color: #182019; background: #f4f3ed; font-synthesis: none; text-rendering: optimizeLegibility; transition: color .25s ease, background-color .25s ease; }
+:root[data-theme='dark'] { color: #edf0e9; background: #111510; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; }

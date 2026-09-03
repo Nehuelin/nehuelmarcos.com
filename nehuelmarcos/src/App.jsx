@@ -68,8 +68,21 @@ function PageContent({ page }) {
 
 function App() {
   const getPage = () => window.location.hash.slice(1) || 'home'
+  const getInitialTheme = () => {
+    const savedTheme = window.localStorage.getItem('theme')
+    if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+  
   const [page, setPage] = useState(getPage)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [theme, setTheme] = useState(getInitialTheme)
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme
+    document.documentElement.style.colorScheme = theme
+    window.localStorage.setItem('theme', theme)
+  }, [theme])
 
   useEffect(() => {
     const onHashChange = () => {
@@ -107,7 +120,19 @@ function App() {
           <a href="#other">Other</a>
           <a className="mobile-contact-link" href="#contact">Contact</a>
         </nav>
-        <a className="contact-link" href="#contact">Let's talk <span>↗</span></a>
+        <div className="header-actions">
+          <button
+            className="theme-toggle"
+            type="button"
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            onClick={() => setTheme((currentTheme) => currentTheme === 'dark' ? 'light' : 'dark')}
+          >
+            <span aria-hidden="true">{theme === 'dark' ? '☀' : '☾'}</span>
+            <span className="theme-label">{theme === 'dark' ? 'Light' : 'Dark'}</span>
+          </button>
+          <a className="contact-link" href="#contact">Let's talk <span>↗</span></a>
+        </div>
       </header>
 
       <main key={page} className="page-enter">
