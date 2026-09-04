@@ -1,0 +1,56 @@
+{
+	"hero": {
+		"location": "Buenos Aires, Argentina",
+		"language": "English C1",
+		"introduction": "Hi, I'm Nehuel.",
+		"headline": "I build systems that make work",
+		"headlineEmphasis": "simpler.",
+		"description": "Computer Engineering student and Operations Intern at Globant, working across backend development, Python automation, data and operational systems.",
+		"viewSelectedWork": "View selected work",
+		"downloadResume": "Download resume",
+		"getInTouch": "Get in touch",
+		"imageAlt": "Nehuel at NASA's Kennedy Space Center",
+		"imageCaption": "At NASA's Kennedy Space Center"
+	},
+	"proof": {
+		"ariaLabel": "Professional profile at a glance",
+		"currentRole": "Current role",
+		"education": "Education",
+		"experience": "Experience",
+		"languages": "Languages"
+	},
+	"featuredWork": {
+		"sectionLabel": "01 / Selected work",
+		"heading": "Systems built for real workflows.",
+		"backendSystem": "Backend system",
+		"technologiesAriaLabel": "{{title}} technologies",
+		"viewProject": "View project",
+		"viewAllProjects": "View all projects"
+	},
+	"experience": {
+		"sectionLabel": "02 / Experience",
+		"heading": "Experience at the intersection of operations and technology.",
+		"viewExperienceAriaLabel": "View {{role}} experience",
+		"viewFullExperience": "View full experience"
+	},
+	"toolkit": {
+		"sectionLabel": "03 / Toolkit",
+		"heading": "A toolkit built around backend systems and automation.",
+		"description": "I work with technologies that help me model business problems, connect systems and replace repetitive processes with dependable tools.",
+		"exploreStack": "Explore my complete stack"
+	},
+	"beyondWork": {
+		"sectionLabel": "04 / Beyond work",
+		"description": "Away from the screen, I've spent more than twelve years playing basketball—and I'm usually the person looking up when an aircraft passes overhead.",
+		"more": "More beyond the resume"
+	},
+	"contact": {
+		"sectionLabel": "05 / Contact",
+		"heading": "Have a problem worth",
+		"headingEmphasis": "simplifying?",
+		"description": "I'm interested in backend engineering, automation and opportunities where technology can improve real operational processes.",
+		"linksAriaLabel": "Contact links",
+		"letsTalk": "Let's talk",
+		"github": "GitHub"
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"intro": {
+		"label": "Sobre mí",
+		"titleLineOne": "Un poco",
+		"titleLineTwo": "sobre mí.",
+		"description": "Me gusta entender cómo funcionan las cosas y luego encontrar una forma más simple de hacerlas funcionar mejor."
+	},
+	"engineering": {
+		"headingLineOne": "Ingeniería con",
+		"headingEmphasis": "intención.",
+		"paragraphs": [
+			"Soy estudiante de Ingeniería Informática en UADE y tengo experiencia profesional en operaciones, administración de Atlassian, soporte técnico, automatización de flujos de trabajo y desarrollo con Python.",
+			"Mi trabajo suele ubicarse entre las personas, los procesos y la tecnología. Disfruto entender un problema, dividirlo en partes manejables y construir una solución que haga que el proceso subyacente sea más claro, rápido o confiable.",
+			"Actualmente me estoy desarrollando hacia la ingeniería frontend y backend, la automatización y los sistemas orientados a datos, con un interés creciente en inteligencia artificial y aprendizaje automático."
+		]
+	},
+	"capabilities": {
+		"label": "Capacidades",
+		"heading": "Lo que aporto",
+		"items": [
+			{
+				"title": "Pensamiento frontend/backend",
+				"description": "Disfruto modelar problemas de negocio, definir responsabilidades claras y construir servicios mantenibles mediante APIs, arquitecturas por capas y persistencia estructurada."
+			},
+			{
+				"title": "Automatización y mejora",
+				"description": "Busco procesos repetitivos o poco confiables que puedan transformarse en flujos de trabajo consistentes, validaciones y herramientas de reportes."
+			},
+			{
+				"title": "Personas y sistemas",
+				"description": "Mi experiencia me enseñó a moverme entre la implementación técnica, los requisitos operativos y la comunicación con distintos grupos de interés."
+			}
+		]
+	},
+	"profile": {
+		"label": "De un vistazo",
+		"heading": "Perfil",
+		"items": {
+			"currentRole": { "label": "Puesto actual", "value": "Pasante de Operaciones en Globant", "href": "#experience" },
+			"previousRole": { "label": "Puesto anterior", "value": "Pasante de Soporte de Atlassian en Globant", "href": "#experience" },
+			"education": { "label": "Educación", "value": "Ingeniería Informática en UADE", "href": "#education" },
+			"basedIn": { "label": "Ubicación", "value": "Buenos Aires, Argentina" },
+			"spanish": { "label": "Español", "value": "Nativo" },
+			"english": { "label": "Inglés", "value": "Cambridge C1 Advanced" },
+			"professionalInterests": { "label": "Intereses profesionales", "value": "Ingeniería frontend/backend, automatización, IA y aprendizaje automático", "href": "#stack" }
+		},
+		"exploreProjects": "Explorar proyectos seleccionados"
+	},
+	"cta": {
+		"label": "Seguir explorando",
+		"heading": "Mira en qué he estado trabajando.",
+		"navigationLabel": "Continuar por el portfolio",
+		"experience": "Experiencia",
+		"projects": "Proyectos",
+		"technicalStack": "Stack técnico",
+		"contact": "Contacto"
+	}
+}

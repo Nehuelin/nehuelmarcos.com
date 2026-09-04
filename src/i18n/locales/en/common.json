@@ -1,0 +1,21 @@
+{
+	"navigation": {
+		"home": "Home",
+		"about": "About",
+		"education": "Education",
+		"experience": "Experience",
+		"projects": "Projects",
+		"stack": "Stack",
+		"other": "Other",
+		"contact": "Contact",
+		"menu": "Menu",
+		"close": "Close",
+		"letsTalk": "Let's talk",
+		"primaryNavigation": "Primary navigation",
+		"homeAriaLabel": "Nehuel Marcos, home",
+		"switchToLightMode": "Switch to light mode",
+		"switchToDarkMode": "Switch to dark mode",
+		"light": "Light",
+		"dark": "Dark"
+	}
+}

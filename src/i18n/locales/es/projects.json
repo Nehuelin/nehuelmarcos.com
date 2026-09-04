@@ -1,0 +1,212 @@
+{
+    "categories": {
+        "academic": "Proyecto académico",
+        "course": "Proyecto de curso",
+        "independent": "Iniciativa independiente"
+    },
+
+    "associations": {
+        "application-integration": "Integración de Aplicaciones",
+        "mobile-application-development": "Desarrollo de Aplicaciones Móviles",
+        "modeling-and-simulation": "Modelado y Simulación",
+        "interactive-applications": "Aplicaciones Interactivas",
+        "data-engineering-ii": "Ingeniería de Datos II",
+        "professional-integration-seminar": "Seminario de Integración Profesional",
+        "object-oriented-design": "Diseño Orientado a Objetos",
+        "object-oriented-programming": "Programación Orientada a Objetos",
+        "coderhouse-react-js": "Coderhouse · React JS",
+        "coderhouse-backend-i": "Coderhouse · Backend I",
+        "coderhouse-backend-ii": "Coderhouse · Backend II",
+        "personal-project": "Proyecto personal"
+    },
+
+    "items": {
+        "robot-live-dashboard": {
+            "title": "Panel en Tiempo Real del Robot",
+            "contribution": ["Trabajé en el diseño de la interfaz, la visualización de datos en tiempo real y las conexiones con la API del robot."],
+            "summary": "Un panel en tiempo real para observar la actividad, el estado y la telemetría del robot desde una interfaz web enfocada.",
+            "challenge": "Hacer que un flujo continuo de eventos del robot sea fácil de monitorear sin perder el contexto operativo actual.",
+            "solution": "El panel transforma las actualizaciones entrantes en una interfaz de consulta rápida para seguir el estado y la actividad a medida que cambian."
+        },
+
+        "municipal-help-center-frontend": {
+            "title": "Frontend del Centro de Ayuda Municipal",
+            "contribution": [
+                "Implementé la vista de detalle de tickets para agentes.",
+                "Ayudé a mejorar la página de bandeja de entrada de tickets agregando nuevas funcionalidades y mejoras visuales.",
+                "Implementé las páginas de registro e inicio de sesión."
+            ],
+            "summary": "Una aplicación web que integra servicios desarrollados de manera independiente dentro de una experiencia de usuario unificada.",
+            "challenge": "Conectar múltiples servicios de la aplicación manteniendo una experiencia consistente para el usuario y límites de integración claros.",
+            "solution": "Un frontend basado en componentes coordina los flujos de la aplicación y consume las APIs de servicios del equipo mediante capas de integración reutilizables."
+        },
+
+        "municipal-help-center-backend": {
+            "title": "Backend del Centro de Ayuda Municipal",
+            "contribution": [
+                "Colaboré en tareas de backend para reducir la carga de trabajo del equipo.",
+                "Proporcioné consultas SQL para encontrar rápidamente información importante o realizar modificaciones en las tablas."
+            ],
+            "summary": "Un servicio backend para gestionar solicitudes, reclamos y reportes de ciudadanos dentro de una plataforma municipal modular.",
+            "challenge": "Coordinar los ciclos de vida de los tickets, las asignaciones y las interacciones entre módulos, preservando al mismo tiempo un contrato de servicio claro para el frontend.",
+            "solution": "Una API en capas desarrollada con Spring Boot modela el dominio del centro de ayuda y proporciona endpoints seguros con persistencia para los flujos operativos."
+        },
+
+        "mobile-auctions": {
+            "title": "Subastas Móviles",
+            "contribution": [
+                "Implementé las pantallas de registro e inicio de sesión, el dashboard principal, el detalle de subastas, la pantalla de subasta en vivo y la pantalla de checkout.",
+                "Implementé WebSockets en el backend para permitir subastas realmente en vivo."
+            ],
+            "summary": "Una experiencia de marketplace móvil para explorar subastas, consultar publicaciones y participar directamente desde el teléfono.",
+            "challenge": "Adaptar un flujo de subastas de múltiples pasos a una interfaz que se mantenga clara y cómoda en pantallas pequeñas.",
+            "solution": "Una aplicación mobile-first organiza el descubrimiento, los detalles de los artículos y las pujas en pantallas específicas y reutilizables."
+        },
+
+        "mental-math-challenge": {
+            "title": "Desafío de Cálculo Mental",
+            "summary": "Un juego móvil de reacción que pone a prueba tu capacidad mental mediante preguntas matemáticas aleatorias con muy poco tiempo para responder.",
+            "challenge": "Construir interacciones de juego ágiles donde el tiempo, el feedback y un ciclo simple de repetición se sientan inmediatos.",
+            "solution": "Un juego móvil compacto utiliza cambios de estado temporizados e interacción táctil para calcular y mostrar cada resultado."
+        },
+
+        "reaction-challenge": {
+            "title": "Desafío de Reacción",
+            "summary": "Un juego móvil de reacción que mide el tiempo de respuesta mediante desafíos rápidos controlados por interacción táctil.",
+            "challenge": "Construir interacciones de juego ágiles donde el tiempo, el feedback y un ciclo simple de repetición se sientan inmediatos.",
+            "solution": "Un juego móvil compacto utiliza cambios de estado temporizados e interacción táctil para calcular y mostrar cada resultado."
+        },
+
+        "tic-tac-toe-mobile": {
+            "title": "Ta-Te-Ti Móvil",
+            "summary": "Una versión adaptada a pantallas táctiles del clásico juego para dos jugadores, construida alrededor de una interacción móvil simple y clara.",
+            "challenge": "Modelar turnos, condiciones de victoria y reinicios manteniendo un feedback de juego inmediatamente comprensible.",
+            "solution": "La aplicación gestiona el tablero como un estado de interfaz predecible y comunica claramente los turnos y resultados."
+        },
+
+        "aerial-pursuit-simulation": {
+            "title": "Simulación de Persecución Aérea",
+            "contribution": [
+                "Trabajé en el frontend de la página para mostrar los datos simulados proporcionados por los demás equipos."
+            ],
+            "summary": "Un modelo computacional que explora la evolución de las posiciones y el resultado de un escenario de persecución aérea.",
+            "challenge": "Representar las reglas de movimiento y persecución con suficiente precisión como para estudiar cómo evoluciona el sistema a lo largo del tiempo.",
+            "solution": "La simulación aplica un conjunto repetible de supuestos del modelo y visualiza las trayectorias resultantes para su análisis."
+        },
+
+        "szafrankus-store-frontend": {
+            "title": "Frontend de Szafrankus Store",
+            "contribution": [
+                "Trabajé en las pantallas del creador/administrador.",
+                "Mejoré otras pantallas mediante nuevos diseños y la incorporación de nuevas funcionalidades."
+            ],
+            "summary": "Un frontend responsivo que transforma datos provenientes de una API remota en una experiencia de navegación accesible e interactiva.",
+            "challenge": "Coordinar datos asincrónicos, acciones del usuario y estados de carga sin hacer que la interfaz se perciba fragmentada.",
+            "solution": "Componentes de interfaz reutilizables organizan el contenido proveniente de la API y proporcionan feedback claro a lo largo de los principales flujos de usuario."
+        },
+
+        "szafrankus-store-backend": {
+            "title": "Backend de Szafrankus Store",
+            "contribution": [
+                "Colaboré en la construcción de las entidades.",
+                "Trabajé en los controladores, servicios y pruebas de endpoints."
+            ],
+            "summary": "La capa de servicios de una aplicación interactiva, diseñada para exponer datos estructurados mediante endpoints claros.",
+            "challenge": "Proporcionar un contrato confiable entre el cliente orientado al usuario y los datos de la aplicación.",
+            "solution": "Un backend orientado a REST centraliza el manejo de solicitudes, las reglas de dominio y la persistencia para el frontend asociado."
+        },
+
+        "polyglot-persistence-system": {
+            "title": "E-Commerce con Persistencia Políglota",
+            "contribution": [
+                "Trabajé en conjunto y en tiempo real con mi equipo para desarrollar el código."
+            ],
+            "summary": "Un sistema de pedidos e inventario que asigna cada necesidad de datos al modelo de base de datos más adecuado.",
+            "challenge": "Mantener consistentes los productos, el stock, los pagos y las relaciones mientras se trabaja con distintas tecnologías NoSQL.",
+            "solution": "Una aplicación Java coordina capas de persistencia especializadas respaldadas por bases de datos documentales, de grafos, clave-valor y de columnas anchas."
+        },
+
+        "sago-dental-management": {
+            "title": "Gestión Odontológica SAGO",
+            "contribution": [
+                "Desarrollé personalmente la mayor parte del frontend.",
+                "Conecté y alojé la base de datos en Firebase."
+            ],
+            "summary": "Una plataforma para consultorios odontológicos que permite gestionar pacientes, turnos y herramientas clínicas desde una única aplicación web.",
+            "challenge": "Integrar flujos administrativos y clínicos sin hacer que la gestión cotidiana de pacientes resulte engorrosa.",
+            "solution": "Una interfaz en React combina autenticación, búsqueda de pacientes, programación de turnos y acceso al periodontograma mediante servicios de Firebase."
+        },
+
+        "restaurant-ordering-system": {
+            "title": "Sistema de Pedidos para Restaurantes",
+            "contribution": [
+                "Fui el principal arquitecto del programa, manteniendo y actualizando constantemente el UML.",
+                "Trabajé en conjunto y en tiempo real con mi equipo para desarrollar el código."
+            ],
+            "summary": "Un modelo de dominio en Java para un flujo de restaurante que abarca menús, pedidos, descuentos, pagos, notificaciones y facturación.",
+            "challenge": "Traducir un conjunto amplio de requisitos de negocio en un modelo de objetos cohesivo, con responsabilidades y puntos de extensión claramente definidos.",
+            "solution": "El diseño utiliza UML, interfaces, herencia, adaptadores y fábricas, junto con persistencia en JSON para los datos del menú."
+        },
+
+        "snake-game": {
+            "title": "Juego Snake",
+            "contribution": [
+                "Desarrollé la lógica inicial de la serpiente.",
+                "Implementé la parte visual de la serpiente.",
+                "Implementé habilidades especiales que se activan al comer determinados alimentos."
+            ],
+            "summary": "Una implementación de escritorio de Snake con sistema de puntaje, gestión del estado del juego y persistencia de récords.",
+            "challenge": "Coordinar movimiento, colisiones, renderizado y entradas temporizadas manteniendo el modelo del juego separado en objetos claramente definidos.",
+            "solution": "Una aplicación en Java Swing organiza la jugabilidad mediante clases de dominio reutilizables, herencia, interfaces y persistencia basada en archivos."
+        },
+
+        "coderhouse-react-final": {
+            "title": "E-Commerce en React",
+            "summary": "Una tienda online completa con exploración de productos, estado del carrito y una experiencia de checkout guiada.",
+            "challenge": "Integrar routing, estado compartido y datos asincrónicos del catálogo en una aplicación de página única cohesiva.",
+            "solution": "La tienda utiliza componentes reutilizables de React y una gestión centralizada del carrito para acompañar todo el proceso de compra."
+        },
+
+        "coderhouse-backend-one": {
+            "title": "Proyecto Final de Backend I",
+            "summary": "Una API de e-commerce que abarca productos, carritos y las bases del lado del servidor para una tienda online.",
+            "challenge": "Trasladar las responsabilidades de la tienda a un servidor mantenible, con recursos y persistencia claramente definidos.",
+            "solution": "Una API en Node.js define rutas modulares y acceso a datos para las operaciones de catálogo y carrito."
+        },
+
+        "coderhouse-backend-two": {
+            "title": "Proyecto Final de Backend II",
+            "summary": "Un backend de comercio electrónico ampliado con autenticación, autorización y patrones de API orientados a producción.",
+            "challenge": "Evolucionar una API funcional para incorporar identidad, acciones protegidas y una separación de responsabilidades más clara.",
+            "solution": "El proyecto incorpora autenticación y flujos de negocio basados en roles sobre un servicio modular desarrollado en Node.js."
+        },
+
+        "electives-filtrator-2000": {
+            "title": "Electives Filtrator 2000",
+            "summary": "Una pequeña herramienta que ayuda a estudiantes de Ingeniería en Informática de UADE a descubrir y filtrar materias optativas.",
+            "challenge": "Transformar un conjunto de materias optativas difícil de revisar en una herramienta de decisión más rápida y basada en criterios.",
+            "solution": "Una interfaz diseñada específicamente para este propósito permite buscar las opciones disponibles y compararlas con mayor facilidad."
+        },
+
+        "forecast-assignment-validator": {
+            "title": "Validador de Asignaciones de Forecast",
+            "summary": "Una herramienta de automatización para validar asignaciones de forecast y detectar inconsistencias antes de que generen trabajo manual adicional.",
+            "challenge": "Reemplazar verificaciones repetitivas sobre datos de asignaciones por un proceso de validación consistente y auditable.",
+            "solution": "La herramienta evalúa los registros según reglas definidas y genera resultados enfocados en los casos que requieren atención."
+        },
+
+        "jira-people-report-generator": {
+            "title": "Generador de Reportes de Personas de Jira",
+            "summary": "Una herramienta de reporting que transforma los datos de personas de Jira en una vista práctica para el seguimiento operativo.",
+            "challenge": "Hacer que la información de cuentas y personas sea más fácil de revisar que mediante registros dispersos y controles manuales aislados.",
+            "solution": "El generador recopila y reorganiza los datos de Jira en un reporte repetible diseñado para facilitar los procesos de revisión."
+        },
+
+        "nehuelmarcos-portfolio": {
+            "title": "nehuelmarcos.com",
+            "summary": "Este portfolio en constante evolución: un espacio pensado para reunir mi recorrido en ingeniería, mi experiencia y mis proyectos.",
+            "challenge": "Presentar un conjunto de trabajos en crecimiento con suficiente estructura para que resulte útil sin perder una identidad personal propia.",
+            "solution": "Un sitio personalizado en React combina diseños editoriales, páginas basadas en datos y navegación responsiva dentro de una implementación liviana."
+        }
+    }
+}

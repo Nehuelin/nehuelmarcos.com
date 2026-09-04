@@ -1,0 +1,1164 @@
+{
+    "degree": {
+    "title": "Ingeniería en Informática",
+    "university": "Universidad Argentina de la Empresa (UADE)",
+    "period": "2023 — Finalización estimada: diciembre de 2027",
+    "status": "En curso"
+    },
+
+    "statuses": {
+    "completed": "Completada",
+    "in-progress": "En curso",
+    "pending": "Pendiente"
+    },
+
+    "labels": {
+    "year": "Año {{year}}",
+    "semester": "Cuatrimestre {{semester}}",
+    "topics": "Temas abordados",
+    "technologies": "Tecnologías",
+    "prerequisites": "Correlativas",
+    "projects": "Proyectos de la materia",
+    "viewProject": "Ver proyecto",
+    "noPrerequisites": "Sin correlativas",
+    "toBeDetermined": "Por definir",
+    "minimumCompletedCourses": "Requiere {{count}} materias aprobadas"
+    },
+
+    "courses": {
+        "fundamentals-of-computer-science": {
+            "title": "Fundamentos de Informática",
+            "description": "Introdujo los fundamentos de la informática y la resolución algorítmica de problemas mediante Python. Se abordaron la organización básica de una computadora, algoritmos y programas, variables y expresiones, estructuras de control, funciones, listas, algoritmos de búsqueda y ordenamiento, y arreglos multidimensionales.",
+            "topics": [
+            "Fundamentos de informática",
+            "Pensamiento algorítmico",
+            "Fundamentos de Python",
+            "Estructuras de control",
+            "Funciones",
+            "Listas y arreglos",
+            "Algoritmos de búsqueda",
+            "Algoritmos de ordenamiento",
+            "Matrices"
+            ],
+            "projects": []
+        },
+
+        "information-systems-i": {
+            "title": "Sistemas de Información I",
+            "description": "Exploró cómo interactúan las organizaciones, los procesos de negocio y los sistemas de información. Se aplicaron conceptos de análisis organizacional, modelado de procesos, relevamiento de requisitos e ingeniería de software para modelar operaciones empresariales y evaluar sistemas de información.",
+            "topics": [
+                "Análisis organizacional",
+                "Modelado de procesos de negocio",
+                "Diagramas de flujo de procesos",
+                "Diagramas de contexto",
+                "Análisis de requisitos",
+                "Sistemas de información",
+                "Ingeniería de software",
+                "Metodologías ágiles",
+                "Inteligencia de negocios",
+                "BPM",
+                "ERP / CRM / SCM"
+            ],
+            "projects": []
+        },
+
+        "critical-thinking-and-communication": {
+            "title": "Pensamiento Crítico y Comunicación",
+            "description": "Desarrolló habilidades de razonamiento crítico y comunicación mediante lógica formal, análisis de argumentos y escritura académica. Se aprendió a evaluar argumentos deductivos e inductivos, identificar falacias lógicas y construir textos informativos y argumentativos claros y fundamentados.",
+            "topics": [
+                "Pensamiento crítico",
+                "Lógica formal",
+                "Lógica proposicional",
+                "Lógica de predicados",
+                "Razonamiento deductivo",
+                "Razonamiento inductivo",
+                "Falacias lógicas",
+                "Argumentación",
+                "Escritura académica"
+            ],
+            "projects": []
+        },
+
+        "systems-theory": {
+            "title": "Teoría de Sistemas",
+            "description": "Desarrolló un enfoque sistémico para analizar problemas complejos, organizaciones y sistemas de información. Se estudiaron la Teoría General de Sistemas, los mecanismos de retroalimentación y control, los modelos de desarrollo de software, el aprendizaje organizacional y patrones sistémicos recurrentes.",
+            "topics": [
+                "Pensamiento sistémico",
+                "Teoría General de Sistemas",
+                "Bucles de retroalimentación",
+                "Cibernética",
+                "Sistemas de información",
+                "Ciclos de vida de desarrollo",
+                "Paradigmas de desarrollo de software",
+                "Sistemas organizacionales",
+                "Aprendizaje organizacional",
+                "Arquetipos sistémicos"
+            ],
+            "projects": []
+        },
+
+        "algebra-and-geometry": {
+            "title": "Álgebra y Geometría",
+            "description": "Desarrolló fundamentos matemáticos en álgebra, vectores y geometría analítica. Se trabajó con números reales y complejos, ecuaciones polinómicas, operaciones vectoriales y modelos geométricos que involucran rectas, planos, secciones cónicas y superficies cuádricas.",
+            "topics": [
+                "Álgebra",
+                "Números complejos",
+                "Polinomios",
+                "Álgebra vectorial",
+                "Geometría analítica",
+                "Geometría 2D y 3D",
+                "Ortogonalidad",
+                "Rectas y planos",
+                "Secciones cónicas",
+                "Superficies cuádricas"
+            ],
+            "projects": []
+        },
+
+        "algorithms-and-data-structures-i": {
+            "title": "Algoritmos y Estructuras de Datos I",
+            "description": "Fortaleció las habilidades de programación y resolución de problemas en Python mediante programación modular, estructuras de datos, recursividad, manejo de excepciones y procesamiento de archivos. Se aplicaron listas, matrices, tuplas, conjuntos, diccionarios y archivos CSV para resolver problemas de programación de complejidad creciente.",
+            "topics": [
+                "Python",
+                "Programación modular",
+                "Funciones",
+                "Estructuras de datos",
+                "Comprensión de listas",
+                "Matrices",
+                "Manejo de excepciones",
+                "Procesamiento de archivos",
+                "CSV",
+                "Recursividad",
+                "Tuplas",
+                "Conjuntos",
+                "Diccionarios"
+            ],
+            "projects": []
+        },
+
+        "systems-of-representation": {
+            "title": "Sistemas de Representación",
+            "description": "Desarrolló habilidades de dibujo técnico y representación espacial mediante geometría descriptiva y normas de dibujo de ingeniería. Se trabajó con proyecciones ortogonales, perspectivas, cortes, acotación, escalas y planos civiles, avanzando desde dibujo manual hasta CAD 2D con AutoCAD.",
+            "topics": [
+                "Dibujo técnico",
+                "Geometría descriptiva",
+                "Proyección de Monge",
+                "Proyección ortogonal",
+                "Dibujo en perspectiva",
+                "Escalas de ingeniería",
+                "Secciones y cortes",
+                "Acotación mecánica",
+                "Planos civiles",
+                "CAD 2D"
+            ],
+            "projects": []
+        },
+
+        "fundamentals-of-chemistry": {
+            "title": "Fundamentos de Química",
+            "description": "Construyó una base en química general mediante el estudio de la materia, la estructura atómica, las reacciones químicas y la resolución cuantitativa de problemas. Se abordaron nomenclatura química, estequiometría, gases, soluciones, cinética de reacciones y equilibrio químico, combinando ejercicios teóricos con trabajo de laboratorio.",
+            "topics": [
+                "Estructura atómica",
+                "Tabla periódica",
+                "Nomenclatura química",
+                "Ecuaciones químicas",
+                "Estequiometría",
+                "Reactivos limitantes",
+                "Leyes de los gases",
+                "Soluciones",
+                "Cinética química",
+                "Equilibrio químico",
+                "Técnicas de laboratorio"
+            ],
+            "projects": []
+        },
+
+        "computer-architecture": {
+            "title": "Arquitectura de Computadoras",
+            "description": "Exploró el funcionamiento de las computadoras a nivel de hardware y arquitectura, desde lógica digital y representación numérica hasta procesadores, memoria, buses y ejecución de instrucciones. Se estudiaron el modelo de Von Neumann, mecanismos de direccionamiento, memoria caché, interrupciones de hardware y arquitecturas basadas en RISC.",
+            "topics": [
+                "Lógica digital",
+                "Sistemas binario y hexadecimal",
+                "Memoria de computadora",
+                "Arquitectura de procesadores",
+                "Registros y buses",
+                "Arquitectura de Von Neumann",
+                "Modos de direccionamiento",
+                "Memoria caché",
+                "Interrupciones de hardware",
+                "RISC y ARM"
+            ],
+            "projects": []
+        },
+
+        "discrete-mathematics": {
+            "title": "Matemática Discreta",
+            "description": "Desarrolló los fundamentos matemáticos utilizados para modelar y razonar sobre estructuras discretas en informática. Se abordaron lógica formal, conjuntos, álgebra de Boole, combinatoria, relaciones, inducción matemática, recursividad, estructuras algebraicas y teoría de grafos.",
+            "topics": [
+                "Lógica proposicional",
+                "Lógica de predicados",
+                "Teoría de conjuntos",
+                "Álgebra de Boole",
+                "Combinatoria",
+                "Relaciones",
+                "Relaciones de equivalencia",
+                "Órdenes parciales",
+                "Inducción matemática",
+                "Relaciones de recurrencia",
+                "Estructuras algebraicas",
+                "Teoría de grafos"
+            ],
+            "projects": []
+        },
+
+        "linear-algebra": {
+            "title": "Álgebra Lineal",
+            "description": "Desarrolló una base en álgebra lineal mediante matrices, sistemas de ecuaciones lineales, espacios vectoriales y transformaciones lineales. Se estudiaron independencia lineal, bases y dimensión, autovalores y autovectores, y técnicas de cambio de base.",
+            "topics": [
+                "Matrices",
+                "Determinantes",
+                "Inversas de matrices",
+                "Sistemas de ecuaciones lineales",
+                "Espacios vectoriales",
+                "Subespacios",
+                "Combinaciones lineales",
+                "Independencia lineal",
+                "Base y dimensión",
+                "Transformaciones lineales",
+                "Núcleo e imagen",
+                "Autovalores",
+                "Autovectores",
+                "Cambio de base"
+            ],
+            "projects": []
+        },
+
+        "algorithms-and-data-structures-ii": {
+            "title": "Algoritmos y Estructuras de Datos II",
+            "description": "Profundizó el conocimiento de estructuras de datos y resolución algorítmica de problemas utilizando Java. Se implementaron tipos abstractos de datos y estructuras tanto lineales como no lineales, incluyendo pilas, colas, diccionarios, estructuras enlazadas, árboles de búsqueda, árboles balanceados y grafos, analizando además sus costos computacionales.",
+            "topics": [
+                "Java",
+                "Tipos abstractos de datos",
+                "Pilas",
+                "Colas",
+                "Colas de prioridad",
+                "Conjuntos",
+                "Diccionarios",
+                "Estructuras enlazadas",
+                "Árboles binarios",
+                "Árboles binarios de búsqueda",
+                "Árboles AVL",
+                "Árboles B",
+                "Grafos",
+                "Complejidad algorítmica"
+            ],
+            "projects": []
+        },
+
+        "information-systems-ii": {
+            "title": "Sistemas de Información II",
+            "description": "Se enfocó en ingeniería de requisitos y en el proceso de traducir necesidades del negocio y del usuario en requisitos de software estructurados. Se aplicaron técnicas de relevamiento, análisis, especificación, validación y trazabilidad mediante entrevistas, casos de uso, historias de usuario y documentación SRS.",
+            "topics": [
+                "Ingeniería de requisitos",
+                "Requisitos funcionales",
+                "Requisitos no funcionales",
+                "Relevamiento de requisitos",
+                "Entrevistas y encuestas",
+                "Análisis de requisitos",
+                "Casos de uso",
+                "Diagramas de flujo de datos",
+                "Documentación SRS",
+                "Historias de usuario",
+                "Criterios de aceptación",
+                "Validación de requisitos",
+                "Trazabilidad de requisitos",
+                "Gestión de configuración"
+            ],
+            "projects": []
+        },
+
+        "operating-systems": {
+            "title": "Sistemas Operativos",
+            "description": "Estudió la organización interna y las responsabilidades principales de los sistemas operativos, incluyendo ejecución de procesos, sincronización, gestión de memoria, sistemas de archivos, entrada/salida y virtualización. Estos conceptos se aplicaron mediante trabajos de laboratorio y se exploraron fundamentos de redes y seguridad de sistemas.",
+            "topics": [
+                "Arquitectura de sistemas operativos",
+                "Llamadas al sistema",
+                "Gestión de procesos",
+                "Sincronización de procesos",
+                "Comunicación entre procesos",
+                "Gestión de memoria",
+                "Memoria virtual",
+                "Paginación",
+                "Segmentación",
+                "Sistemas de archivos",
+                "Gestión de entrada/salida",
+                "Virtualización",
+                "Fundamentos de redes",
+                "Seguridad de sistemas"
+            ],
+            "projects": []
+        },
+
+        "physics-i": {
+            "title": "Física I",
+            "description": "Construyó una base en mecánica clásica mediante resolución teórica de problemas y experimentos de laboratorio. Se estudiaron incertidumbre de medición, cinemática, dinámica newtoniana, movimiento circular, trabajo y energía, cantidad de movimiento, colisiones y movimiento oscilatorio.",
+            "topics": [
+                "Medición e incertidumbre",
+                "Propagación de errores",
+                "Cinemática vectorial",
+                "Movimiento lineal",
+                "Movimiento de proyectiles",
+                "Movimiento circular",
+                "Leyes de Newton",
+                "Fricción",
+                "Fuerzas elásticas",
+                "Trabajo y potencia",
+                "Energía cinética y potencial",
+                "Conservación de la energía",
+                "Cantidad de movimiento",
+                "Colisiones",
+                "Movimiento oscilatorio"
+            ],
+            "projects": []
+        },
+
+        "calculus-i": {
+            "title": "Cálculo I",
+            "description": "Desarrolló una base en cálculo diferencial e integral mediante el estudio de funciones, límites, derivadas, integrales y ecuaciones diferenciales. Estos conceptos se aplicaron al análisis del comportamiento de funciones, problemas de optimización, áreas y sistemas de ecuaciones diferenciales ordinarias.",
+            "topics": [
+                "Funciones",
+                "Límites",
+                "Continuidad",
+                "Derivadas",
+                "Regla de la cadena",
+                "Regla de L’Hôpital",
+                "Optimización de funciones",
+                "Aproximación de funciones",
+                "Integrales indefinidas",
+                "Integrales definidas",
+                "Técnicas de integración",
+                "Ecuaciones diferenciales ordinarias"
+            ],
+            "projects": []
+        },
+
+        "algorithm-design-and-analysis": {
+            "title": "Diseño y Análisis de Algoritmos",
+            "description": "Estudió técnicas avanzadas de diseño de algoritmos y resolución computacional de problemas. Se aplicaron divide y vencerás, estrategias greedy, programación dinámica, algoritmos sobre grafos y backtracking, analizando la complejidad y eficiencia de distintos enfoques.",
+            "topics": [
+                "Análisis de algoritmos",
+                "Complejidad computacional",
+                "Recursividad",
+                "Divide y vencerás",
+                "QuickSort",
+                "MergeSort",
+                "Algoritmos greedy",
+                "Árboles de expansión mínima",
+                "Algoritmo de Prim",
+                "Algoritmo de Kruskal",
+                "Algoritmo de Dijkstra",
+                "Programación dinámica",
+                "Algoritmo de Floyd",
+                "Subsecuencia común más larga",
+                "Subsecuencia creciente más larga",
+                "Backtracking",
+                "DFS",
+                "BFS",
+                "Búsqueda de costo uniforme",
+                "Poda alfa-beta",
+                "Branch and bound"
+            ],
+            "projects": []
+        },
+
+        "object-oriented-programming": {
+            "title": "Programación Orientada a Objetos",
+            "description": "Desarrolló software orientado a objetos en Java utilizando encapsulamiento, herencia, abstracción, interfaces y polimorfismo. Se aplicaron modelado UML, principios SOLID y GRASP, colecciones y genéricos, manejo de excepciones, entrada/salida de archivos, interfaces gráficas, programación dirigida por eventos y multithreading.",
+            "topics": [
+                "Programación orientada a objetos",
+                "Clases y objetos",
+                "Encapsulamiento",
+                "Abstracción",
+                "Herencia",
+                "Polimorfismo",
+                "Sobrecarga de métodos",
+                "Sobrescritura de métodos",
+                "Clases abstractas",
+                "Interfaces",
+                "UML",
+                "Diagramas de clases",
+                "Diagramas de secuencia",
+                "SOLID",
+                "GRASP",
+                "Colecciones",
+                "Genéricos",
+                "Manejo de excepciones",
+                "Entrada/salida de archivos",
+                "Swing",
+                "Programación dirigida por eventos",
+                "Multithreading"
+            ],
+            "projects": [
+                "snake-ii"
+            ]
+        },
+
+        "fundamentals-of-telecommunications": {
+            "title": "Fundamentos de Telecomunicaciones",
+            "description": "Estudió los principios detrás de las comunicaciones digitales y analógicas, desde teoría de la información y comportamiento de señales hasta medios físicos de transmisión y modelos de comunicación de redes. Se abordaron modulación, control de errores, multiplexación, comunicaciones por radio y ópticas, y arquitecturas TCP/IP y OSI.",
+            "topics": [
+                "Teoría de la información",
+                "Entropía",
+                "Señales",
+                "Ancho de banda",
+                "Ruido y distorsión",
+                "Modulación",
+                "AM / FM / PM",
+                "ASK / FSK / PSK / QAM",
+                "Detección y corrección de errores",
+                "Multiplexación",
+                "FDM / TDM / CDM",
+                "Acceso al medio",
+                "Medios de cobre y coaxiales",
+                "Fibra óptica",
+                "Comunicaciones por radio",
+                "Comunicaciones por microondas",
+                "Comunicaciones satelitales",
+                "Modelo TCP/IP",
+                "Modelo OSI",
+                "Dispositivos de conmutación y enrutamiento"
+            ],
+            "projects": []
+        },
+
+        "data-engineering-i": {
+            "title": "Ingeniería de Datos I",
+            "description": "Desarrolló fundamentos de sistemas de bases de datos relacionales y gestión de datos. Se diseñaron y consultaron estructuras relacionales utilizando SQL, trabajando con álgebra relacional, vistas, procedimientos almacenados, transacciones y técnicas de normalización para mejorar la consistencia y el diseño de bases de datos.",
+            "topics": [
+                "Arquitectura de bases de datos",
+                "Bases de datos relacionales",
+                "Modelo relacional",
+                "Claves primarias y foráneas",
+                "Álgebra relacional",
+                "SQL",
+                "DDL",
+                "DML",
+                "Subconsultas",
+                "Vistas",
+                "Procedimientos almacenados",
+                "Funciones",
+                "SQL dinámico",
+                "Cursores",
+                "Transacciones",
+                "Normalización de bases de datos",
+                "BCNF",
+                "Cuarta forma normal",
+                "Quinta forma normal"
+            ],
+            "projects": []
+        },
+
+        "calculus-ii": {
+            "title": "Cálculo II",
+            "description": "Extendió el cálculo hacia funciones multivariables y vectoriales, desarrollando herramientas para analizar curvas, campos escalares y vectoriales y regiones multidimensionales. Se abordaron derivadas parciales y direccionales, jacobianos, integrales de línea y múltiples, y los principales teoremas integrales del cálculo vectorial.",
+            "topics": [
+                "Funciones vectoriales",
+                "Parametrización de curvas",
+                "Coordenadas polares",
+                "Campos escalares",
+                "Campos vectoriales",
+                "Derivadas parciales",
+                "Derivadas direccionales",
+                "Gradiente",
+                "Matriz Jacobiana",
+                "Integrales de línea",
+                "Campos conservativos",
+                "Integrales dobles",
+                "Integrales triples",
+                "Cambio de variables",
+                "Integrales de superficie",
+                "Teorema de Green",
+                "Teorema de Stokes",
+                "Teorema de Gauss"
+            ],
+            "projects": []
+        },
+
+        "object-oriented-design": {
+            "title": "Diseño Orientado a Objetos",
+            "description": "Se enfocó en mejorar el diseño de software orientado a objetos mediante asignación de responsabilidades, principios de diseño, conceptos de refactoring y patrones de diseño reutilizables. Se aplicaron GRASP, SOLID, análisis de code smells y patrones estructurales, de comportamiento y creacionales.",
+            "topics": [
+                "Diseño orientado a objetos",
+                "Asignación de responsabilidades",
+                "GRASP",
+                "SOLID",
+                "Code smells",
+                "Patrones de diseño",
+                "Patrones creacionales",
+                "Patrones estructurales",
+                "Patrones de comportamiento",
+                "Mejora del diseño de software"
+            ],
+            "projects": [
+                "restaurant-order-app"
+            ]
+        },
+
+        "professional-integration-seminar": {
+            "title": "Seminario de Integración Profesional",
+            "description": "Integró descubrimiento de producto, UX, ingeniería de software y gestión de proyectos en el desarrollo de un MVP completo. Se aplicaron Design Thinking, investigación de usuarios, prototipado, metodologías ágiles, ingeniería de requisitos, modelado de software, documentación técnica, desarrollo web y presentación de producto.",
+            "topics": [
+                "Design Thinking",
+                "Definición de MVP",
+                "Investigación de usuarios",
+                "User personas",
+                "Mapas de empatía",
+                "User journeys",
+                "Definición del problema",
+                "Ideación",
+                "Prototipado",
+                "UX / UI / IxD",
+                "Pruebas de usabilidad",
+                "Arquitectura de información",
+                "Scrum",
+                "Kanban",
+                "Backlog y sprints",
+                "Historias de usuario",
+                "Criterios de aceptación",
+                "UML",
+                "Ingeniería de requisitos",
+                "Documentación técnica",
+                "Desarrollo web",
+                "Pitching",
+                "Validación de producto"
+            ],
+            "projects": [
+                "dental-practice-management-system-sago"
+            ]
+        },
+
+        "data-communications-and-networks": {
+            "title": "Comunicaciones de Datos y Redes",
+            "description": "Estudió redes informáticas modernas, desde el diseño de redes locales y direccionamiento TCP/IP hasta redes inalámbricas, programables y de centros de datos. Se abordaron Ethernet, Wi-Fi, IPv6, SDN, SD-WAN, conectividad IoT, seguridad de redes y arquitecturas LAN/SAN.",
+            "topics": [
+                "Redes informáticas",
+                "LAN",
+                "Ethernet",
+                "TCP/IP",
+                "Modelo OSI",
+                "Direccionamiento IP",
+                "Diseño de redes",
+                "Wi-Fi",
+                "WLAN",
+                "Redes definidas por software",
+                "Redes IoT",
+                "IPv6",
+                "SD-WAN",
+                "Seguridad de redes",
+                "Redes de centros de datos",
+                "SAN"
+            ],
+            "projects": []
+        },
+
+        "data-engineering-ii": {
+            "title": "Ingeniería de Datos II",
+            "description": "Extendió los conceptos de ingeniería de datos más allá de las bases relacionales hacia sistemas distribuidos y NoSQL. Se estudiaron replicación, modelos de consistencia, bases documentales, de grafos, clave-valor y otros paradigmas, frameworks de persistencia, acceso a datos heterogéneos y procesamiento de datos a gran escala.",
+            "topics": [
+                "NoSQL",
+                "Bases de datos distribuidas",
+                "Replicación",
+                "Modelos de consistencia",
+                "ACID",
+                "Bases de datos documentales",
+                "Bases de datos de objetos",
+                "Bases de datos de grafos",
+                "Bases de datos clave-valor",
+                "Escalabilidad",
+                "Frameworks de persistencia",
+                "Persistencia políglota",
+                "Procesamiento de datos a gran escala",
+                "Hadoop"
+            ],
+            "projects": [
+                "e-commerce-in-java-s-terminal"
+            ]
+        },
+
+        "general-statistics": {
+            "title": "Estadística General",
+            "description": "Desarrolló una base en estadística descriptiva, probabilidad y modelado probabilístico para aplicaciones de ingeniería. Se trabajó con variables aleatorias discretas y continuas, probabilidad condicional, teorema de Bayes, distribuciones de probabilidad comunes y el Teorema Central del Límite.",
+            "topics": [
+                "Estadística descriptiva",
+                "Poblaciones y muestras",
+                "Medidas de tendencia central",
+                "Variabilidad",
+                "Probabilidad",
+                "Probabilidad condicional",
+                "Teorema de Bayes",
+                "Variables aleatorias",
+                "Distribución binomial",
+                "Distribución hipergeométrica",
+                "Distribución normal",
+                "Distribución log-normal",
+                "Distribución exponencial",
+                "Distribución Weibull",
+                "Distribución de Poisson",
+                "Distribución Gamma",
+                "Teorema Central del Límite"
+            ],
+            "projects": []
+        },
+
+        "english-exam": {
+            "title": "Examen de Suficiencia de Inglés",
+            "description": "Instancia de evaluación del dominio del idioma inglés.",
+            "topics": [
+                "Inglés"
+            ],
+            "projects": []
+        },
+
+        "interactive-applications": {
+            "title": "Aplicaciones Interactivas",
+            "description": "Desarrolló aplicaciones web interactivas utilizando una arquitectura full-stack. Se trabajó con Spring Boot y Hibernate en el backend y con JavaScript, ReactJS, routing, consumo de APIs y Redux en el frontend, integrando el estado del cliente con servicios del servidor.",
+            "topics": [
+                "Desarrollo full-stack",
+                "Spring Boot",
+                "Hibernate",
+                "Cookies y tokens",
+                "JavaScript",
+                "DOM",
+                "React",
+                "Componentes de React",
+                "React Hooks",
+                "React Router",
+                "Fetch API",
+                "Renderizado condicional",
+                "Gestión de estado",
+                "Redux"
+            ],
+            "projects": [
+                "szafrankus-clothing-backend",
+                "szafrankus-clothing-frontend"
+            ]
+        },
+
+        "software-engineering": {
+            "title": "Ingeniería de Software",
+            "description": "Estudió la ingeniería de software desde una perspectiva operativa, de gobierno y seguridad. Se abordaron operaciones de software, gestión de configuración y releases, outsourcing, niveles de servicio, planificación de continuidad, recuperación ante desastres, auditoría de seguridad y prácticas de desarrollo seguro.",
+            "topics": [
+                "Procesos de ingeniería de software",
+                "Operaciones de software",
+                "Despliegue e instalación",
+                "Rendimiento y confiabilidad",
+                "Balanceo de carga",
+                "Gestión de capacidad",
+                "Gestión de incidentes",
+                "Acuerdos de nivel de servicio",
+                "Outsourcing",
+                "Gestión de configuración",
+                "Gestión de cambios",
+                "Gestión de releases",
+                "Gobierno de software",
+                "Continuidad del negocio",
+                "Recuperación ante desastres",
+                "Auditoría de seguridad",
+                "Pruebas de penetración",
+                "Escaneo de vulnerabilidades",
+                "Desarrollo seguro de software",
+                "Autenticación y autorización",
+                "Control de acceso",
+                "Manejo seguro de datos"
+            ],
+            "projects": []
+        },
+
+        "physics-ii": {
+            "title": "Física II",
+            "description": "Aplicó principios físicos a sistemas ópticos, fluidos, eléctricos y magnéticos mediante resolución teórica de problemas y experimentos de laboratorio. Se estudiaron propagación de ondas, óptica geométrica, mecánica de fluidos, electrostática, circuitos eléctricos y campos magnéticos.",
+            "topics": [
+                "Propagación de ondas",
+                "Óptica geométrica",
+                "Reflexión y refracción",
+                "Ley de Snell",
+                "Espejos",
+                "Lentes",
+                "Hidrostática",
+                "Hidrodinámica",
+                "Ecuación de Bernoulli",
+                "Electrostática",
+                "Ley de Coulomb",
+                "Campos eléctricos",
+                "Ley de Gauss",
+                "Potencial eléctrico",
+                "Ley de Ohm",
+                "Leyes de Kirchhoff",
+                "Campos magnéticos",
+                "Fuerza de Lorentz",
+                "Ley de Biot–Savart",
+                "Ley de Ampère"
+            ],
+            "projects": []
+        },
+
+        "theory-of-computation": {
+            "title": "Teoría de la Computación",
+            "description": "Estudió los fundamentos matemáticos y los límites de la computación mediante lenguajes formales, autómatas, gramáticas y máquinas de Turing. Se exploraron lenguajes regulares y libres de contexto, computabilidad, problemas indecidibles y clases de complejidad computacional.",
+            "topics": [
+                "Lenguajes formales",
+                "Autómatas finitos",
+                "DFA",
+                "NFA",
+                "Expresiones regulares",
+                "Minimización de autómatas",
+                "Gramáticas formales",
+                "Jerarquía de Chomsky",
+                "Lenguajes regulares",
+                "Lema de bombeo",
+                "Autómatas de pila",
+                "Lenguajes libres de contexto",
+                "Lenguajes sensibles al contexto",
+                "Máquinas de Turing",
+                "Computabilidad",
+                "Decidibilidad",
+                "Problema de la parada",
+                "Teoría de la complejidad",
+                "P",
+                "NP",
+                "PSPACE",
+                "BQP"
+            ],
+            "projects": [
+                "automaton-machine-codes"
+            ]
+        },
+
+        "applied-statistics": {
+            "title": "Estadística Aplicada",
+            "description": "Aplicó inferencia estadística a estimación, pruebas de hipótesis, comparación de poblaciones y toma de decisiones basada en datos. Se trabajó con intervalos de confianza, métodos t de Student y chi-cuadrado, muestras pareadas, análisis de contingencia y regresión lineal y múltiple.",
+            "topics": [
+                "Inferencia estadística",
+                "Estimación de parámetros",
+                "Intervalos de confianza",
+                "Pruebas de hipótesis",
+                "Estimación del tamaño de muestra",
+                "Distribución t de Student",
+                "Distribución chi-cuadrado",
+                "Comparación de poblaciones",
+                "Muestras pareadas",
+                "Tablas de contingencia",
+                "Pruebas de bondad de ajuste",
+                "Correlación",
+                "Regresión lineal",
+                "Regresión múltiple"
+            ],
+            "projects": []
+        },
+
+        "application-development-i": {
+            "title": "Desarrollo de Aplicaciones Móviles",
+            "description": "Desarrolló aplicaciones móviles utilizando enfoques tanto nativos como multiplataforma. Se trabajó con Android Studio y React Native, integrando persistencia local y remota, APIs externas, recursos del dispositivo y diseño de interfaces móviles.",
+            "topics": [
+                "Desarrollo de aplicaciones móviles",
+                "Aplicaciones nativas",
+                "Desarrollo Android",
+                "Android Studio",
+                "Modelado de interfaces móviles",
+                "Persistencia local",
+                "Persistencia remota",
+                "Integración de APIs",
+                "Recursos del dispositivo",
+                "React Native",
+                "Desarrollo multiplataforma"
+            ],
+            "projects": [
+                "tic-tac-toe-mobile-app",
+                "math-reaction-mobile-app",
+                "vantage-live-auction-app"
+            ]
+        },
+
+        "it-project-management": {
+            "title": "Gestión de Proyectos de Tecnología",
+            "description": "Estudió la gestión de proyectos tecnológicos utilizando principios de PMBOK y enfoques adaptativos. Se abordaron gestión de stakeholders y equipos, ciclo de vida del proyecto, planificación, recursos, medición del desempeño, incertidumbre, mejora continua y metodologías ágiles.",
+            "topics": [
+                "Gestión de proyectos",
+                "PMBOK 7",
+                "Entrega de valor",
+                "Gestión de stakeholders",
+                "Gestión de equipos",
+                "Ciclo de vida del proyecto",
+                "Planificación de proyectos",
+                "Gestión de recursos",
+                "Medición del desempeño",
+                "Riesgo e incertidumbre",
+                "Adaptación del proyecto",
+                "Mejora continua",
+                "Metodologías ágiles"
+            ],
+            "projects": []
+        },
+
+        "data-science": {
+            "title": "Ciencia de Datos",
+            "description": "Estudió el ciclo de vida completo de los datos, desde la arquitectura de datos analítica hasta el descubrimiento de conocimiento y machine learning. Se abordaron data warehouses, modelado dimensional, ETL, calidad de datos, data mining y técnicas de aprendizaje supervisado y no supervisado.",
+            "topics": [
+                "Data warehousing",
+                "Arquitectura de data warehouse",
+                "Modelado dimensional",
+                "ETL",
+                "Calidad de datos",
+                "Data mining",
+                "KDD",
+                "Aprendizaje supervisado",
+                "Aprendizaje no supervisado",
+                "Machine learning",
+                "Data mining avanzado"
+            ],
+            "projects": []
+        },
+
+        "information-security-and-integrity": {
+            "title": "Seguridad e Integridad de la Información",
+            "description": "Estudió seguridad de la información desde perspectivas criptográficas, operativas, organizacionales y de redes. Se abordaron criptografía simétrica y asimétrica, autenticación, privacidad, auditoría de seguridad, gestión de riesgos, defensas de red, análisis de incidentes y arquitectura de seguridad.",
+            "topics": [
+                "Seguridad de la información",
+                "Criptografía simétrica",
+                "Criptografía asimétrica",
+                "Autenticación",
+                "Biometría",
+                "OWASP",
+                "Auditoría de seguridad",
+                "Privacidad",
+                "Identidad digital",
+                "Reputación digital",
+                "Gestión de riesgos de seguridad",
+                "Operaciones de seguridad",
+                "Seguridad de redes",
+                "Dispositivos de seguridad",
+                "Análisis de incidentes",
+                "Arquitectura de seguridad"
+            ],
+            "projects": []
+        },
+
+        "modeling-and-simulation": {
+            "title": "Modelado y Simulación",
+            "description": "Aplicó métodos numéricos y teoría de sistemas dinámicos para modelar y simular sistemas matemáticos. Se estudiaron métodos numéricos para búsqueda de raíces, interpolación, integración, métodos de Monte Carlo, ecuaciones diferenciales, estabilidad, bifurcaciones y modelos dinámicos lineales y no lineales.",
+            "topics": [
+                "Métodos numéricos",
+                "Búsqueda de raíces",
+                "Iteración de punto fijo",
+                "Método de Newton–Raphson",
+                "Interpolación de Lagrange",
+                "Diferenciación numérica",
+                "Integración numérica",
+                "Métodos de Monte Carlo",
+                "Ecuaciones diferenciales ordinarias",
+                "Método de Euler",
+                "Métodos de Runge–Kutta",
+                "Sistemas dinámicos",
+                "Diagramas de fase",
+                "Puntos de equilibrio",
+                "Bifurcación",
+                "Sistemas lineales",
+                "Sistemas no lineales",
+                "Linealización mediante Jacobiano",
+                "Análisis paramétrico"
+            ],
+            "projects": [
+                "aerial-pursuit-simulation"
+            ]
+        },
+
+        "application-integration": {
+            "title": "Integración de Aplicaciones",
+            "description": "Actualmente estudia arquitectura e integración de aplicaciones empresariales. Se trabaja con sistemas basados en componentes, arquitecturas en capas, servidores de aplicaciones, mensajería, servicios web, integración basada en REST y desarrollo de aplicaciones integradas.",
+            "topics": [
+                "Aplicaciones empresariales",
+                "Arquitectura de aplicaciones",
+                "Escalado ágil",
+                "Arquitectura basada en componentes",
+                "Servidores de aplicaciones",
+                "Arquitectura en capas",
+                "Integración de aplicaciones",
+                "Patrones de integración",
+                "Mensajería",
+                "Servicios web",
+                "REST",
+                "Aplicaciones integradas"
+            ],
+            "projects": [
+                "uade-city-app-module-ii-citizen-help-frontend",
+                "uade-city-app-module-ii-citizen-help-backend",
+                "uade-city-app-module-ii-citizen-help-docker-infrastructure"
+            ]
+        },
+
+        "it-project-evaluation": {
+            "title": "Evaluación de Proyectos de Tecnología",
+            "description": "Actualmente desarrolla las habilidades financieras y económicas necesarias para evaluar proyectos tecnológicos. Se trabaja con matemática financiera, modelado de flujos de fondos, conceptos contables, análisis de inversiones y beneficios, tasas, valor terminal y fundamentos de mercados de capitales.",
+            "topics": [
+                "Evaluación de proyectos",
+                "Matemática financiera",
+                "Análisis de flujo de fondos",
+                "Análisis de inversiones",
+                "Análisis de beneficios",
+                "Modelado financiero",
+                "Contabilidad tradicional",
+                "Contabilidad de gestión",
+                "Ratios financieros",
+                "Tasas",
+                "Valor terminal",
+                "Mercados de capitales",
+                "Presentación de proyectos"
+            ],
+            "projects": []
+        },
+
+        "artificial-intelligence": {
+            "title": "Inteligencia Artificial",
+            "description": "Actualmente estudia enfoques clásicos y computacionales de inteligencia artificial. Se trabaja con representación del conocimiento, programación lógica, búsqueda heurística, ontologías, redes neuronales, algoritmos genéticos, razonamiento basado en casos y sistemas inteligentes multiagente.",
+            "topics": [
+                "Inteligencia artificial",
+                "Representación del conocimiento",
+                "Lógica proposicional y de predicados",
+                "Programación lógica",
+                "Búsqueda en espacio de estados",
+                "Búsqueda heurística",
+                "Búsqueda en grafos",
+                "Redes semánticas",
+                "Ontologías",
+                "Redes neuronales",
+                "Perceptrones",
+                "Algoritmos genéticos",
+                "Razonamiento basado en casos",
+                "Agentes inteligentes",
+                "Sistemas multiagente",
+                "Arquitectura BDI",
+                "Teoría de juegos",
+                "Equilibrio de Nash"
+            ],
+            "projects": []
+        },
+
+        "technology-and-environment": {
+            "title": "Tecnología y Medio Ambiente",
+            "description": "Actualmente examina el impacto ambiental y social del desarrollo tecnológico y el rol de la ingeniería en soluciones sustentables. Se estudian gestión de recursos, contaminación, cambio climático, desarrollo sustentable, residuos electrónicos, regulación ambiental y gestión ambiental empresarial.",
+            "topics": [
+                "Tecnología y sustentabilidad",
+                "Impacto ambiental",
+                "Gestión de recursos naturales",
+                "Prevención de la contaminación",
+                "Cambio climático",
+                "Desarrollo sustentable",
+                "Economía ambiental",
+                "Tecnología ambiental",
+                "Monitoreo ambiental",
+                "Residuos electrónicos",
+                "Economía circular",
+                "Legislación ambiental",
+                "Gestión ambiental empresarial",
+                "Indicadores de sustentabilidad",
+                "Ecoeficiencia",
+                "Responsabilidad ambiental"
+            ],
+            "projects": []
+        },
+
+        "supervised-professional-practice": {
+            "title": "Práctica Profesional Supervisada",
+            "description": "Esta materia funciona principalmente como un proceso en el que se registran horas de trabajo para demostrar cómo los conocimientos adquiridos durante la carrera fueron aplicados en el ámbito profesional.",
+            "topics": [
+                "Práctica profesional"
+            ],
+            "projects": []
+        },
+
+        "application-architecture": {
+            "title": "Arquitectura de Aplicaciones",
+            "description": "Por definir",
+            "topics": [
+                "Arquitectura de software"
+            ],
+            "projects": []
+        },
+
+        "technology-trends": {
+            "title": "Tendencias Tecnológicas",
+            "description": "Por definir",
+            "topics": [
+                "Por definir"
+            ],
+            "projects": []
+        },
+
+        "final-engineering-project": {
+            "title": "Proyecto Final de Ingeniería",
+            "description": "Por definir",
+            "topics": [
+                "Por definir"
+            ],
+            "projects": []
+        },
+
+        "software-quality": {
+            "title": "Calidad de Software",
+            "description": "Por definir",
+            "topics": [
+                "Calidad de software"
+            ],
+            "projects": []
+        },
+
+        "technology-business": {
+            "title": "Negocios Tecnológicos",
+            "description": "Por definir",
+            "topics": [
+                "Por definir"
+            ],
+            "projects": []
+        },
+
+        "technology-and-innovation": {
+            "title": "Tecnología e Innovación",
+            "description": "Por definir",
+            "topics": [
+                "Por definir"
+            ],
+            "projects": []
+        },
+
+        "information-technology-law": {
+            "title": "Derecho Informático",
+            "description": "Por definir",
+            "topics": [
+                "Por definir"
+            ],
+            "projects": []
+        },
+
+        "bioinformatics": {
+            "title": "Bioinformática (Optativa I)",
+            "description": "Actualmente aplica métodos computacionales al análisis de datos biológicos y secuencias moleculares. Se trabaja con bases de datos biológicas, alineamiento de secuencias, análisis de proteínas, bioinformática estructural, secuenciación de nueva generación, ensamblado de genomas, anotación génica, genómica comparativa y detección de variantes.",
+            "topics": [
+                "Bioinformática",
+                "Linux para bioinformática",
+                "Bases de datos biológicas",
+                "GenBank",
+                "Alineamiento de secuencias",
+                "Alineamiento global y local",
+                "Dot plots",
+                "Programación dinámica",
+                "BLAST",
+                "Alineamiento múltiple de secuencias",
+                "Clasificación de proteínas",
+                "Dominios proteicos",
+                "Bioinformática estructural",
+                "Modelado por homología",
+                "NGS",
+                "Control de calidad de secuenciación",
+                "Ensamblado de genomas",
+                "Mapeo de secuencias",
+                "Predicción génica",
+                "Anotación estructural",
+                "Anotación funcional",
+                "Genómica comparativa",
+                "SNPs e INDELs"
+            ],
+            "projects": []
+        },
+
+        "elective-2": {
+            "title": "Optativa II — A seleccionar",
+            "description": "Por definir",
+            "topics": [
+                "Por definir"
+            ],
+            "projects": []
+        },
+
+        "elective-3": {
+            "title": "Optativa III — A seleccionar",
+            "description": "Por definir",
+            "topics": [
+                "Por definir"
+            ],
+            "projects": []
+        }
+
+    },
+
+    "courseProjects": {
+        "snake-ii": {
+            "title": "Snake II",
+            "description": "Una variante del popular juego Snake, con habilidades aleatorias cada vez que se come una manzana, incluyendo incluso la posibilidad de reiniciar la PC."
+        },
+
+        "restaurant-order-app": {
+            "title": "Aplicación de Pedidos para Restaurantes",
+            "description": "Una aplicación para restaurantes en la que se pueden seleccionar y realizar pedidos que cambian de estado con el tiempo. Los requisitos de la aplicación cambiaban cada mes, por lo que el diseño de software fue fundamental para incorporar modificaciones al código fuente de manera fluida."
+        },
+
+        "dental-practice-management-system-sago": {
+            "title": "Sistema de Gestión Odontológica (SAGO)",
+            "description": "Aplicación web integral para la gestión de salud, diseñada para administrar pacientes, historias clínicas, turnos, tratamientos, facturación y flujos administrativos desde una plataforma digital centralizada."
+        },
+
+        "e-commerce-in-java-s-terminal": {
+            "title": "E-Commerce desde la Terminal de Java",
+            "description": "Una aplicación de e-commerce que puede utilizarse desde la terminal de Java. Implementa persistencia políglota utilizando Cassandra, MongoDB, Neo4j y Redis simultáneamente para almacenar distintos modelos de datos."
+        },
+
+        "szafrankus-clothing-backend": {
+            "title": "Szafrankus Clothing (Backend)",
+            "description": "El código backend del sitio de e-commerce. Desarrollado con Spring Boot y Java, cuenta con múltiples endpoints protegidos mediante autenticación JWT y RBAC, además de acceso a una base de datos MySQL."
+        },
+
+        "szafrankus-clothing-frontend": {
+            "title": "Szafrankus Clothing (Frontend)",
+            "description": "El código frontend del sitio de e-commerce. Desarrollado con ReactJS y Vite, el sitio incluye un creador de outfits que permite visualizar cómo podrían combinarse distintas prendas."
+        },
+
+        "automaton-machine-codes": {
+            "title": "Códigos de Máquinas de Autómatas",
+            "description": "Algunos códigos de autómatas que desarrollé durante la materia."
+        },
+
+        "tic-tac-toe-mobile-app": {
+            "title": "Aplicación Móvil de Ta-Te-Ti",
+            "description": "Juego nativo de Ta-Te-Ti para Android desarrollado en Java, con tres niveles de dificultad y un oponente de inteligencia artificial basado en Minimax con poda alfa-beta."
+        },
+
+        "math-reaction-mobile-app": {
+            "title": "Aplicación Móvil Math Reaction",
+            "description": "Juego móvil de reacción desarrollado con React Native, con dificultad y límites de tiempo configurables, gestión de estado basada en ViewModel y persistencia local de puntajes."
+        },
+
+        "vantage-live-auction-app": {
+            "title": "Vantage (Aplicación de Subastas en Vivo)",
+            "description": "Plataforma móvil full-stack de subastas desarrollada con React Native y Spring Boot, con autenticación JWT, persistencia en MySQL, soporte para pujas en tiempo real y una API REST."
+        },
+
+        "aerial-pursuit-simulation": {
+            "title": "Simulación de Persecución Aérea",
+            "description": "Un modelo computacional que explora la evolución de las posiciones y el resultado de un escenario de persecución aérea."
+        },
+
+        "uade-city-app-module-ii-citizen-help-frontend": {
+            "title": "UADE City App (Módulo II - Atención Ciudadana) (Frontend)",
+            "description": "El frontend de uno de los módulos de UADE City App, encargado de gestionar todo lo relacionado con solicitudes y reclamos ciudadanos. La aplicación desarrollada toma como referencia Jira Service Management y su sistema de tickets."
+        },
+
+        "uade-city-app-module-ii-citizen-help-backend": {
+            "title": "UADE City App (Módulo II - Atención Ciudadana) (Backend)",
+            "description": "El backend de uno de los módulos de UADE City App, encargado de gestionar todo lo relacionado con solicitudes y reclamos ciudadanos. La aplicación desarrollada toma como referencia Jira Service Management y su sistema de tickets."
+        },
+
+        "uade-city-app-module-ii-citizen-help-docker-infrastructure": {
+            "title": "UADE City App (Módulo II - Atención Ciudadana) (Infraestructura Docker)",
+            "description": "La infraestructura DevOps de uno de los módulos de UADE City App, encargado de gestionar todo lo relacionado con solicitudes y reclamos ciudadanos. La aplicación desarrollada toma como referencia Jira Service Management y su sistema de tickets."
+        }
+    }
+}

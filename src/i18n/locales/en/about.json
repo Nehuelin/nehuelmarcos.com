@@ -1,0 +1,58 @@
+{
+	"intro": {
+		"label": "About",
+		"titleLineOne": "A little bit",
+		"titleLineTwo": "about me.",
+		"description": "I like understanding how things work, then finding a simpler way to make them work better."
+	},
+	"engineering": {
+		"headingLineOne": "Engineering with",
+		"headingEmphasis": "intention.",
+		"paragraphs": [
+			"I'm a Computer Engineering student at UADE with professional experience spanning operations, Atlassian administration, technical support, workflow automation and Python development.",
+			"My work often sits between people, processes and technology. I enjoy understanding a problem, breaking it into manageable parts and building a solution that makes the underlying process clearer, faster or more dependable.",
+			"I'm currently developing toward backend engineering, automation and data-driven systems, with a growing interest in artificial intelligence and machine learning."
+		]
+	},
+	"capabilities": {
+		"label": "Capabilities",
+		"heading": "What I bring",
+		"items": [
+			{
+				"title": "Frontend/Backend thinking",
+				"description": "I enjoy modeling business problems, defining clear responsibilities and building maintainable services through APIs, layered architectures and structured persistence."
+			},
+			{
+				"title": "Automation and improvement",
+				"description": "I look for repetitive or unreliable processes that can be transformed into consistent workflows, validations and reporting tools."
+			},
+			{
+				"title": "People and systems",
+				"description": "My experience has taught me to move between technical implementation, operational requirements and communication with different stakeholders."
+			}
+		]
+	},
+	"profile": {
+		"label": "At a glance",
+		"heading": "Profile",
+		"items": {
+			"currentRole": { "label": "Current role", "value": "Operations Intern at Globant", "href": "#experience" },
+			"previousRole": { "label": "Previous role", "value": "Atlassian Engineer Intern at Globant", "href": "#experience" },
+			"education": { "label": "Education", "value": "Computer Engineering at UADE", "href": "#education" },
+			"basedIn": { "label": "Based in", "value": "Buenos Aires, Argentina" },
+			"spanish": { "label": "Spanish", "value": "Native" },
+			"english": { "label": "English", "value": "Cambridge C1 Advanced" },
+			"professionalInterests": { "label": "Professional interests", "value": "Frontend/Backend engineering, automation, AI and machine learning", "href": "#stack" }
+		},
+		"exploreProjects": "Explore selected projects"
+	},
+	"cta": {
+		"label": "Keep exploring",
+		"heading": "See what I've been working on.",
+		"navigationLabel": "Continue through the portfolio",
+		"experience": "Experience",
+		"projects": "Projects",
+		"technicalStack": "Technical stack",
+		"contact": "Contact"
+	}
+}

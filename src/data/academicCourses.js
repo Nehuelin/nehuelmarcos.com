@@ -1,1384 +1,784 @@
-const course = (slug, title, year, semester, status = 'completed', technologies = [], prerequisites = [], description, topics, projects) => ({
-  slug, title, year, semester, status, technologies, prerequisites,
-  description, topics, projects,
-})
+import academicContent from '../i18n/locales/en/academic.json'
 
-export const academicCourses = [
-  course(
-    'fundamentals-of-computer-science', 
-    'Fundamentals of Computer Science', 
-    1, 
-    1, 
-    'completed', 
-    ['Python'], 
-    [], 
-    'Introduced the foundations of computer science and algorithmic problem solving through Python. Covered basic computer organization, algorithms and programs, variables and expressions, control structures, functions, lists, searching and sorting algorithms, and multidimensional arrays.', 
-    [
-      'Computer science foundations',
-      'Algorithmic thinking',
-      'Python fundamentals',
-      'Control structures',
-      'Functions',
-      'Lists and arrays',
-      'Searching algorithms',
-      'Sorting algorithms',
-      'Matrices'
+const courseDefinitions = [
+  {
+    "slug": "fundamentals-of-computer-science",
+    "year": 1,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Python"
     ],
-    []
-  ),
-  course(
-    'information-systems-i',
-    'Information Systems I',
-    1,
-    2,
-    'completed',
-    [],
-    [],
-    'Explored how organizations, business processes, and information systems interact. Applied organizational analysis, process modeling, requirements elicitation, and software engineering concepts to model business operations and evaluate enterprise information systems.',
-    [
-      'Organizational analysis',
-      'Business process modeling',
-      'Process flowcharts',
-      'Context diagrams',
-      'Requirements analysis',
-      'Information systems',
-      'Software engineering',
-      'Agile methodologies',
-      'Business intelligence',
-      'BPM',
-      'ERP / CRM / SCM'
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "information-systems-i",
+    "year": 1,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "critical-thinking-and-communication",
+    "year": 1,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "systems-theory",
+    "year": 1,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "algebra-and-geometry",
+    "year": 1,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "algorithms-and-data-structures-i",
+    "year": 1,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [
+      "Python"
     ],
-    []
-  ),
-  course(
-    'critical-thinking-and-communication',
-    'Critical Thinking and Communication',
-    1,
-    1,
-    'completed',
-    [],
-    [],
-    'Developed critical reasoning and communication skills through formal logic, argument analysis, and academic writing. Learned to evaluate deductive and inductive arguments, identify logical fallacies, and construct clear, well-supported informative and argumentative texts.',
-    [
-      'Critical thinking',
-      'Formal logic',
-      'Propositional logic',
-      'Predicate logic',
-      'Deductive reasoning',
-      'Inductive reasoning',
-      'Logical fallacies',
-      'Argumentation',
-      'Academic writing'
+    "prerequisites": [
+      "fundamentals-of-computer-science"
     ],
-    []
-  ),
-  course(
-    'systems-theory',
-    'Systems Theory',
-    1,
-    1,
-    'completed',
-    [],
-    [],
-    'Developed a systems-thinking approach to analyzing complex problems, organizations, and information systems. Studied General Systems Theory, feedback and control mechanisms, software development models, organizational learning, and recurring systemic patterns.',
-    [
-      'Systems thinking',
-      'General Systems Theory',
-      'Feedback loops',
-      'Cybernetics',
-      'Information systems',
-      'Development life cycles',
-      'Software development paradigms',
-      'Organizational systems',
-      'Organizational learning',
-      'System archetypes'
+    "projects": []
+  },
+  {
+    "slug": "systems-of-representation",
+    "year": 1,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [
+      "AutoCAD"
     ],
-    []
-  ),
-  course(
-    'algebra-and-geometry',
-    'Algebra and Geometry',
-    1,
-    1,
-    'completed',
-    [],
-    [],
-    'Developed mathematical foundations in algebra, vectors, and analytic geometry. Worked with real and complex numbers, polynomial equations, vector operations, and geometric models involving lines, planes, conic sections, and quadric surfaces.',
-    [
-      'Algebra',
-      'Complex numbers',
-      'Polynomials',
-      'Vector algebra',
-      'Analytic geometry',
-      '2D and 3D geometry',
-      'Orthogonality',
-      'Lines and planes',
-      'Conic sections',
-      'Quadric surfaces'
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "fundamentals-of-chemistry",
+    "year": 1,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "computer-architecture",
+    "year": 1,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "discrete-mathematics",
+    "year": 1,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "linear-algebra",
+    "year": 1,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [
+      "algebra-and-geometry"
     ],
-    []
-  ),
-  course(
-    'algorithms-and-data-structures-i',
-    'Algorithms and Data Structures I',
-    1,
-    2,
-    'completed',
-    ['Python'],
-    ['fundamentals-of-computer-science'],
-    'Strengthened programming and problem-solving skills in Python through modular programming, data structures, recursion, exception handling, and file processing. Applied lists, matrices, tuples, sets, dictionaries, and CSV files to solve increasingly complex programming problems.',
-    [
-      'Python',
-      'Modular programming',
-      'Functions',
-      'Data structures',
-      'List comprehensions',
-      'Matrices',
-      'Exception handling',
-      'File processing',
-      'CSV',
-      'Recursion',
-      'Tuples',
-      'Sets',
-      'Dictionaries'
+    "projects": []
+  },
+  {
+    "slug": "algorithms-and-data-structures-ii",
+    "year": 2,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Java"
     ],
-    []
-  ),
-  course(
-    'systems-of-representation',
-    'Systems of Representation',
-    1,
-    2,
-    'completed',
-    ['AutoCAD'],
-    [],
-    'Developed technical drawing and spatial representation skills using descriptive geometry and engineering drawing standards. Worked with orthographic projections, perspectives, sections, dimensioning, scales, and civil drawings, progressing from manual drafting to 2D CAD with AutoCAD.',
-    [
-      'Technical drawing',
-      'Descriptive geometry',
-      'Monge projection',
-      'Orthographic projection',
-      'Perspective drawing',
-      'Engineering scales',
-      'Sections and cuts',
-      'Mechanical dimensioning',
-      'Civil drawings',
-      '2D CAD'
+    "prerequisites": [
+      "algorithms-and-data-structures-i"
     ],
-    []
-  ),
-  course(
-    'fundamentals-of-chemistry',
-    'Fundamentals of Chemistry',
-    1,
-    2,
-    'completed',
-    [],
-    [],
-    'Built a foundation in general chemistry through the study of matter, atomic structure, chemical reactions, and quantitative problem solving. Covered chemical nomenclature, stoichiometry, gases, solutions, reaction kinetics, and chemical equilibrium, combining theoretical exercises with laboratory work.',
-    [
-      'Atomic structure',
-      'Periodic table',
-      'Chemical nomenclature',
-      'Chemical equations',
-      'Stoichiometry',
-      'Limiting reagents',
-      'Gas laws',
-      'Solutions',
-      'Chemical kinetics',
-      'Chemical equilibrium',
-      'Laboratory techniques'
+    "projects": []
+  },
+  {
+    "slug": "information-systems-ii",
+    "year": 2,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [
+      "information-systems-i"
     ],
-    []
-  ),
-  course(
-    'computer-architecture',
-    'Computer Architecture',
-    1,
-    2,
-    'completed',
-    [],
-    [],
-    'Explored how computers operate at the hardware and architectural level, from digital logic and numeric representation to processors, memory, buses, and instruction execution. Studied the Von Neumann model, addressing mechanisms, cache memory, hardware interrupts, and RISC-based architectures.',
-    [
-      'Digital logic',
-      'Binary and hexadecimal systems',
-      'Computer memory',
-      'Processor architecture',
-      'Registers and buses',
-      'Von Neumann architecture',
-      'Addressing modes',
-      'Cache memory',
-      'Hardware interrupts',
-      'RISC and ARM'
+    "projects": []
+  },
+  {
+    "slug": "operating-systems",
+    "year": 2,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Linux"
     ],
-    []
-  ),
-  course(
-    'discrete-mathematics',
-    'Discrete Mathematics',
-    1,
-    2,
-    'completed',
-    [],
-    [],
-    'Developed the mathematical foundations used to model and reason about discrete structures in computer science. Covered formal logic, sets, Boolean algebra, combinatorics, relations, mathematical induction, recursion, algebraic structures, and graph theory.',
-    [
-      'Propositional logic',
-      'Predicate logic',
-      'Set theory',
-      'Boolean algebra',
-      'Combinatorics',
-      'Relations',
-      'Equivalence relations',
-      'Partial orders',
-      'Mathematical induction',
-      'Recurrence relations',
-      'Algebraic structures',
-      'Graph theory'
+    "prerequisites": [
+      "computer-architecture"
     ],
-    []
-  ),
-  course(
-    'linear-algebra',
-    'Linear Algebra',
-    1,
-    2,
-    'completed',
-    [],
-    ['algebra-and-geometry'],
-    'Developed a foundation in linear algebra through matrices, systems of linear equations, vector spaces, and linear transformations. Studied linear independence, bases and dimension, eigenvalues and eigenvectors, and change-of-basis techniques.',
-    [
-      'Matrices',
-      'Determinants',
-      'Matrix inverses',
-      'Systems of linear equations',
-      'Vector spaces',
-      'Subspaces',
-      'Linear combinations',
-      'Linear independence',
-      'Basis and dimension',
-      'Linear transformations',
-      'Kernel and image',
-      'Eigenvalues',
-      'Eigenvectors',
-      'Change of basis'
+    "projects": []
+  },
+  {
+    "slug": "physics-i",
+    "year": 2,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [
+      "linear-algebra"
     ],
-    []
-  ),
-
-
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // YEAR 2
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  course(
-    'algorithms-and-data-structures-ii',
-    'Algorithms and Data Structures II',
-    2,
-    1,
-    'completed',
-    ['Java'],
-    ['algorithms-and-data-structures-i'],
-    'Deepened knowledge of data structures and algorithmic problem solving using Java. Implemented abstract data types and both linear and non-linear structures, including stacks, queues, dictionaries, linked structures, search trees, balanced trees, and graphs, while analyzing their computational costs.',
-    [
-      'Java',
-      'Abstract data types',
-      'Stacks',
-      'Queues',
-      'Priority queues',
-      'Sets',
-      'Dictionaries',
-      'Linked structures',
-      'Binary trees',
-      'Binary search trees',
-      'AVL trees',
-      'B-trees',
-      'Graphs',
-      'Algorithmic complexity'
+    "projects": []
+  },
+  {
+    "slug": "calculus-i",
+    "year": 2,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "algorithm-design-and-analysis",
+    "year": 2,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [
+      "Pseudo-code"
     ],
-    []
-  ),
-  course(
-    'information-systems-ii',
-    'Information Systems II',
-    2,
-    1,
-    'completed',
-    [],
-    ['information-systems-i'],
-    'Focused on requirements engineering and the process of translating business and user needs into structured software requirements. Applied elicitation, analysis, specification, validation, and traceability techniques through interviews, use cases, user stories, and SRS documentation.',
-    [
-      'Requirements engineering',
-      'Functional requirements',
-      'Non-functional requirements',
-      'Requirements elicitation',
-      'Interviews and surveys',
-      'Requirements analysis',
-      'Use cases',
-      'Data flow diagrams',
-      'SRS documentation',
-      'User stories',
-      'Acceptance criteria',
-      'Requirements validation',
-      'Requirements traceability',
-      'Configuration management'
+    "prerequisites": [
+      "algorithms-and-data-structures-ii"
     ],
-    []
-  ),
-  course(
-    'operating-systems',
-    'Operating Systems',
-    2,
-    1,
-    'completed',
-    ['Linux'],
-    ['computer-architecture'],
-    'Studied the internal organization and core responsibilities of operating systems, including process execution, synchronization, memory management, file systems, input/output, and virtualization. Applied these concepts through laboratory work and explored introductory networking and system security.',
-    [
-      'Operating system architecture',
-      'System calls',
-      'Process management',
-      'Process synchronization',
-      'Inter-process communication',
-      'Memory management',
-      'Virtual memory',
-      'Paging',
-      'Segmentation',
-      'File systems',
-      'Input/output management',
-      'Virtualization',
-      'Networking fundamentals',
-      'System security'
+    "projects": []
+  },
+  {
+    "slug": "object-oriented-programming",
+    "year": 2,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [
+      "Java"
     ],
-    []
-  ),
-  course(
-    'physics-i',
-    'Physics I',
-    2,
-    1,
-    'completed',
-    [],
-    ['linear-algebra'],
-    'Built a foundation in classical mechanics through theoretical problem solving and laboratory experiments. Studied measurement uncertainty, kinematics, Newtonian dynamics, circular motion, work and energy, momentum, collisions, and oscillatory motion.',
-    [
-      'Measurement and uncertainty',
-      'Error propagation',
-      'Vector kinematics',
-      'Linear motion',
-      'Projectile motion',
-      'Circular motion',
-      'Newton’s laws',
-      'Friction',
-      'Elastic forces',
-      'Work and power',
-      'Kinetic and potential energy',
-      'Conservation of energy',
-      'Momentum',
-      'Collisions',
-      'Oscillatory motion'
+    "prerequisites": [
+      "algorithms-and-data-structures-i"
     ],
-    []
-  ),
-  course(
-    'calculus-i',
-    'Calculus I',
-    2,
-    1,
-    'completed',
-    [],
-    [],
-    'Developed a foundation in differential and integral calculus through the study of functions, limits, derivatives, integrals, and differential equations. Applied these concepts to analyze function behavior, optimization problems, areas, and systems of ordinary differential equations.',
-    [
-      'Functions',
-      'Limits',
-      'Continuity',
-      'Derivatives',
-      'Chain rule',
-      'L’Hôpital’s rule',
-      'Function optimization',
-      'Function approximation',
-      'Indefinite integrals',
-      'Definite integrals',
-      'Integration techniques',
-      'Ordinary differential equations'
-    ],
-    []
-  ),
-  course(
-    'algorithm-design-and-analysis',
-    'Algorithm Design and Analysis',
-    2,
-    2,
-    'completed',
-    ['Pseudo-code'],
-    ['algorithms-and-data-structures-ii'],
-    'Studied advanced algorithm design techniques and computational problem solving. Applied divide and conquer, greedy strategies, dynamic programming, graph algorithms, and backtracking while analyzing the complexity and efficiency of different approaches.',
-    [
-      'Algorithm analysis',
-      'Computational complexity',
-      'Recursion',
-      'Divide and conquer',
-      'QuickSort',
-      'MergeSort',
-      'Greedy algorithms',
-      'Minimum spanning trees',
-      'Prim’s algorithm',
-      'Kruskal’s algorithm',
-      'Dijkstra’s algorithm',
-      'Dynamic programming',
-      'Floyd’s algorithm',
-      'Longest common subsequence',
-      'Longest increasing subsequence',
-      'Backtracking',
-      'DFS',
-      'BFS',
-      'Uniform-cost search',
-      'Alpha-beta pruning',
-      'Branch and bound'
-    ],
-    []
-  ),
-  course(
-    'object-oriented-programming',
-    'Object-Oriented Programming',
-    2,
-    2,
-    'completed',
-    ['Java'],
-    ['algorithms-and-data-structures-i'],
-    'Developed object-oriented software in Java using encapsulation, inheritance, abstraction, interfaces, and polymorphism. Applied UML modeling, SOLID and GRASP principles, collections and generics, exception handling, file I/O, graphical interfaces, event-driven programming, and multithreading.',
-    [
-      'Object-oriented programming',
-      'Classes and objects',
-      'Encapsulation',
-      'Abstraction',
-      'Inheritance',
-      'Polymorphism',
-      'Method overloading',
-      'Method overriding',
-      'Abstract classes',
-      'Interfaces',
-      'UML',
-      'Class diagrams',
-      'Sequence diagrams',
-      'SOLID',
-      'GRASP',
-      'Collections',
-      'Generics',
-      'Exception handling',
-      'File I/O',
-      'Swing',
-      'Event-driven programming',
-      'Multithreading'
-    ],
-    [{
-      title: "Snake II",
-      description: "A variant of the popular Snake game, with randomized abilities every time you eat an apple (including a chance of restarting your PC)",
-      technologies: ['Java'],
-      url: "https://github.com/marcosvillar4/TP-OOP"
-    }]
-  ),
-  course(
-    'fundamentals-of-telecommunications',
-    'Fundamentals of Telecommunications',
-    2,
-    2,
-    'completed',
-    [],
-    [],
-    'Studied the principles behind digital and analog communications, from information theory and signal behavior to physical transmission media and network communication models. Covered modulation, error control, multiplexing, radio and optical communications, and the TCP/IP and OSI architectures.',
-    [
-      'Information theory',
-      'Entropy',
-      'Signals',
-      'Bandwidth',
-      'Noise and distortion',
-      'Modulation',
-      'AM / FM / PM',
-      'ASK / FSK / PSK / QAM',
-      'Error detection and correction',
-      'Multiplexing',
-      'FDM / TDM / CDM',
-      'Media access',
-      'Copper and coaxial media',
-      'Fiber optics',
-      'Radio communications',
-      'Microwave communications',
-      'Satellite communications',
-      'TCP/IP model',
-      'OSI model',
-      'Switching and routing devices'
-    ],
-    []
-  ),
-  course(
-    'data-engineering-i',
-    'Data Engineering I',
-    2,
-    2,
-    'completed',
-    ['SQL'],
-    ['discrete-mathematics'],
-    'Developed a foundation in relational database systems and data management. Designed and queried relational structures using SQL, worked with relational algebra, views, stored procedures, transactions, and applied normalization techniques to improve database consistency and design.',
-    [
-      'Database architecture',
-      'Relational databases',
-      'Relational model',
-      'Primary and foreign keys',
-      'Relational algebra',
-      'SQL',
-      'DDL',
-      'DML',
-      'Subqueries',
-      'Views',
-      'Stored procedures',
-      'Functions',
-      'Dynamic SQL',
-      'Cursors',
-      'Transactions',
-      'Database normalization',
-      'BCNF',
-      'Fourth normal form',
-      'Fifth normal form'
-    ],
-    []
-  ),
-  course(
-    'calculus-ii',
-    'Calculus II',
-    2,
-    2,
-    'completed',
-    [],
-    ['calculus-i'],
-    'Extended calculus into multivariable and vector-valued functions, developing tools for analyzing curves, scalar and vector fields, and multidimensional regions. Covered partial and directional derivatives, Jacobians, line and multiple integrals, and the fundamental integral theorems of vector calculus.',
-    [
-      'Vector-valued functions',
-      'Curve parametrization',
-      'Polar coordinates',
-      'Scalar fields',
-      'Vector fields',
-      'Partial derivatives',
-      'Directional derivatives',
-      'Gradient',
-      'Jacobian matrix',
-      'Line integrals',
-      'Conservative fields',
-      'Double integrals',
-      'Triple integrals',
-      'Change of variables',
-      'Surface integrals',
-      'Green’s theorem',
-      'Stokes’ theorem',
-      'Gauss’ theorem'
-    ],
-    []
-  ),
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // YEAR 3 
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  course(
-    'object-oriented-design',
-    'Object-Oriented Design',
-    3,
-    1,
-    'completed',
-    ['StarUML', 'Java'],
-    ['object-oriented-programming'],
-    'Focused on improving object-oriented software design through responsibility assignment, design principles, refactoring concepts, and reusable design patterns. Applied GRASP, SOLID, code smell analysis, and structural, behavioral, and creational patterns to evolve software solutions.',
-    [
-      'Object-oriented design',
-      'Responsibility assignment',
-      'GRASP',
-      'SOLID',
-      'Code smells',
-      'Design patterns',
-      'Creational patterns',
-      'Structural patterns',
-      'Behavioral patterns',
-      'Software design improvement'
-    ],
-    [{
-      title: "Restaurant Order App",
-      description: "A restaurant app in which you can select and place orders, which update over time. App requirements changed every month, making the software design critical to implement changes smoothly in the source code.",
-      technologies: ["Java", "JSON"],
-      url: "https://github.com/marcosvillar4/TP-Proceso-desarollo-de-software"
-    }]
-  ),
-  course(
-    'professional-integration-seminar',
-    'Professional Integration Seminar',
-    3,
-    1,
-    'completed',
-    ['Figma', 'Miro', 'Trello', 'GitHub', 'HTML', 'CSS', 'JavaScript', 'ReactJS', 'Google Firebase'],
-    ['algorithms-and-data-structures-ii', 'information-systems-ii', 'data-engineering-i'],
-    'Integrated product discovery, UX, software engineering, and project management into the development of a complete MVP. Applied Design Thinking, user research, prototyping, agile methodologies, requirements engineering, software modeling, technical documentation, web development, and product pitching.',
-    [
-      'Design Thinking',
-      'MVP definition',
-      'User research',
-      'User personas',
-      'Empathy maps',
-      'User journeys',
-      'Problem definition',
-      'Ideation',
-      'Prototyping',
-      'UX / UI / IxD',
-      'Usability testing',
-      'Information architecture',
-      'Scrum',
-      'Kanban',
-      'Backlog and sprints',
-      'User stories',
-      'Acceptance criteria',
-      'UML',
-      'Requirements engineering',
-      'Technical documentation',
-      'Web development',
-      'Pitching',
-      'Product validation'
-    ],
-    [{
-      title: "Dental practice management system (SAGO)",
-      description: "Comprehensive healthcare management web application for managing patients, medical records, appointments, treatments, billing, and administrative workflows through a centralized digital platform.",
-      technologies: ["ReactJS", "Google Firebase", "HTML", "CSS"],
-      url: "https://github.com/Nehuelin/UADE-SIP-SAGO"
-    }]
-  ),
-  course(
-    'data-communications-and-networks',
-    'Data Communications and Networks',
-    3,
-    1,
-    'completed',
-    ['Cisco Packet Tracer'],
-    ['fundamentals-of-telecommunications'],
-    'Studied modern computer networking from local network design and TCP/IP addressing to wireless, programmable, and data-center networks. Covered Ethernet, Wi-Fi, IPv6, SDN, SD-WAN, IoT connectivity, network security, and LAN/SAN architectures.',
-    [
-      'Computer networks',
-      'LAN',
-      'Ethernet',
-      'TCP/IP',
-      'OSI model',
-      'IP addressing',
-      'Network design',
-      'Wi-Fi',
-      'WLAN',
-      'Software-defined networking',
-      'IoT networking',
-      'IPv6',
-      'SD-WAN',
-      'Network security',
-      'Data center networking',
-      'SAN'
-    ],
-    []
-  ),
-  course(
-    'data-engineering-ii',
-    'Data Engineering II',
-    3,
-    1,
-    'completed',
-    ['Java', 'Hadoop', 'MongoDB', 'CassandraDB', 'Neo4j', 'Redis'],
-    ['data-engineering-i'],
-    'Expanded data engineering concepts beyond relational databases into distributed and NoSQL data systems. Studied replication, consistency models, document, graph, key-value and other database paradigms, persistence frameworks, heterogeneous data access, and large-scale data processing.',
-    [
-      'NoSQL',
-      'Distributed databases',
-      'Replication',
-      'Consistency models',
-      'ACID',
-      'Document databases',
-      'Object databases',
-      'Graph databases',
-      'Key-value databases',
-      'Scalability',
-      'Persistence frameworks',
-      'Polyglot persistence',
-      'Large-scale data processing',
-      'Hadoop'
-    ],
-    [{
-      title: "E-Commerce in Java's Terminal",
-      description: "An E-commerce app that can be used from the java terminal. It features polyglot persistence, using Cassandra, MongoDB, Neo4j and Redis at the same time to save different data models.",
-      technologies: ["Java", "MongoDB", "Cassandra", "Redis", "Neo4j"],
-      url: "https://github.com/XxMrentxX/Base-de-datos-2"
-    }]
-  ),
-  course(
-    'general-statistics',
-    'General Statistics',
-    3,
-    1,
-    'completed',
-    [],
-    ['calculus-i'],
-    'Developed a foundation in descriptive statistics, probability, and probabilistic modeling for engineering applications. Worked with discrete and continuous random variables, conditional probability, Bayes’ theorem, common probability distributions, and the Central Limit Theorem.',
-    [
-      'Descriptive statistics',
-      'Population and samples',
-      'Measures of central tendency',
-      'Variability',
-      'Probability',
-      'Conditional probability',
-      'Bayes’ theorem',
-      'Random variables',
-      'Binomial distribution',
-      'Hypergeometric distribution',
-      'Normal distribution',
-      'Log-normal distribution',
-      'Exponential distribution',
-      'Weibull distribution',
-      'Poisson distribution',
-      'Gamma distribution',
-      'Central Limit Theorem'
-    ],
-    []
-  ),
-  course(
-    'english-exam', 
-    'English Proficiency Exam', 
-    3,
-    1,
-    'completed',
-    [],
-    [],
-    "English proficiency exam checkpoint",
-    ['English'],
-    []
-  ),
-  course(
-    'interactive-applications',
-    'Interactive Applications',
-    3,
-    2,
-    'completed',
-    ['Java', 'Spring Boot', 'Hibernate', 'JavaScript', 'ReactJS', 'Redux', 'SQL'],
-    ['object-oriented-programming'],
-    'Built interactive web applications using a full-stack architecture. Worked with Spring Boot and Hibernate on the backend and JavaScript, ReactJS, routing, API consumption, and Redux on the frontend, integrating client-side state with server-side services.',
-    [
-      'Full-stack development',
-      'Spring Boot',
-      'Hibernate',
-      'Cookies and tokens',
-      'JavaScript',
-      'DOM',
-      'React',
-      'React components',
-      'React Hooks',
-      'React Router',
-      'Fetch API',
-      'Conditional rendering',
-      'State management',
-      'Redux'
-    ],
-    [{
-      title: "Szafrankus Clothing (Backend)",
-      description: "The backend code for the E-commerce website. Built with Spring boot (Java), it features multiple endpoints protected with JWT authentication and RBAC, and access to a MySQL Database",
-      technologies: ["Java", "Spring Boot", "SQL"],
-      url: "https://github.com/SantiMussi/TPO-APIs"
-    }, 
-    {
-      title: "Szafrankus Clothing (Frontend)",
-      description: "The frontend code for the E-commerce website. Using ReactJS and Vite, the webpage features an outfit builder to check how clothes will look in you.",
-      technologies: ["JavaScript", "ReactJS"],
-      url: "https://github.com/SantiMussi/Front-apis"
-    }, 
+    "projects": [
+      {
+        "id": "snake-ii",
+        "technologies": [
+          "Java"
+        ],
+        "url": "https://github.com/marcosvillar4/TP-OOP"
+      }
     ]
-  ),
-  course(
-    'software-engineering',
-    'Software Engineering',
-    3,
-    2,
-    'completed',
-    ['Python'],
-    ['information-systems-ii'],
-    'Studied software engineering from an operational, governance, and security perspective. Covered software operations, configuration and release management, outsourcing, service levels, continuity planning, disaster recovery, security auditing, and secure development practices.',
-    [
-      'Software engineering processes',
-      'Software operations',
-      'Deployment and installation',
-      'Performance and reliability',
-      'Load balancing',
-      'Capacity management',
-      'Incident management',
-      'Service level agreements',
-      'Outsourcing',
-      'Configuration management',
-      'Change management',
-      'Release management',
-      'Software governance',
-      'Business continuity',
-      'Disaster recovery',
-      'Security auditing',
-      'Penetration testing',
-      'Vulnerability scanning',
-      'Secure software development',
-      'Authentication and authorization',
-      'Access control',
-      'Secure data handling'
+  },
+  {
+    "slug": "fundamentals-of-telecommunications",
+    "year": 2,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "data-engineering-i",
+    "year": 2,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [
+      "SQL"
     ],
-    []
-  ),
-  course(
-    'physics-ii',
-    'Physics II',
-    3,
-    2,
-    'completed',
-    [],
-    ['physics-i'],
-    'Applied physical principles to optical, fluid, electrical, and magnetic systems through theoretical problem solving and laboratory experiments. Studied wave propagation, geometric optics, fluid mechanics, electrostatics, electric circuits, and magnetic fields.',
-    [
-      'Wave propagation',
-      'Geometric optics',
-      'Reflection and refraction',
-      'Snell’s law',
-      'Mirrors',
-      'Lenses',
-      'Hydrostatics',
-      'Hydrodynamics',
-      'Bernoulli equation',
-      'Electrostatics',
-      'Coulomb’s law',
-      'Electric fields',
-      'Gauss’s law',
-      'Electric potential',
-      'Ohm’s law',
-      'Kirchhoff’s laws',
-      'Magnetic fields',
-      'Lorentz force',
-      'Biot–Savart law',
-      'Ampère’s law'
+    "prerequisites": [
+      "discrete-mathematics"
     ],
-    []
-  ),
-  course(
-    'theory-of-computation',
-    'Theory of Computation',
-    3,
-    2,
-    'completed',
-    ['Java'],
-    ['discrete-mathematics', 'algorithm-design-and-analysis'],
-    'Studied the mathematical foundations and limits of computation through formal languages, automata, grammars, and Turing machines. Explored regular and context-free languages, computability, undecidable problems, and computational complexity classes.',
-    [
-      'Formal languages',
-      'Finite automata',
-      'DFA',
-      'NFA',
-      'Regular expressions',
-      'Automata minimization',
-      'Formal grammars',
-      'Chomsky hierarchy',
-      'Regular languages',
-      'Pumping lemma',
-      'Pushdown automata',
-      'Context-free languages',
-      'Context-sensitive languages',
-      'Turing machines',
-      'Computability',
-      'Decidability',
-      'Halting problem',
-      'Complexity theory',
-      'P',
-      'NP',
-      'PSPACE',
-      'BQP'
+    "projects": []
+  },
+  {
+    "slug": "calculus-ii",
+    "year": 2,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [
+      "calculus-i"
     ],
-    [{
-      title: "Automaton machine codes",
-      description: "Some automaton machine codes I did during the course.",
-      technologies: ["Java"],
-      url: "https://github.com/Nehuelin/Automaton-Sanctuary"
-    }]
-  ),
-  course(
-    'applied-statistics',
-    'Applied Statistics',
-    3,
-    2,
-    'completed',
-    [],
-    ['general-statistics'],
-    'Applied statistical inference to estimation, hypothesis testing, population comparison, and data-driven decision making. Worked with confidence intervals, Student’s t and chi-square methods, paired samples, contingency analysis, and linear and multiple regression.',
-    [
-      'Statistical inference',
-      'Parameter estimation',
-      'Confidence intervals',
-      'Hypothesis testing',
-      'Sample size estimation',
-      'Student’s t-distribution',
-      'Chi-square distribution',
-      'Population comparison',
-      'Paired samples',
-      'Contingency tables',
-      'Goodness-of-fit tests',
-      'Correlation',
-      'Linear regression',
-      'Multiple regression'
+    "projects": []
+  },
+  {
+    "slug": "object-oriented-design",
+    "year": 3,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "StarUML",
+      "Java"
     ],
-    []
-  ),
-
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // YEAR 4 
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  course(
-    'application-development-i',
-    'Mobile Application Development',
-    4,
-    1,
-    'completed',
-    ['Android Studio', 'React Native', 'Java', 'JavaScript'],
-    ['object-oriented-design'],
-    'Developed mobile applications using both native and cross-platform approaches. Worked with Android Studio and React Native, integrating local and remote persistence, external APIs, device resources, and mobile interface design.',
-    [
-      'Mobile application development',
-      'Native applications',
-      'Android development',
-      'Android Studio',
-      'Mobile UI modeling',
-      'Local persistence',
-      'Remote persistence',
-      'API integration',
-      'Device resources',
-      'React Native',
-      'Cross-platform development'
+    "prerequisites": [
+      "object-oriented-programming"
     ],
-    [{
-      title: "Tic Tac Toe mobile app",
-      description: "Native Android Tic-Tac-Toe game built with Java, featuring three difficulty levels and a Minimax-based AI opponent with alpha-beta pruning.",
-      technologies: ["Java", "Android Studio"],
-      url: "https://github.com/Nehuelin/TicTacToe_mobile_app"
-    },
-    {
-      title: "Math Reaction mobile app",
-      description: "Native Android reaction game built with React Native, featuring configurable difficulty and time limits, ViewModel-based state management, and local score persistence.",
-      technologies: ["JavaScript", "React Native"],
-      url: "https://github.com/Nehuelin/Reaction-Challenge-Mobile-App"
-    },
-    {
-      title: "Vantage (Live Auction App)",
-      description: "Full-stack mobile auction platform built with React Native and Spring Boot, featuring JWT authentication, MySQL persistence, real-time bidding support, and a REST API.",
-      technologies: ["Java", "Spring Boot", "SQL", "JavaScript", "React Native"],
-      url: "https://github.com/SantiMussi/AppMovilSubastas"
-    }]
-  ),
-  course(
-    'it-project-management',
-    'IT Project Management',
-    4,
-    1,
-    'completed',
-    ['Jira'],
-    ['information-systems-ii'],
-    'Studied the management of technology projects using PMBOK principles and adaptive approaches. Covered stakeholder and team management, project lifecycle, planning, resources, performance measurement, uncertainty, continuous improvement, and agile methodologies.',
-    [
-      'Project management',
-      'PMBOK 7',
-      'Value delivery',
-      'Stakeholder management',
-      'Team management',
-      'Project lifecycle',
-      'Project planning',
-      'Resource management',
-      'Performance measurement',
-      'Risk and uncertainty',
-      'Project adaptation',
-      'Continuous improvement',
-      'Agile methodologies'
+    "projects": [
+      {
+        "id": "restaurant-order-app",
+        "technologies": [
+          "Java",
+          "JSON"
+        ],
+        "url": "https://github.com/marcosvillar4/TP-Proceso-desarollo-de-software"
+      }
+    ]
+  },
+  {
+    "slug": "professional-integration-seminar",
+    "year": 3,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Figma",
+      "Miro",
+      "Trello",
+      "GitHub",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ReactJS",
+      "Google Firebase"
     ],
-    []
-  ),
-  course(
-    'data-science',
-    'Data Science',
-    4,
-    1,
-    'completed',
-    ['Google Cloud'],
-    ['applied-statistics', 'data-engineering-ii'],
-    'Studied the complete data lifecycle from analytical data architecture to knowledge discovery and machine learning. Covered data warehouses, dimensional modeling, ETL, data quality, data mining, and supervised and unsupervised learning techniques.',
-    [
-      'Data warehousing',
-      'Data warehouse architecture',
-      'Dimensional modeling',
-      'ETL',
-      'Data quality',
-      'Data mining',
-      'KDD',
-      'Supervised learning',
-      'Unsupervised learning',
-      'Machine learning',
-      'Advanced data mining'
+    "prerequisites": [
+      "algorithms-and-data-structures-ii",
+      "information-systems-ii",
+      "data-engineering-i"
     ],
-    []
-  ),
-  course(
-    'information-security-and-integrity',
-    'Information Security and Integrity',
-    4,
-    1,
-    'completed',
-    ['OWASP'],
-    ['data-communications-and-networks'],
-    'Studied information security from cryptographic, operational, organizational, and network perspectives. Covered symmetric and asymmetric cryptography, authentication, privacy, security auditing, risk management, network defenses, incident analysis, and security architecture.',
-    [
-      'Information security',
-      'Symmetric cryptography',
-      'Asymmetric cryptography',
-      'Authentication',
-      'Biometrics',
-      'OWASP',
-      'Security auditing',
-      'Privacy',
-      'Digital identity',
-      'Cyber reputation',
-      'Security risk management',
-      'Security operations',
-      'Network security',
-      'Security devices',
-      'Incident analysis',
-      'Security architecture'
+    "projects": [
+      {
+        "id": "dental-practice-management-system-sago",
+        "technologies": [
+          "ReactJS",
+          "Google Firebase",
+          "HTML",
+          "CSS"
+        ],
+        "url": "https://github.com/Nehuelin/UADE-SIP-SAGO"
+      }
+    ]
+  },
+  {
+    "slug": "data-communications-and-networks",
+    "year": 3,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Cisco Packet Tracer"
     ],
-    []
-  ),
-  course(
-    'modeling-and-simulation',
-    'Modeling and Simulation',
-    4,
-    1,
-    'completed',
-    ['Python'],
-    ['calculus-ii'],
-    'Applied numerical methods and dynamical-systems theory to model and simulate mathematical systems. Studied numerical root finding, interpolation, integration, Monte Carlo methods, differential equations, stability, bifurcations, and linear and nonlinear dynamical models.',
-    [
-      'Numerical methods',
-      'Root finding',
-      'Fixed-point iteration',
-      'Newton–Raphson method',
-      'Lagrange interpolation',
-      'Numerical differentiation',
-      'Numerical integration',
-      'Monte Carlo methods',
-      'Ordinary differential equations',
-      'Euler method',
-      'Runge–Kutta methods',
-      'Dynamical systems',
-      'Phase diagrams',
-      'Equilibrium points',
-      'Bifurcation',
-      'Linear systems',
-      'Nonlinear systems',
-      'Jacobian linearization',
-      'Parametric analysis'
+    "prerequisites": [
+      "fundamentals-of-telecommunications"
     ],
-    [{
-      title: "Aerial Pursuit Simulation",
-      description: "A computational model that explores the changing positions and outcome of an aerial pursuit scenario.",
-      technologies: ['TypeScript', 'HTML', 'CSS'],
-      url: "https://github.com/matiasfelau/persecucion-aerea"
-    }]
-  ),
-  course(
-    'application-integration',
-    'Application Integration',
-    4,
-    2,
-    'in-progress',
-    ['JavaScript', 'ReactJS', 'Java', 'Spring Boot', 'SQL', 'Docker'],
-    ['interactive-applications', 'object-oriented-design'],
-    'Currently studying enterprise application architecture and integration. Working with component-based systems, layered architectures, application servers, messaging, web services, REST-based integration, and the development of integrated applications.',
-    [
-      'Enterprise applications',
-      'Application architecture',
-      'Agile scaling',
-      'Component-based architecture',
-      'Application servers',
-      'Layered architecture',
-      'Application integration',
-      'Integration patterns',
-      'Messaging',
-      'Web services',
-      'REST',
-      'Integrated applications'
+    "projects": []
+  },
+  {
+    "slug": "data-engineering-ii",
+    "year": 3,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Java",
+      "Hadoop",
+      "MongoDB",
+      "CassandraDB",
+      "Neo4j",
+      "Redis"
     ],
-    [{
-      title: "UADE City App (Module II - Citizen Help) (Frontend)",
-      description: "The frontend of one of the UADE City App module that handles everything related to citizen help requests and complaints. The app we develop is based on Jira Service Management and it's ticket system.",
-      technologies: ["JavaScript", "ReactJS"],
-      url: "https://github.com/SantiMussi/front-desarrollo-apps-2"
-    },
-    {
-      title: "UADE City App (Module II - Citizen Help) (Backend)",
-      description: "The backend of one of the UADE City App module that handles everything related to citizen help requests and complaints. The app we develop is based on Jira Service Management and it's ticket system.",
-      technologies: ["Java", "Spring Boot", "SQL"],
-      url: "https://github.com/JuanmaGuida/Backend-DAMII"
-    },
-    {
-      title: "UADE City App (Module II - Citizen Help) (Docker infrastructure)",
-      description: "The DevOps infrastructure of one of the UADE City App module that handles everything related to citizen help requests and complaints. The app we develop is based on Jira Service Management and it's ticket system.",
-      technologies: ["Docker", "AWS"],
-      url: "https://github.com/AgustinNari/DA2-m2-infra"
-    }
-  ]
-  ),
-  course(
-    'it-project-evaluation',
-    'IT Project Evaluation',
-    4,
-    2,
-    'in-progress',
-    ['Excel'],
-    ['general-statistics'],
-    'Currently developing the financial and economic skills required to evaluate technology projects. Working with financial mathematics, cash-flow modeling, accounting concepts, investment and benefit analysis, rates, terminal value, and capital-market fundamentals.',
-    [
-      'Project evaluation',
-      'Financial mathematics',
-      'Cash-flow analysis',
-      'Investment analysis',
-      'Benefit analysis',
-      'Financial modeling',
-      'Traditional accounting',
-      'Management accounting',
-      'Financial ratios',
-      'Rates',
-      'Terminal value',
-      'Capital markets',
-      'Project pitching'
+    "prerequisites": [
+      "data-engineering-i"
     ],
-    []
-  ),
-  course(
-    'artificial-intelligence',
-    'Artificial Intelligence',
-    4,
-    2,
-    'in-progress',
-    ['Python'],
-    ['applied-statistics'],
-    'Currently studying classical and computational approaches to artificial intelligence. Working with knowledge representation, logic programming, heuristic search, ontologies, neural networks, genetic algorithms, case-based reasoning, and intelligent multi-agent systems.',
-    [
-      'Artificial intelligence',
-      'Knowledge representation',
-      'Propositional and predicate logic',
-      'Logic programming',
-      'State-space search',
-      'Heuristic search',
-      'Graph search',
-      'Semantic networks',
-      'Ontologies',
-      'Neural networks',
-      'Perceptrons',
-      'Genetic algorithms',
-      'Case-based reasoning',
-      'Intelligent agents',
-      'Multi-agent systems',
-      'BDI architecture',
-      'Game theory',
-      'Nash equilibrium'
+    "projects": [
+      {
+        "id": "e-commerce-in-java-s-terminal",
+        "technologies": [
+          "Java",
+          "MongoDB",
+          "Cassandra",
+          "Redis",
+          "Neo4j"
+        ],
+        "url": "https://github.com/XxMrentxX/Base-de-datos-2"
+      }
+    ]
+  },
+  {
+    "slug": "general-statistics",
+    "year": 3,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [
+      "calculus-i"
     ],
-    []
-  ),
-  course(
-    'technology-and-environment',
-    'Technology and Environment',
-    4,
-    2,
-    'in-progress',
-    [],
-    [],
-    'Currently examining the environmental and social impact of technological development and the role of engineering in sustainable solutions. Studying resource management, pollution, climate change, sustainable development, electronic waste, environmental regulation, and corporate environmental management.',
-    [
-      'Technology and sustainability',
-      'Environmental impact',
-      'Natural resource management',
-      'Pollution prevention',
-      'Climate change',
-      'Sustainable development',
-      'Environmental economics',
-      'Environmental technology',
-      'Environmental monitoring',
-      'Electronic waste',
-      'Circular economy',
-      'Environmental legislation',
-      'Corporate environmental management',
-      'Sustainability indicators',
-      'Eco-efficiency',
-      'Environmental responsibility'
+    "projects": []
+  },
+  {
+    "slug": "english-exam",
+    "year": 3,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "interactive-applications",
+    "year": 3,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [
+      "Java",
+      "Spring Boot",
+      "Hibernate",
+      "JavaScript",
+      "ReactJS",
+      "Redux",
+      "SQL"
     ],
-    []
-  ),
-  course(
-    'supervised-professional-practice', 
-    'Supervised Professional Practice', 
-    4, 
-    2, 
-    'pending', 
-    [],
-    ["38 completed courses"],
-    "This course is more of a process in which work hours are logged into the system to show how the courses have helped me in my job.",
-    ['Professional practice'],
-    []
-  ),
-  course(
-    'application-architecture', 
-    'Application Architecture', 
-    5,
-    1,
-    'pending',
-    ['TBD'],
-    ['information-systems-ii'],
-    "TBD", 
-    ['Software architecture'],
-    []
-  ),
-  course(
-    'technology-trends', 
-    'Technology Trends',
-    5,
-    1,
-    'pending',
-    ['TBD'],
-    [],
-    "TBD", 
-    ['TBD'],
-    []
-  ),
-  course('final-engineering-project', 
-    'Final Engineering Project',
-    5,
-    1,
-    'pending',
-    ['TBD'],
-    ['38 completed courses'],
-    "TBD", 
-    ['TBD'],
-    []
-  ),
-  course(
-    'software-quality', 
-    'Software Quality',
-    5,
-    1,
-    'pending',
-    ['TBD'],
-    ['software-engineering'],
-    "TBD", 
-    ['Software quality'],
-    []
-  ),
-  course(
-    'technology-business', 
-    'Technology Business',
-    5,
-    2,
-    'pending',
-    ['TBD'],
-    [],
-    "TBD", 
-    ['TBD'],
-    []
-  ),
-  course(
-    'technology-and-innovation', 
-    'Technology and Innovation',
-    5,
-    2,
-    'pending',
-    ['TBD'],
-    [],
-    "TBD", 
-    ['TBD'],
-    []
-  ),
-  course(
-    'information-technology-law', 
-    'Information Technology Law',
-    5,
-    2,
-    'pending',
-    ['TBD'],
-    [],
-    "TBD", 
-    ['TBD'],
-    []
-  ),
-  course(
-    'bioinformatics',
-    'Bioinformatics (Elective I)',
-    4,
-    2,
-    'in-progress',
-    ['Linux', 'NCBI', 'BLAST', 'Pfam', 'InterProScan'],
-    [],
-    'Currently applying computational methods to biological data and molecular sequence analysis. Working with biological databases, sequence alignment, protein analysis, structural bioinformatics, next-generation sequencing, genome assembly, gene annotation, comparative genomics, and variant detection.',
-    [
-      'Bioinformatics',
-      'Linux for bioinformatics',
-      'Biological databases',
-      'GenBank',
-      'Sequence alignment',
-      'Global and local alignment',
-      'Dot plots',
-      'Dynamic programming',
-      'BLAST',
-      'Multiple sequence alignment',
-      'Protein classification',
-      'Protein domains',
-      'Structural bioinformatics',
-      'Homology modeling',
-      'NGS',
-      'Sequencing quality control',
-      'Genome assembly',
-      'Sequence mapping',
-      'Gene prediction',
-      'Structural annotation',
-      'Functional annotation',
-      'Comparative genomics',
-      'SNPs and INDELs'
+    "prerequisites": [
+      "object-oriented-programming"
     ],
-    []
-  ),
-  course(
-    'elective-2', 
-    'Elective II — To be selected',     
-    5,
-    1,
-    'pending',
-    ['TBD'],
-    [],
-    "TBD", 
-    ['TBD'],
-    []
-  ),
-  course(
-    'elective-3', 
-    'Elective III — To be selected',
-    5,
-    2,
-    'pending',
-    ['TBD'],
-    [],
-    "TBD", 
-    ['TBD'],
-    []
-  ),
+    "projects": [
+      {
+        "id": "szafrankus-clothing-backend",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "SQL"
+        ],
+        "url": "https://github.com/SantiMussi/TPO-APIs"
+      },
+      {
+        "id": "szafrankus-clothing-frontend",
+        "technologies": [
+          "JavaScript",
+          "ReactJS"
+        ],
+        "url": "https://github.com/SantiMussi/Front-apis"
+      }
+    ]
+  },
+  {
+    "slug": "software-engineering",
+    "year": 3,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [
+      "Python"
+    ],
+    "prerequisites": [
+      "information-systems-ii"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "physics-ii",
+    "year": 3,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [
+      "physics-i"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "theory-of-computation",
+    "year": 3,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [
+      "Java"
+    ],
+    "prerequisites": [
+      "discrete-mathematics",
+      "algorithm-design-and-analysis"
+    ],
+    "projects": [
+      {
+        "id": "automaton-machine-codes",
+        "technologies": [
+          "Java"
+        ],
+        "url": "https://github.com/Nehuelin/Automaton-Sanctuary"
+      }
+    ]
+  },
+  {
+    "slug": "applied-statistics",
+    "year": 3,
+    "semester": 2,
+    "status": "completed",
+    "technologies": [],
+    "prerequisites": [
+      "general-statistics"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "application-development-i",
+    "year": 4,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Android Studio",
+      "React Native",
+      "Java",
+      "JavaScript"
+    ],
+    "prerequisites": [
+      "object-oriented-design"
+    ],
+    "projects": [
+      {
+        "id": "tic-tac-toe-mobile-app",
+        "technologies": [
+          "Java",
+          "Android Studio"
+        ],
+        "url": "https://github.com/Nehuelin/TicTacToe_mobile_app"
+      },
+      {
+        "id": "math-reaction-mobile-app",
+        "technologies": [
+          "JavaScript",
+          "React Native"
+        ],
+        "url": "https://github.com/Nehuelin/Reaction-Challenge-Mobile-App"
+      },
+      {
+        "id": "vantage-live-auction-app",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "SQL",
+          "JavaScript",
+          "React Native"
+        ],
+        "url": "https://github.com/SantiMussi/AppMovilSubastas"
+      }
+    ]
+  },
+  {
+    "slug": "it-project-management",
+    "year": 4,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Jira"
+    ],
+    "prerequisites": [
+      "information-systems-ii"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "data-science",
+    "year": 4,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Google Cloud"
+    ],
+    "prerequisites": [
+      "applied-statistics",
+      "data-engineering-ii"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "information-security-and-integrity",
+    "year": 4,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "OWASP"
+    ],
+    "prerequisites": [
+      "data-communications-and-networks"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "modeling-and-simulation",
+    "year": 4,
+    "semester": 1,
+    "status": "completed",
+    "technologies": [
+      "Python"
+    ],
+    "prerequisites": [
+      "calculus-ii"
+    ],
+    "projects": [
+      {
+        "id": "aerial-pursuit-simulation",
+        "technologies": [
+          "TypeScript",
+          "HTML",
+          "CSS"
+        ],
+        "url": "https://github.com/matiasfelau/persecucion-aerea"
+      }
+    ]
+  },
+  {
+    "slug": "application-integration",
+    "year": 4,
+    "semester": 2,
+    "status": "in-progress",
+    "technologies": [
+      "JavaScript",
+      "ReactJS",
+      "Java",
+      "Spring Boot",
+      "SQL",
+      "Docker"
+    ],
+    "prerequisites": [
+      "interactive-applications",
+      "object-oriented-design"
+    ],
+    "projects": [
+      {
+        "id": "uade-city-app-module-ii-citizen-help-frontend",
+        "technologies": [
+          "JavaScript",
+          "ReactJS"
+        ],
+        "url": "https://github.com/SantiMussi/front-desarrollo-apps-2"
+      },
+      {
+        "id": "uade-city-app-module-ii-citizen-help-backend",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "SQL"
+        ],
+        "url": "https://github.com/JuanmaGuida/Backend-DAMII"
+      },
+      {
+        "id": "uade-city-app-module-ii-citizen-help-docker-infrastructure",
+        "technologies": [
+          "Docker",
+          "AWS"
+        ],
+        "url": "https://github.com/AgustinNari/DA2-m2-infra"
+      }
+    ]
+  },
+  {
+    "slug": "it-project-evaluation",
+    "year": 4,
+    "semester": 2,
+    "status": "in-progress",
+    "technologies": [
+      "Excel"
+    ],
+    "prerequisites": [
+      "general-statistics"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "artificial-intelligence",
+    "year": 4,
+    "semester": 2,
+    "status": "in-progress",
+    "technologies": [
+      "Python"
+    ],
+    "prerequisites": [
+      "applied-statistics"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "technology-and-environment",
+    "year": 4,
+    "semester": 2,
+    "status": "in-progress",
+    "technologies": [],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "supervised-professional-practice",
+    "year": 4,
+    "semester": 2,
+    "status": "pending",
+    "technologies": [],
+    "prerequisites": [
+      "38 completed courses"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "application-architecture",
+    "year": 5,
+    "semester": 1,
+    "status": "pending",
+    "technologies": [
+      "TBD"
+    ],
+    "prerequisites": [
+      "information-systems-ii"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "technology-trends",
+    "year": 5,
+    "semester": 1,
+    "status": "pending",
+    "technologies": [
+      "TBD"
+    ],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "final-engineering-project",
+    "year": 5,
+    "semester": 1,
+    "status": "pending",
+    "technologies": [
+      "TBD"
+    ],
+    "prerequisites": [
+      "38 completed courses"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "software-quality",
+    "year": 5,
+    "semester": 1,
+    "status": "pending",
+    "technologies": [
+      "TBD"
+    ],
+    "prerequisites": [
+      "software-engineering"
+    ],
+    "projects": []
+  },
+  {
+    "slug": "technology-business",
+    "year": 5,
+    "semester": 2,
+    "status": "pending",
+    "technologies": [
+      "TBD"
+    ],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "technology-and-innovation",
+    "year": 5,
+    "semester": 2,
+    "status": "pending",
+    "technologies": [
+      "TBD"
+    ],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "information-technology-law",
+    "year": 5,
+    "semester": 2,
+    "status": "pending",
+    "technologies": [
+      "TBD"
+    ],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "bioinformatics",
+    "year": 4,
+    "semester": 2,
+    "status": "in-progress",
+    "technologies": [
+      "Linux",
+      "NCBI",
+      "BLAST",
+      "Pfam",
+      "InterProScan"
+    ],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "elective-2",
+    "year": 5,
+    "semester": 1,
+    "status": "pending",
+    "technologies": [
+      "TBD"
+    ],
+    "prerequisites": [],
+    "projects": []
+  },
+  {
+    "slug": "elective-3",
+    "year": 5,
+    "semester": 2,
+    "status": "pending",
+    "technologies": [
+      "TBD"
+    ],
+    "prerequisites": [],
+    "projects": []
+  }
 ]
 
+export const academicCourses = courseDefinitions.map((course) => ({
+  ...course,
+  ...academicContent.courses[course.slug],
+  projects: course.projects.map((project) => ({
+    ...project,
+    ...academicContent.courseProjects[project.id],
+  })),
+}))
+
 export const degree = {
-  title: 'Computer Engineering',
-  university: 'Universidad Argentina de la Empresa (UADE)',
-  period: '2023 — Expected December 2027',
-  status: 'In progress',
+  ...academicContent.degree,
   completed: academicCourses.filter((course) => course.status === 'completed').length,
   total: academicCourses.length,
 }
@@ -1395,6 +795,7 @@ export const getCourseRelations = (slug) => {
   const visitUnlocked = (id) => getUnlockedCourses(id).forEach((next) => {
     if (!descendants.has(next.slug)) { descendants.add(next.slug); visitUnlocked(next.slug) }
   })
-  visitPrerequisites(slug); visitUnlocked(slug)
+  visitPrerequisites(slug)
+  visitUnlocked(slug)
   return { ancestors, descendants }
 }

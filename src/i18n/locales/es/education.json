@@ -1,0 +1,230 @@
+{
+	"types": {
+		"bachelors-degree": "Título de grado"
+	},
+
+	"statuses": {
+		"completed": "Completado",
+		"in-progress": "En curso",
+		"upcoming": "Próximamente"
+	},
+
+	"labels": {
+		"completedIn": "Completado ({{year}})",
+		"startingOn": "Comienza el {{date}}",
+		"period": "{{startYear}} — Finalización estimada: {{graduationDate}}",
+		"intermediateDegree": "Título intermedio: {{degree}}",
+		"courseProgress": "{{completed}} de {{total}} cursos completados ({{percentage}}%)",
+		"gpa": "Promedio actual: {{gpa}}",
+		"viewCertificate": "Ver certificado",
+		"viewSource": "Ver código fuente",
+		"viewDemo": "Ver demo",
+		"topics": "Temas abordados",
+		"toBeDetermined": "Por definir"
+	},
+
+	"qualifications": {
+		"computer-science-analyst": "Analista en Informática"
+	},
+
+	"degrees": {
+		"computer-engineering": {
+		"title": "Ingeniería en Informática",
+		"summary": "Una carrera de ingeniería integral que abarca software, sistemas informáticos y los fundamentos detrás de la tecnología moderna."
+		}
+	},
+
+	"courses": {
+		"python": {
+			"title": "Python",
+			"topics": [
+			"Fundamentos de Python y estructuras de control",
+			"Estructuras de datos y colecciones",
+			"Funciones y programación modular",
+			"Depuración y manejo de excepciones",
+			"Programación orientada a objetos",
+			"Herencia, encapsulamiento y polimorfismo",
+			"Módulos, paquetes y manejo de archivos",
+			"Procesamiento de datos JSON y CSV",
+			"Flujos de trabajo con Git y GitHub"
+			]
+		},
+
+
+		"web-development": {
+			"title": "Desarrollo Web",
+			"topics": [
+					"HTML5 y marcado semántico",
+					"Estilos CSS y Box Model",
+					"Flexbox y CSS Grid",
+					"Diseño responsivo y media queries",
+					"Bootstrap",
+					"SCSS y estilos reutilizables",
+					"Animaciones y transformaciones CSS",
+					"Flujos de trabajo con Git y GitHub",
+					"Fundamentos de SEO",
+					"Hosting web, dominios y servidores",
+					"Desarrollo de sitios web estáticos responsivos"
+			]
+		},
+
+		"javascript": {
+			"title": "JavaScript",
+			"topics": [
+					"Fundamentos de JavaScript y estructuras de control",
+					"Funciones, objetos y arrays",
+					"Métodos de arrays y funciones de orden superior",
+					"Manipulación del DOM",
+					"Manejo de eventos",
+					"JSON y Local Storage",
+					"Sintaxis avanzada de JavaScript",
+					"Librerías y herramientas de terceros",
+					"Programación asincrónica y promesas",
+					"Fetch API y AJAX",
+					"Consumo de APIs externas",
+					"Desarrollo de aplicaciones web interactivas"
+			]
+		},
+
+		"sql": {
+			"title": "SQL",
+			"topics": [
+					"Diseño y normalización de bases de datos relacionales",
+					"PostgreSQL",
+					"DDL y DML",
+					"Consultas SQL y filtrado avanzado",
+					"Joins y consultas sobre múltiples tablas",
+					"Agregaciones, GROUP BY y HAVING",
+					"Subconsultas y CTEs",
+					"Funciones de ventana",
+					"CASE WHEN y manipulación de fechas",
+					"Transacciones e integridad de datos",
+					"Optimización de consultas e índices",
+					"Planes de ejecución con EXPLAIN",
+					"JSONB y búsqueda de texto completo",
+					"Usuarios, roles y permisos",
+					"Análisis de datos y reporting de negocio"
+			]
+		},
+
+		"react-js": {
+			"title": "React JS",
+			"topics": [
+					"Fundamentos de React y arquitectura basada en componentes",
+					"JSX y componentes funcionales",
+					"Props y componentes reutilizables",
+					"Gestión de estado con useState",
+					"Efectos secundarios y ciclo de vida con useEffect",
+					"Referencias con useRef",
+					"Manejo de eventos en React",
+					"Programación asincrónica y promesas",
+					"Consumo de APIs con Fetch",
+					"Fundamentos de APIs REST",
+					"Renderizado dinámico y renderizado de listas",
+					"React Router y navegación SPA",
+					"Rutas dinámicas y useParams",
+					"Context API y gestión de estado global",
+					"Providers personalizados",
+					"Conceptos de renderizado y optimización en React",
+					"Integración con Firebase y Firestore",
+					"Colecciones, documentos y consultas en Firestore",
+					"Vite, Node.js y NPM",
+					"Desarrollo de aplicaciones completas de página única"
+			]
+		},
+
+		"ai-automation": {
+			"title": "Automatización con IA",
+			"topics": [
+					"Automatización con IA y agentes autónomos con n8n",
+					"Flujos agentivos y razonamiento ReAct",
+					"Diseño de system prompts y selección de LLMs",
+					"Llamadas a herramientas, guardrails y flujos human-in-the-loop",
+					"Sistemas multiagente y agentes especializados",
+					"Arquitecturas Manager-Worker y Planner-Executor",
+					"Subflujos y diseño modular de agentes",
+					"Memoria, contexto y persistencia",
+					"Búsqueda semántica y memoria compartida entre agentes",
+					"Webhooks e integraciones con terceros",
+					"RAG y bases de conocimiento documentales con LlamaCloud",
+					"IA de voz con Whisper y ElevenLabs",
+					"Flujos agentivos específicos por industria",
+					"Evaluación automatizada y AI-as-a-Judge",
+					"Evaluación de prompts y mejora continua",
+					"Gobernanza, seguridad y privacidad en IA",
+					"Gestión y optimización de costos de tokens",
+					"Observabilidad, logging y auditoría de agentes",
+					"Diseño de sistemas agentivos preparados para producción"
+			]
+		},
+
+		"backend-i": {
+			"title": "Backend I - Node.js, APIs y Bases de Datos",
+			"topics": [
+					"Node.js y JavaScript del lado del servidor",
+					"Programación asincrónica",
+					"APIs REST y HTTP",
+					"Express.js y routing",
+					"Controladores y manejo de solicitudes",
+					"Validación y manejo centralizado de errores",
+					"Handlebars y renderizado del lado del servidor",
+					"WebSockets y Socket.IO",
+					"MongoDB y modelado de datos NoSQL",
+					"Operaciones CRUD",
+					"Schemas, modelos y validación con Mongoose",
+					"Relaciones entre documentos y population",
+					"Paginación, filtrado y ordenamiento",
+					"Optimización de consultas en MongoDB",
+					"Acceso a datos mediante patrones DAO",
+					"Configuración de entorno con dotenv"
+			]
+		},
+
+		"backend-ii": {
+			"title": "Backend II - Diseño y Arquitectura",
+			"topics": [
+					"Arquitectura backend en capas",
+					"Controladores, servicios, repositorios y DAOs",
+					"DTOs y separación de responsabilidades",
+					"Inyección de dependencias y desacoplamiento",
+					"Autenticación JWT y cookies seguras",
+					"Passport.js y OAuth",
+					"Hashing de contraseñas con bcrypt",
+					"Control de acceso basado en roles (RBAC)",
+					"Autorización y rutas protegidas",
+					"Reglas de negocio y validación de dominio",
+					"Manejo centralizado de errores",
+					"MongoDB y Mongoose",
+					"Diseño de APIs REST",
+					"Desarrollo backend seguro y mantenible"
+			]
+		},
+
+		"backend-iii": {
+			"title": "Backend III — Testing y Escalabilidad",
+			"topics": [
+					"Por definir"
+		]
+		}
+
+
+	},
+
+	"projects": {
+		"react-ecommerce": {
+			"title": "E-Commerce con React",
+			"description": "SPA de e-commerce desarrollada con React, React Router, Context API y Firebase, con exploración de productos, detalle de productos, gestión del carrito y checkout."
+		},
+
+		"nehue-net-backend": {
+			"title": "Backend de E-Commerce NehueNet",
+			"description": "Backend de e-commerce desarrollado con Node.js, Express, MongoDB, Mongoose, Handlebars y Socket.IO. Incluye APIs REST para productos y carritos, persistencia de datos, filtrado y paginación, vistas renderizadas desde el servidor, validación, manejo centralizado de errores y actualizaciones de productos en tiempo real."
+		},
+
+		"park-event-solutions": {
+			"title": "ParkEvent Solutions",
+			"description": "API backend para gestionar eventos dentro de un parque temático, desarrollada con Node.js, Express, MongoDB y Mongoose utilizando una arquitectura en capas. Actualmente implementa autenticación de usuarios con JWT y Passport, OAuth con GitHub, autorización basada en roles, gestión de eventos y categorías, reglas de negocio, DTOs, repositorios, DAOs y manejo centralizado de errores."
+		}
+	}
+}
+

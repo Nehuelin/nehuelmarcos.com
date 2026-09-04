@@ -1,0 +1,190 @@
+{
+    "groups": {
+        "backend": "Backend y APIs",
+        "frontend-mobile": "Frontend y Mobile",
+        "data": "Datos y Persistencia",
+        "automation-operations": "Automatización y Operaciones",
+        "practices": "Prácticas de Ingeniería"
+    },
+
+    "contexts": {
+        "multiple-projects": "Múltiples proyectos",
+        "professional": "Uso profesional",
+        "academic": "Experiencia académica",
+        "developing": "Actualmente en desarrollo"
+    },
+
+    "technologies": {
+        "java": {
+            "name": "Java",
+            "description": "Utilizado para modelar dominios orientados a objetos y desarrollar aplicaciones backend y Android mantenibles."
+        },
+        "spring-boot": {
+            "name": "Spring Boot",
+            "description": "Utilizado para desarrollar APIs REST en capas y servicios backend respaldados por persistencia."
+        },
+        "javascript-backend": {
+            "name": "JavaScript",
+            "description": "Utilizado en interfaces web basadas en componentes, aplicaciones móviles y servicios Node.js."
+        },
+        "node-js": {
+            "name": "Node.js",
+            "description": "Utilizado como entorno de ejecución para APIs modulares y aplicaciones de comercio electrónico del lado del servidor."
+        },
+        "express": {
+            "name": "Express",
+            "description": "Utilizado para organizar rutas, manejo de solicitudes y middleware en APIs desarrolladas con Node.js."
+        },
+        "rest-apis": {
+            "name": "APIs REST",
+            "description": "Utilizadas para definir contratos de servicio y conectar flujos de frontend, backend y automatización."
+        },
+        "jwt": {
+            "name": "JWT",
+            "description": "Utilizado para proteger endpoints del backend y soportar flujos de aplicación basados en roles."
+        },
+        "websockets": {
+            "name": "WebSockets",
+            "description": "Utilizados para transmitir eventos operativos y telemetría en tiempo real hacia dashboards interactivos."
+        },
+        "javascript": {
+            "name": "JavaScript",
+            "description": "Utilizado en interfaces web basadas en componentes, aplicaciones móviles y servicios Node.js."
+        },
+        "typescript": {
+            "name": "TypeScript",
+            "description": "Utilizado para trabajos de modelado y simulación interactiva con tipado estático."
+        },
+        "react": {
+            "name": "React",
+            "description": "Utilizado para desarrollar interfaces basadas en datos con componentes reutilizables y un estado de UI predecible."
+        },
+        "html": {
+            "name": "HTML",
+            "description": "Utilizado para crear estructuras semánticas y accesibles en experiencias web responsivas."
+        },
+        "css": {
+            "name": "CSS",
+            "description": "Utilizado para desarrollar layouts responsivos y sistemas de interfaz distintivos sin depender de un framework de UI."
+        },
+        "react-native": {
+            "name": "React Native",
+            "description": "Utilizado para trasladar patrones reutilizables de React a experiencias móviles centradas en la interacción táctil."
+        },
+        "expo": {
+            "name": "Expo",
+            "description": "Utilizado para desarrollar y ejecutar aplicaciones React Native en distintos entornos móviles."
+        },
+        "android": {
+            "name": "Android",
+            "description": "Utilizado para desarrollar aplicaciones nativas en Java con interacciones táctiles y lógica de estado de juego."
+        },
+        "sql": {
+            "name": "SQL",
+            "description": "Utilizado para consultar, validar y analizar datos estructurados tanto operativos como de aplicaciones."
+        },
+        "postgresql": {
+            "name": "PostgreSQL",
+            "description": "Utilizado como sistema de persistencia relacional para servicios de aplicaciones desarrollados con Spring Boot."
+        },
+        "mongodb": {
+            "name": "MongoDB",
+            "description": "Utilizado para persistencia documental en APIs Node.js y sistemas de persistencia políglota."
+        },
+        "firebase": {
+            "name": "Firebase",
+            "description": "Utilizado para alojar datos de aplicaciones y respaldar flujos web mediante servicios en la nube."
+        },
+        "redis": {
+            "name": "Redis",
+            "description": "Utilizado como componente clave-valor dentro de una arquitectura de persistencia políglota."
+        },
+        "neo4j": {
+            "name": "Neo4j",
+            "description": "Utilizado para representar datos orientados a relaciones dentro de un sistema de persistencia políglota."
+        },
+        "cassandra": {
+            "name": "Cassandra",
+            "description": "Utilizado para explorar almacenamiento de columnas anchas dentro de una aplicación con múltiples bases de datos."
+        },
+        "python": {
+            "name": "Python",
+            "description": "Utilizado para automatizar procesos de validación, generación de reportes y administración de Atlassian."
+        },
+        "jira": {
+            "name": "Jira",
+            "description": "Utilizado para administrar proyectos, flujos de trabajo, permisos y solicitudes de soporte técnico."
+        },
+        "confluence": {
+            "name": "Confluence",
+            "description": "Utilizado para administrar espacios y crear documentación técnica y operativa duradera."
+        },
+        "atlassian-apis": {
+            "name": "APIs de Atlassian",
+            "description": "Utilizadas para automatizar tareas de gestión de usuarios, gobernanza y generación de reportes que no cuentan con flujos nativos."
+        },
+        "google-sheets": {
+            "name": "Google Sheets",
+            "description": "Utilizado para registros operativos, análisis colaborativo y generación recurrente de reportes."
+        },
+        "microsoft-excel": {
+            "name": "Microsoft Excel",
+            "description": "Utilizado para analizar datos operativos y acompañar el seguimiento financiero y de KPIs."
+        },
+        "power-bi": {
+            "name": "Power BI",
+            "description": "Utilizado para respaldar reportes operativos basados en datos y mejorar la visibilidad de la información."
+        },
+        "docker": {
+            "name": "Docker",
+            "description": "Utilizado para empaquetar servicios y coordinar entornos de integración de aplicaciones."
+        },
+        "git-github": {
+            "name": "Git y GitHub",
+            "description": "Utilizados para control de versiones, colaboración y mantenimiento del historial de los proyectos."
+        },
+        "uml": {
+            "name": "UML",
+            "description": "Utilizado para comunicar la estructura del dominio, las responsabilidades y las interacciones entre objetos antes de la implementación."
+        },
+        "design-patterns": {
+            "name": "Patrones de diseño",
+            "description": "Utilizados para mantener modelos de dominio extensibles mediante colaboraciones entre objetos explícitas y reutilizables."
+        },
+        "layered-architecture": {
+            "name": "Arquitectura en capas",
+            "description": "Utilizada para separar las responsabilidades de API, negocio y persistencia dentro de servicios backend."
+        },
+        "oop": {
+            "name": "Programación orientada a objetos",
+            "description": "Utilizada para modelar comportamientos y responsabilidades en dominios, juegos y servicios desarrollados en Java."
+        },
+        "api-integration": {
+            "name": "Integración de APIs",
+            "description": "Utilizada para conectar de manera confiable servicios independientes, interfaces y automatizaciones operativas."
+        }
+    },
+
+    "focus": {
+        "java-spring": "Java + Spring Boot",
+        "python-automation": "Automatización con Python",
+        "node-apis": "APIs con Node.js",
+        "sql-persistence": "SQL y persistencia",
+        "docker-integrations": "Docker e integraciones"
+    },
+
+    "workflows": {
+        "backend": {
+            "title": "Sistemas backend",
+            "path": "Java → Spring Boot → PostgreSQL → Docker"
+        },
+        "automation": {
+            "title": "Herramientas de automatización",
+            "path": "Python → APIs → Validación → Reporting"
+        },
+        "interactive": {
+            "title": "Aplicaciones interactivas",
+            "path": "React → APIs REST / WebSockets → Interfaces responsivas"
+        }
+    }
+}

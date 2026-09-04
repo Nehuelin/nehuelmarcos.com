@@ -1,0 +1,48 @@
+{
+  "types": {
+    "bachelors-degree": "Bachelor’s degree"
+  },
+  "statuses": {
+    "completed": "Completed",
+    "in-progress": "In progress",
+    "upcoming": "Upcoming"
+  },
+  "labels": {
+    "completedIn": "Completed ({{year}})",
+    "startingOn": "Starting on {{date}}",
+    "period": "{{startYear}} — Expected {{graduationDate}}",
+    "intermediateDegree": "Intermediate degree: {{degree}}",
+    "courseProgress": "{{completed}} of {{total}} courses completed ({{percentage}}%)",
+    "gpa": "Current GPA: {{gpa}}",
+    "viewCertificate": "View certificate",
+    "viewSource": "View source code",
+    "viewDemo": "View demo",
+    "topics": "Topics covered",
+    "toBeDetermined": "To be determined"
+  },
+  "qualifications": {
+    "computer-science-analyst": "Computer Science Analyst"
+  },
+  "degrees": {
+    "computer-engineering": {
+      "title": "Computer Engineering",
+      "summary": "A broad engineering program covering software, computing systems and the foundations behind modern technology."
+    }
+  },
+  "courses": {
+    "python": { "title": "Python", "topics": ["Python fundamentals and control flow", "Data structures and collections", "Functions and modular programming", "Debugging and exception handling", "Object-oriented programming", "Inheritance, encapsulation, and polymorphism", "Modules, packages, and file handling", "JSON and CSV data processing", "Git and GitHub workflows"] },
+    "web-development": { "title": "Web Development", "topics": ["HTML5 and semantic markup", "CSS styling and the Box Model", "Flexbox and CSS Grid", "Responsive design and media queries", "Bootstrap", "SCSS and reusable styles", "CSS animations and transforms", "Git and GitHub workflows", "SEO fundamentals", "Web hosting, domains, and servers", "Building responsive static websites"] },
+    "javascript": { "title": "JavaScript", "topics": ["JavaScript fundamentals and control flow", "Functions, objects, and arrays", "Array methods and higher-order functions", "DOM manipulation", "Event handling", "JSON and Local Storage", "Advanced JavaScript syntax", "Libraries and third-party tools", "Asynchronous programming and promises", "Fetch API and AJAX", "External API consumption", "Building interactive web applications"] },
+    "sql": { "title": "SQL", "topics": ["Relational database design and normalization", "PostgreSQL", "DDL and DML", "SQL queries and advanced filtering", "Joins and multi-table queries", "Aggregation, GROUP BY, and HAVING", "Subqueries and CTEs", "Window functions", "CASE WHEN and date manipulation", "Transactions and data integrity", "Query optimization and indexes", "Execution plans with EXPLAIN", "JSONB and full-text search", "Users, roles, and permissions", "Data analysis and business reporting"] },
+    "react-js": { "title": "React JS", "topics": ["React fundamentals and component-based architecture", "JSX and functional components", "Props and reusable components", "State management with useState", "Side effects and lifecycle with useEffect", "Refs with useRef", "Event handling in React", "Asynchronous programming and promises", "API consumption with Fetch", "REST API fundamentals", "Dynamic rendering and list rendering", "React Router and SPA navigation", "Dynamic routes and useParams", "Context API and global state management", "Custom Providers", "React rendering and optimization concepts", "Firebase and Firestore integration", "Firestore collections, documents, and queries", "Vite, Node.js, and NPM", "Building complete single-page applications"] },
+    "ai-automation": { "title": "AI Automation", "topics": ["AI automation and autonomous agents with n8n", "Agentic workflows and ReAct reasoning", "System prompt design and LLM selection", "Tool calling, guardrails, and human-in-the-loop workflows", "Multi-agent systems and specialized agents", "Manager-Worker and Planner-Executor architectures", "Sub-workflows and modular agent design", "Memory, context, and persistence", "Semantic search and shared agent memory", "Webhooks and third-party integrations", "RAG and document knowledge bases with LlamaCloud", "Voice AI with Whisper and ElevenLabs", "Industry-specific agentic workflows", "Automated evaluation and AI-as-a-Judge", "Prompt evaluation and continuous improvement", "AI governance, security, and privacy", "Token cost management and optimization", "Observability, logging, and agent auditing", "Production-ready agentic system design"] },
+    "backend-i": { "title": "Backend I - Node.js, APIs & Databases", "topics": ["Node.js and server-side JavaScript", "Asynchronous programming", "REST APIs and HTTP", "Express.js and routing", "Controllers and request handling", "Validation and centralized error handling", "Handlebars and server-side rendering", "WebSockets and Socket.IO", "MongoDB and NoSQL data modeling", "CRUD operations", "Mongoose schemas, models, and validation", "Document relationships and population", "Pagination, filtering, and sorting", "MongoDB query optimization", "Data access with DAO patterns", "Environment configuration with dotenv"] },
+    "backend-ii": { "title": "Backend II - Design & Architecture", "topics": ["Layered backend architecture", "Controllers, services, repositories, and DAOs", "DTOs and separation of concerns", "Dependency injection and decoupling", "JWT authentication and secure cookies", "Passport.js and OAuth", "Password hashing with bcrypt", "Role-based access control (RBAC)", "Authorization and protected routes", "Business rules and domain validation", "Centralized error handling", "MongoDB and Mongoose", "REST API design", "Secure and maintainable backend development"] },
+    "backend": { "title": "Backend III — Testing & Scalability", "topics": ["TBD"] }
+  },
+  "projects": {
+    "react-ecommerce": { "title": "React E-Commerce", "description": "E-commerce SPA built with React, React Router, Context API, and Firebase, featuring product browsing, product details, cart management, and checkout." },
+    "nehue-net-backend": { "title": "NehueNet E-Commerce Backend", "description": "E-commerce backend built with Node.js, Express, MongoDB, Mongoose, Handlebars, and Socket.IO. Includes REST APIs for products and carts, persistent data storage, filtering and pagination, server-rendered views, validation, centralized error handling, and real-time product updates." },
+    "park-event-solutions": { "title": "ParkEvent Solutions", "description": "Backend API for managing events within a theme park, built with Node.js, Express, MongoDB, and Mongoose using a layered architecture. Currently implements user authentication with JWT and Passport, GitHub OAuth, role-based authorization, event and category management, business rules, DTOs, repositories, DAOs, and centralized error handling." }
+  }
+}

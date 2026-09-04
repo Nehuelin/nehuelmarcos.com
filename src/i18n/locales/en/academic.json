@@ -1,0 +1,1095 @@
+{
+  "degree": {
+    "title": "Computer Engineering",
+    "university": "Universidad Argentina de la Empresa (UADE)",
+    "period": "2023 — Expected December 2027",
+    "status": "In progress"
+  },
+  "statuses": {
+    "completed": "Completed",
+    "in-progress": "In progress",
+    "pending": "Pending"
+  },
+  "labels": {
+    "year": "Year {{year}}",
+    "semester": "Semester {{semester}}",
+    "topics": "Topics covered",
+    "technologies": "Technologies",
+    "prerequisites": "Prerequisites",
+    "projects": "Course projects",
+    "viewProject": "View project",
+    "noPrerequisites": "No prerequisites",
+    "toBeDetermined": "To be determined",
+    "minimumCompletedCourses": "Requires {{count}} completed courses"
+  },
+  "courses": {
+    "fundamentals-of-computer-science": {
+      "title": "Fundamentals of Computer Science",
+      "description": "Introduced the foundations of computer science and algorithmic problem solving through Python. Covered basic computer organization, algorithms and programs, variables and expressions, control structures, functions, lists, searching and sorting algorithms, and multidimensional arrays.",
+      "topics": [
+        "Computer science foundations",
+        "Algorithmic thinking",
+        "Python fundamentals",
+        "Control structures",
+        "Functions",
+        "Lists and arrays",
+        "Searching algorithms",
+        "Sorting algorithms",
+        "Matrices"
+      ],
+      "projects": []
+    },
+    "information-systems-i": {
+      "title": "Information Systems I",
+      "description": "Explored how organizations, business processes, and information systems interact. Applied organizational analysis, process modeling, requirements elicitation, and software engineering concepts to model business operations and evaluate enterprise information systems.",
+      "topics": [
+        "Organizational analysis",
+        "Business process modeling",
+        "Process flowcharts",
+        "Context diagrams",
+        "Requirements analysis",
+        "Information systems",
+        "Software engineering",
+        "Agile methodologies",
+        "Business intelligence",
+        "BPM",
+        "ERP / CRM / SCM"
+      ],
+      "projects": []
+    },
+    "critical-thinking-and-communication": {
+      "title": "Critical Thinking and Communication",
+      "description": "Developed critical reasoning and communication skills through formal logic, argument analysis, and academic writing. Learned to evaluate deductive and inductive arguments, identify logical fallacies, and construct clear, well-supported informative and argumentative texts.",
+      "topics": [
+        "Critical thinking",
+        "Formal logic",
+        "Propositional logic",
+        "Predicate logic",
+        "Deductive reasoning",
+        "Inductive reasoning",
+        "Logical fallacies",
+        "Argumentation",
+        "Academic writing"
+      ],
+      "projects": []
+    },
+    "systems-theory": {
+      "title": "Systems Theory",
+      "description": "Developed a systems-thinking approach to analyzing complex problems, organizations, and information systems. Studied General Systems Theory, feedback and control mechanisms, software development models, organizational learning, and recurring systemic patterns.",
+      "topics": [
+        "Systems thinking",
+        "General Systems Theory",
+        "Feedback loops",
+        "Cybernetics",
+        "Information systems",
+        "Development life cycles",
+        "Software development paradigms",
+        "Organizational systems",
+        "Organizational learning",
+        "System archetypes"
+      ],
+      "projects": []
+    },
+    "algebra-and-geometry": {
+      "title": "Algebra and Geometry",
+      "description": "Developed mathematical foundations in algebra, vectors, and analytic geometry. Worked with real and complex numbers, polynomial equations, vector operations, and geometric models involving lines, planes, conic sections, and quadric surfaces.",
+      "topics": [
+        "Algebra",
+        "Complex numbers",
+        "Polynomials",
+        "Vector algebra",
+        "Analytic geometry",
+        "2D and 3D geometry",
+        "Orthogonality",
+        "Lines and planes",
+        "Conic sections",
+        "Quadric surfaces"
+      ],
+      "projects": []
+    },
+    "algorithms-and-data-structures-i": {
+      "title": "Algorithms and Data Structures I",
+      "description": "Strengthened programming and problem-solving skills in Python through modular programming, data structures, recursion, exception handling, and file processing. Applied lists, matrices, tuples, sets, dictionaries, and CSV files to solve increasingly complex programming problems.",
+      "topics": [
+        "Python",
+        "Modular programming",
+        "Functions",
+        "Data structures",
+        "List comprehensions",
+        "Matrices",
+        "Exception handling",
+        "File processing",
+        "CSV",
+        "Recursion",
+        "Tuples",
+        "Sets",
+        "Dictionaries"
+      ],
+      "projects": []
+    },
+    "systems-of-representation": {
+      "title": "Systems of Representation",
+      "description": "Developed technical drawing and spatial representation skills using descriptive geometry and engineering drawing standards. Worked with orthographic projections, perspectives, sections, dimensioning, scales, and civil drawings, progressing from manual drafting to 2D CAD with AutoCAD.",
+      "topics": [
+        "Technical drawing",
+        "Descriptive geometry",
+        "Monge projection",
+        "Orthographic projection",
+        "Perspective drawing",
+        "Engineering scales",
+        "Sections and cuts",
+        "Mechanical dimensioning",
+        "Civil drawings",
+        "2D CAD"
+      ],
+      "projects": []
+    },
+    "fundamentals-of-chemistry": {
+      "title": "Fundamentals of Chemistry",
+      "description": "Built a foundation in general chemistry through the study of matter, atomic structure, chemical reactions, and quantitative problem solving. Covered chemical nomenclature, stoichiometry, gases, solutions, reaction kinetics, and chemical equilibrium, combining theoretical exercises with laboratory work.",
+      "topics": [
+        "Atomic structure",
+        "Periodic table",
+        "Chemical nomenclature",
+        "Chemical equations",
+        "Stoichiometry",
+        "Limiting reagents",
+        "Gas laws",
+        "Solutions",
+        "Chemical kinetics",
+        "Chemical equilibrium",
+        "Laboratory techniques"
+      ],
+      "projects": []
+    },
+    "computer-architecture": {
+      "title": "Computer Architecture",
+      "description": "Explored how computers operate at the hardware and architectural level, from digital logic and numeric representation to processors, memory, buses, and instruction execution. Studied the Von Neumann model, addressing mechanisms, cache memory, hardware interrupts, and RISC-based architectures.",
+      "topics": [
+        "Digital logic",
+        "Binary and hexadecimal systems",
+        "Computer memory",
+        "Processor architecture",
+        "Registers and buses",
+        "Von Neumann architecture",
+        "Addressing modes",
+        "Cache memory",
+        "Hardware interrupts",
+        "RISC and ARM"
+      ],
+      "projects": []
+    },
+    "discrete-mathematics": {
+      "title": "Discrete Mathematics",
+      "description": "Developed the mathematical foundations used to model and reason about discrete structures in computer science. Covered formal logic, sets, Boolean algebra, combinatorics, relations, mathematical induction, recursion, algebraic structures, and graph theory.",
+      "topics": [
+        "Propositional logic",
+        "Predicate logic",
+        "Set theory",
+        "Boolean algebra",
+        "Combinatorics",
+        "Relations",
+        "Equivalence relations",
+        "Partial orders",
+        "Mathematical induction",
+        "Recurrence relations",
+        "Algebraic structures",
+        "Graph theory"
+      ],
+      "projects": []
+    },
+    "linear-algebra": {
+      "title": "Linear Algebra",
+      "description": "Developed a foundation in linear algebra through matrices, systems of linear equations, vector spaces, and linear transformations. Studied linear independence, bases and dimension, eigenvalues and eigenvectors, and change-of-basis techniques.",
+      "topics": [
+        "Matrices",
+        "Determinants",
+        "Matrix inverses",
+        "Systems of linear equations",
+        "Vector spaces",
+        "Subspaces",
+        "Linear combinations",
+        "Linear independence",
+        "Basis and dimension",
+        "Linear transformations",
+        "Kernel and image",
+        "Eigenvalues",
+        "Eigenvectors",
+        "Change of basis"
+      ],
+      "projects": []
+    },
+    "algorithms-and-data-structures-ii": {
+      "title": "Algorithms and Data Structures II",
+      "description": "Deepened knowledge of data structures and algorithmic problem solving using Java. Implemented abstract data types and both linear and non-linear structures, including stacks, queues, dictionaries, linked structures, search trees, balanced trees, and graphs, while analyzing their computational costs.",
+      "topics": [
+        "Java",
+        "Abstract data types",
+        "Stacks",
+        "Queues",
+        "Priority queues",
+        "Sets",
+        "Dictionaries",
+        "Linked structures",
+        "Binary trees",
+        "Binary search trees",
+        "AVL trees",
+        "B-trees",
+        "Graphs",
+        "Algorithmic complexity"
+      ],
+      "projects": []
+    },
+    "information-systems-ii": {
+      "title": "Information Systems II",
+      "description": "Focused on requirements engineering and the process of translating business and user needs into structured software requirements. Applied elicitation, analysis, specification, validation, and traceability techniques through interviews, use cases, user stories, and SRS documentation.",
+      "topics": [
+        "Requirements engineering",
+        "Functional requirements",
+        "Non-functional requirements",
+        "Requirements elicitation",
+        "Interviews and surveys",
+        "Requirements analysis",
+        "Use cases",
+        "Data flow diagrams",
+        "SRS documentation",
+        "User stories",
+        "Acceptance criteria",
+        "Requirements validation",
+        "Requirements traceability",
+        "Configuration management"
+      ],
+      "projects": []
+    },
+    "operating-systems": {
+      "title": "Operating Systems",
+      "description": "Studied the internal organization and core responsibilities of operating systems, including process execution, synchronization, memory management, file systems, input/output, and virtualization. Applied these concepts through laboratory work and explored introductory networking and system security.",
+      "topics": [
+        "Operating system architecture",
+        "System calls",
+        "Process management",
+        "Process synchronization",
+        "Inter-process communication",
+        "Memory management",
+        "Virtual memory",
+        "Paging",
+        "Segmentation",
+        "File systems",
+        "Input/output management",
+        "Virtualization",
+        "Networking fundamentals",
+        "System security"
+      ],
+      "projects": []
+    },
+    "physics-i": {
+      "title": "Physics I",
+      "description": "Built a foundation in classical mechanics through theoretical problem solving and laboratory experiments. Studied measurement uncertainty, kinematics, Newtonian dynamics, circular motion, work and energy, momentum, collisions, and oscillatory motion.",
+      "topics": [
+        "Measurement and uncertainty",
+        "Error propagation",
+        "Vector kinematics",
+        "Linear motion",
+        "Projectile motion",
+        "Circular motion",
+        "Newton’s laws",
+        "Friction",
+        "Elastic forces",
+        "Work and power",
+        "Kinetic and potential energy",
+        "Conservation of energy",
+        "Momentum",
+        "Collisions",
+        "Oscillatory motion"
+      ],
+      "projects": []
+    },
+    "calculus-i": {
+      "title": "Calculus I",
+      "description": "Developed a foundation in differential and integral calculus through the study of functions, limits, derivatives, integrals, and differential equations. Applied these concepts to analyze function behavior, optimization problems, areas, and systems of ordinary differential equations.",
+      "topics": [
+        "Functions",
+        "Limits",
+        "Continuity",
+        "Derivatives",
+        "Chain rule",
+        "L’Hôpital’s rule",
+        "Function optimization",
+        "Function approximation",
+        "Indefinite integrals",
+        "Definite integrals",
+        "Integration techniques",
+        "Ordinary differential equations"
+      ],
+      "projects": []
+    },
+    "algorithm-design-and-analysis": {
+      "title": "Algorithm Design and Analysis",
+      "description": "Studied advanced algorithm design techniques and computational problem solving. Applied divide and conquer, greedy strategies, dynamic programming, graph algorithms, and backtracking while analyzing the complexity and efficiency of different approaches.",
+      "topics": [
+        "Algorithm analysis",
+        "Computational complexity",
+        "Recursion",
+        "Divide and conquer",
+        "QuickSort",
+        "MergeSort",
+        "Greedy algorithms",
+        "Minimum spanning trees",
+        "Prim’s algorithm",
+        "Kruskal’s algorithm",
+        "Dijkstra’s algorithm",
+        "Dynamic programming",
+        "Floyd’s algorithm",
+        "Longest common subsequence",
+        "Longest increasing subsequence",
+        "Backtracking",
+        "DFS",
+        "BFS",
+        "Uniform-cost search",
+        "Alpha-beta pruning",
+        "Branch and bound"
+      ],
+      "projects": []
+    },
+    "object-oriented-programming": {
+      "title": "Object-Oriented Programming",
+      "description": "Developed object-oriented software in Java using encapsulation, inheritance, abstraction, interfaces, and polymorphism. Applied UML modeling, SOLID and GRASP principles, collections and generics, exception handling, file I/O, graphical interfaces, event-driven programming, and multithreading.",
+      "topics": [
+        "Object-oriented programming",
+        "Classes and objects",
+        "Encapsulation",
+        "Abstraction",
+        "Inheritance",
+        "Polymorphism",
+        "Method overloading",
+        "Method overriding",
+        "Abstract classes",
+        "Interfaces",
+        "UML",
+        "Class diagrams",
+        "Sequence diagrams",
+        "SOLID",
+        "GRASP",
+        "Collections",
+        "Generics",
+        "Exception handling",
+        "File I/O",
+        "Swing",
+        "Event-driven programming",
+        "Multithreading"
+      ],
+      "projects": [
+        "snake-ii"
+      ]
+    },
+    "fundamentals-of-telecommunications": {
+      "title": "Fundamentals of Telecommunications",
+      "description": "Studied the principles behind digital and analog communications, from information theory and signal behavior to physical transmission media and network communication models. Covered modulation, error control, multiplexing, radio and optical communications, and the TCP/IP and OSI architectures.",
+      "topics": [
+        "Information theory",
+        "Entropy",
+        "Signals",
+        "Bandwidth",
+        "Noise and distortion",
+        "Modulation",
+        "AM / FM / PM",
+        "ASK / FSK / PSK / QAM",
+        "Error detection and correction",
+        "Multiplexing",
+        "FDM / TDM / CDM",
+        "Media access",
+        "Copper and coaxial media",
+        "Fiber optics",
+        "Radio communications",
+        "Microwave communications",
+        "Satellite communications",
+        "TCP/IP model",
+        "OSI model",
+        "Switching and routing devices"
+      ],
+      "projects": []
+    },
+    "data-engineering-i": {
+      "title": "Data Engineering I",
+      "description": "Developed a foundation in relational database systems and data management. Designed and queried relational structures using SQL, worked with relational algebra, views, stored procedures, transactions, and applied normalization techniques to improve database consistency and design.",
+      "topics": [
+        "Database architecture",
+        "Relational databases",
+        "Relational model",
+        "Primary and foreign keys",
+        "Relational algebra",
+        "SQL",
+        "DDL",
+        "DML",
+        "Subqueries",
+        "Views",
+        "Stored procedures",
+        "Functions",
+        "Dynamic SQL",
+        "Cursors",
+        "Transactions",
+        "Database normalization",
+        "BCNF",
+        "Fourth normal form",
+        "Fifth normal form"
+      ],
+      "projects": []
+    },
+    "calculus-ii": {
+      "title": "Calculus II",
+      "description": "Extended calculus into multivariable and vector-valued functions, developing tools for analyzing curves, scalar and vector fields, and multidimensional regions. Covered partial and directional derivatives, Jacobians, line and multiple integrals, and the fundamental integral theorems of vector calculus.",
+      "topics": [
+        "Vector-valued functions",
+        "Curve parametrization",
+        "Polar coordinates",
+        "Scalar fields",
+        "Vector fields",
+        "Partial derivatives",
+        "Directional derivatives",
+        "Gradient",
+        "Jacobian matrix",
+        "Line integrals",
+        "Conservative fields",
+        "Double integrals",
+        "Triple integrals",
+        "Change of variables",
+        "Surface integrals",
+        "Green’s theorem",
+        "Stokes’ theorem",
+        "Gauss’ theorem"
+      ],
+      "projects": []
+    },
+    "object-oriented-design": {
+      "title": "Object-Oriented Design",
+      "description": "Focused on improving object-oriented software design through responsibility assignment, design principles, refactoring concepts, and reusable design patterns. Applied GRASP, SOLID, code smell analysis, and structural, behavioral, and creational patterns to evolve software solutions.",
+      "topics": [
+        "Object-oriented design",
+        "Responsibility assignment",
+        "GRASP",
+        "SOLID",
+        "Code smells",
+        "Design patterns",
+        "Creational patterns",
+        "Structural patterns",
+        "Behavioral patterns",
+        "Software design improvement"
+      ],
+      "projects": [
+        "restaurant-order-app"
+      ]
+    },
+    "professional-integration-seminar": {
+      "title": "Professional Integration Seminar",
+      "description": "Integrated product discovery, UX, software engineering, and project management into the development of a complete MVP. Applied Design Thinking, user research, prototyping, agile methodologies, requirements engineering, software modeling, technical documentation, web development, and product pitching.",
+      "topics": [
+        "Design Thinking",
+        "MVP definition",
+        "User research",
+        "User personas",
+        "Empathy maps",
+        "User journeys",
+        "Problem definition",
+        "Ideation",
+        "Prototyping",
+        "UX / UI / IxD",
+        "Usability testing",
+        "Information architecture",
+        "Scrum",
+        "Kanban",
+        "Backlog and sprints",
+        "User stories",
+        "Acceptance criteria",
+        "UML",
+        "Requirements engineering",
+        "Technical documentation",
+        "Web development",
+        "Pitching",
+        "Product validation"
+      ],
+      "projects": [
+        "dental-practice-management-system-sago"
+      ]
+    },
+    "data-communications-and-networks": {
+      "title": "Data Communications and Networks",
+      "description": "Studied modern computer networking from local network design and TCP/IP addressing to wireless, programmable, and data-center networks. Covered Ethernet, Wi-Fi, IPv6, SDN, SD-WAN, IoT connectivity, network security, and LAN/SAN architectures.",
+      "topics": [
+        "Computer networks",
+        "LAN",
+        "Ethernet",
+        "TCP/IP",
+        "OSI model",
+        "IP addressing",
+        "Network design",
+        "Wi-Fi",
+        "WLAN",
+        "Software-defined networking",
+        "IoT networking",
+        "IPv6",
+        "SD-WAN",
+        "Network security",
+        "Data center networking",
+        "SAN"
+      ],
+      "projects": []
+    },
+    "data-engineering-ii": {
+      "title": "Data Engineering II",
+      "description": "Expanded data engineering concepts beyond relational databases into distributed and NoSQL data systems. Studied replication, consistency models, document, graph, key-value and other database paradigms, persistence frameworks, heterogeneous data access, and large-scale data processing.",
+      "topics": [
+        "NoSQL",
+        "Distributed databases",
+        "Replication",
+        "Consistency models",
+        "ACID",
+        "Document databases",
+        "Object databases",
+        "Graph databases",
+        "Key-value databases",
+        "Scalability",
+        "Persistence frameworks",
+        "Polyglot persistence",
+        "Large-scale data processing",
+        "Hadoop"
+      ],
+      "projects": [
+        "e-commerce-in-java-s-terminal"
+      ]
+    },
+    "general-statistics": {
+      "title": "General Statistics",
+      "description": "Developed a foundation in descriptive statistics, probability, and probabilistic modeling for engineering applications. Worked with discrete and continuous random variables, conditional probability, Bayes’ theorem, common probability distributions, and the Central Limit Theorem.",
+      "topics": [
+        "Descriptive statistics",
+        "Population and samples",
+        "Measures of central tendency",
+        "Variability",
+        "Probability",
+        "Conditional probability",
+        "Bayes’ theorem",
+        "Random variables",
+        "Binomial distribution",
+        "Hypergeometric distribution",
+        "Normal distribution",
+        "Log-normal distribution",
+        "Exponential distribution",
+        "Weibull distribution",
+        "Poisson distribution",
+        "Gamma distribution",
+        "Central Limit Theorem"
+      ],
+      "projects": []
+    },
+    "english-exam": {
+      "title": "English Proficiency Exam",
+      "description": "English proficiency exam checkpoint",
+      "topics": [
+        "English"
+      ],
+      "projects": []
+    },
+    "interactive-applications": {
+      "title": "Interactive Applications",
+      "description": "Built interactive web applications using a full-stack architecture. Worked with Spring Boot and Hibernate on the backend and JavaScript, ReactJS, routing, API consumption, and Redux on the frontend, integrating client-side state with server-side services.",
+      "topics": [
+        "Full-stack development",
+        "Spring Boot",
+        "Hibernate",
+        "Cookies and tokens",
+        "JavaScript",
+        "DOM",
+        "React",
+        "React components",
+        "React Hooks",
+        "React Router",
+        "Fetch API",
+        "Conditional rendering",
+        "State management",
+        "Redux"
+      ],
+      "projects": [
+        "szafrankus-clothing-backend",
+        "szafrankus-clothing-frontend"
+      ]
+    },
+    "software-engineering": {
+      "title": "Software Engineering",
+      "description": "Studied software engineering from an operational, governance, and security perspective. Covered software operations, configuration and release management, outsourcing, service levels, continuity planning, disaster recovery, security auditing, and secure development practices.",
+      "topics": [
+        "Software engineering processes",
+        "Software operations",
+        "Deployment and installation",
+        "Performance and reliability",
+        "Load balancing",
+        "Capacity management",
+        "Incident management",
+        "Service level agreements",
+        "Outsourcing",
+        "Configuration management",
+        "Change management",
+        "Release management",
+        "Software governance",
+        "Business continuity",
+        "Disaster recovery",
+        "Security auditing",
+        "Penetration testing",
+        "Vulnerability scanning",
+        "Secure software development",
+        "Authentication and authorization",
+        "Access control",
+        "Secure data handling"
+      ],
+      "projects": []
+    },
+    "physics-ii": {
+      "title": "Physics II",
+      "description": "Applied physical principles to optical, fluid, electrical, and magnetic systems through theoretical problem solving and laboratory experiments. Studied wave propagation, geometric optics, fluid mechanics, electrostatics, electric circuits, and magnetic fields.",
+      "topics": [
+        "Wave propagation",
+        "Geometric optics",
+        "Reflection and refraction",
+        "Snell’s law",
+        "Mirrors",
+        "Lenses",
+        "Hydrostatics",
+        "Hydrodynamics",
+        "Bernoulli equation",
+        "Electrostatics",
+        "Coulomb’s law",
+        "Electric fields",
+        "Gauss’s law",
+        "Electric potential",
+        "Ohm’s law",
+        "Kirchhoff’s laws",
+        "Magnetic fields",
+        "Lorentz force",
+        "Biot–Savart law",
+        "Ampère’s law"
+      ],
+      "projects": []
+    },
+    "theory-of-computation": {
+      "title": "Theory of Computation",
+      "description": "Studied the mathematical foundations and limits of computation through formal languages, automata, grammars, and Turing machines. Explored regular and context-free languages, computability, undecidable problems, and computational complexity classes.",
+      "topics": [
+        "Formal languages",
+        "Finite automata",
+        "DFA",
+        "NFA",
+        "Regular expressions",
+        "Automata minimization",
+        "Formal grammars",
+        "Chomsky hierarchy",
+        "Regular languages",
+        "Pumping lemma",
+        "Pushdown automata",
+        "Context-free languages",
+        "Context-sensitive languages",
+        "Turing machines",
+        "Computability",
+        "Decidability",
+        "Halting problem",
+        "Complexity theory",
+        "P",
+        "NP",
+        "PSPACE",
+        "BQP"
+      ],
+      "projects": [
+        "automaton-machine-codes"
+      ]
+    },
+    "applied-statistics": {
+      "title": "Applied Statistics",
+      "description": "Applied statistical inference to estimation, hypothesis testing, population comparison, and data-driven decision making. Worked with confidence intervals, Student’s t and chi-square methods, paired samples, contingency analysis, and linear and multiple regression.",
+      "topics": [
+        "Statistical inference",
+        "Parameter estimation",
+        "Confidence intervals",
+        "Hypothesis testing",
+        "Sample size estimation",
+        "Student’s t-distribution",
+        "Chi-square distribution",
+        "Population comparison",
+        "Paired samples",
+        "Contingency tables",
+        "Goodness-of-fit tests",
+        "Correlation",
+        "Linear regression",
+        "Multiple regression"
+      ],
+      "projects": []
+    },
+    "application-development-i": {
+      "title": "Mobile Application Development",
+      "description": "Developed mobile applications using both native and cross-platform approaches. Worked with Android Studio and React Native, integrating local and remote persistence, external APIs, device resources, and mobile interface design.",
+      "topics": [
+        "Mobile application development",
+        "Native applications",
+        "Android development",
+        "Android Studio",
+        "Mobile UI modeling",
+        "Local persistence",
+        "Remote persistence",
+        "API integration",
+        "Device resources",
+        "React Native",
+        "Cross-platform development"
+      ],
+      "projects": [
+        "tic-tac-toe-mobile-app",
+        "math-reaction-mobile-app",
+        "vantage-live-auction-app"
+      ]
+    },
+    "it-project-management": {
+      "title": "IT Project Management",
+      "description": "Studied the management of technology projects using PMBOK principles and adaptive approaches. Covered stakeholder and team management, project lifecycle, planning, resources, performance measurement, uncertainty, continuous improvement, and agile methodologies.",
+      "topics": [
+        "Project management",
+        "PMBOK 7",
+        "Value delivery",
+        "Stakeholder management",
+        "Team management",
+        "Project lifecycle",
+        "Project planning",
+        "Resource management",
+        "Performance measurement",
+        "Risk and uncertainty",
+        "Project adaptation",
+        "Continuous improvement",
+        "Agile methodologies"
+      ],
+      "projects": []
+    },
+    "data-science": {
+      "title": "Data Science",
+      "description": "Studied the complete data lifecycle from analytical data architecture to knowledge discovery and machine learning. Covered data warehouses, dimensional modeling, ETL, data quality, data mining, and supervised and unsupervised learning techniques.",
+      "topics": [
+        "Data warehousing",
+        "Data warehouse architecture",
+        "Dimensional modeling",
+        "ETL",
+        "Data quality",
+        "Data mining",
+        "KDD",
+        "Supervised learning",
+        "Unsupervised learning",
+        "Machine learning",
+        "Advanced data mining"
+      ],
+      "projects": []
+    },
+    "information-security-and-integrity": {
+      "title": "Information Security and Integrity",
+      "description": "Studied information security from cryptographic, operational, organizational, and network perspectives. Covered symmetric and asymmetric cryptography, authentication, privacy, security auditing, risk management, network defenses, incident analysis, and security architecture.",
+      "topics": [
+        "Information security",
+        "Symmetric cryptography",
+        "Asymmetric cryptography",
+        "Authentication",
+        "Biometrics",
+        "OWASP",
+        "Security auditing",
+        "Privacy",
+        "Digital identity",
+        "Cyber reputation",
+        "Security risk management",
+        "Security operations",
+        "Network security",
+        "Security devices",
+        "Incident analysis",
+        "Security architecture"
+      ],
+      "projects": []
+    },
+    "modeling-and-simulation": {
+      "title": "Modeling and Simulation",
+      "description": "Applied numerical methods and dynamical-systems theory to model and simulate mathematical systems. Studied numerical root finding, interpolation, integration, Monte Carlo methods, differential equations, stability, bifurcations, and linear and nonlinear dynamical models.",
+      "topics": [
+        "Numerical methods",
+        "Root finding",
+        "Fixed-point iteration",
+        "Newton–Raphson method",
+        "Lagrange interpolation",
+        "Numerical differentiation",
+        "Numerical integration",
+        "Monte Carlo methods",
+        "Ordinary differential equations",
+        "Euler method",
+        "Runge–Kutta methods",
+        "Dynamical systems",
+        "Phase diagrams",
+        "Equilibrium points",
+        "Bifurcation",
+        "Linear systems",
+        "Nonlinear systems",
+        "Jacobian linearization",
+        "Parametric analysis"
+      ],
+      "projects": [
+        "aerial-pursuit-simulation"
+      ]
+    },
+    "application-integration": {
+      "title": "Application Integration",
+      "description": "Currently studying enterprise application architecture and integration. Working with component-based systems, layered architectures, application servers, messaging, web services, REST-based integration, and the development of integrated applications.",
+      "topics": [
+        "Enterprise applications",
+        "Application architecture",
+        "Agile scaling",
+        "Component-based architecture",
+        "Application servers",
+        "Layered architecture",
+        "Application integration",
+        "Integration patterns",
+        "Messaging",
+        "Web services",
+        "REST",
+        "Integrated applications"
+      ],
+      "projects": [
+        "uade-city-app-module-ii-citizen-help-frontend",
+        "uade-city-app-module-ii-citizen-help-backend",
+        "uade-city-app-module-ii-citizen-help-docker-infrastructure"
+      ]
+    },
+    "it-project-evaluation": {
+      "title": "IT Project Evaluation",
+      "description": "Currently developing the financial and economic skills required to evaluate technology projects. Working with financial mathematics, cash-flow modeling, accounting concepts, investment and benefit analysis, rates, terminal value, and capital-market fundamentals.",
+      "topics": [
+        "Project evaluation",
+        "Financial mathematics",
+        "Cash-flow analysis",
+        "Investment analysis",
+        "Benefit analysis",
+        "Financial modeling",
+        "Traditional accounting",
+        "Management accounting",
+        "Financial ratios",
+        "Rates",
+        "Terminal value",
+        "Capital markets",
+        "Project pitching"
+      ],
+      "projects": []
+    },
+    "artificial-intelligence": {
+      "title": "Artificial Intelligence",
+      "description": "Currently studying classical and computational approaches to artificial intelligence. Working with knowledge representation, logic programming, heuristic search, ontologies, neural networks, genetic algorithms, case-based reasoning, and intelligent multi-agent systems.",
+      "topics": [
+        "Artificial intelligence",
+        "Knowledge representation",
+        "Propositional and predicate logic",
+        "Logic programming",
+        "State-space search",
+        "Heuristic search",
+        "Graph search",
+        "Semantic networks",
+        "Ontologies",
+        "Neural networks",
+        "Perceptrons",
+        "Genetic algorithms",
+        "Case-based reasoning",
+        "Intelligent agents",
+        "Multi-agent systems",
+        "BDI architecture",
+        "Game theory",
+        "Nash equilibrium"
+      ],
+      "projects": []
+    },
+    "technology-and-environment": {
+      "title": "Technology and Environment",
+      "description": "Currently examining the environmental and social impact of technological development and the role of engineering in sustainable solutions. Studying resource management, pollution, climate change, sustainable development, electronic waste, environmental regulation, and corporate environmental management.",
+      "topics": [
+        "Technology and sustainability",
+        "Environmental impact",
+        "Natural resource management",
+        "Pollution prevention",
+        "Climate change",
+        "Sustainable development",
+        "Environmental economics",
+        "Environmental technology",
+        "Environmental monitoring",
+        "Electronic waste",
+        "Circular economy",
+        "Environmental legislation",
+        "Corporate environmental management",
+        "Sustainability indicators",
+        "Eco-efficiency",
+        "Environmental responsibility"
+      ],
+      "projects": []
+    },
+    "supervised-professional-practice": {
+      "title": "Supervised Professional Practice",
+      "description": "This course is more of a process in which work hours are logged into the system to show how the courses have helped me in my job.",
+      "topics": [
+        "Professional practice"
+      ],
+      "projects": []
+    },
+    "application-architecture": {
+      "title": "Application Architecture",
+      "description": "TBD",
+      "topics": [
+        "Software architecture"
+      ],
+      "projects": []
+    },
+    "technology-trends": {
+      "title": "Technology Trends",
+      "description": "TBD",
+      "topics": [
+        "TBD"
+      ],
+      "projects": []
+    },
+    "final-engineering-project": {
+      "title": "Final Engineering Project",
+      "description": "TBD",
+      "topics": [
+        "TBD"
+      ],
+      "projects": []
+    },
+    "software-quality": {
+      "title": "Software Quality",
+      "description": "TBD",
+      "topics": [
+        "Software quality"
+      ],
+      "projects": []
+    },
+    "technology-business": {
+      "title": "Technology Business",
+      "description": "TBD",
+      "topics": [
+        "TBD"
+      ],
+      "projects": []
+    },
+    "technology-and-innovation": {
+      "title": "Technology and Innovation",
+      "description": "TBD",
+      "topics": [
+        "TBD"
+      ],
+      "projects": []
+    },
+    "information-technology-law": {
+      "title": "Information Technology Law",
+      "description": "TBD",
+      "topics": [
+        "TBD"
+      ],
+      "projects": []
+    },
+    "bioinformatics": {
+      "title": "Bioinformatics (Elective I)",
+      "description": "Currently applying computational methods to biological data and molecular sequence analysis. Working with biological databases, sequence alignment, protein analysis, structural bioinformatics, next-generation sequencing, genome assembly, gene annotation, comparative genomics, and variant detection.",
+      "topics": [
+        "Bioinformatics",
+        "Linux for bioinformatics",
+        "Biological databases",
+        "GenBank",
+        "Sequence alignment",
+        "Global and local alignment",
+        "Dot plots",
+        "Dynamic programming",
+        "BLAST",
+        "Multiple sequence alignment",
+        "Protein classification",
+        "Protein domains",
+        "Structural bioinformatics",
+        "Homology modeling",
+        "NGS",
+        "Sequencing quality control",
+        "Genome assembly",
+        "Sequence mapping",
+        "Gene prediction",
+        "Structural annotation",
+        "Functional annotation",
+        "Comparative genomics",
+        "SNPs and INDELs"
+      ],
+      "projects": []
+    },
+    "elective-2": {
+      "title": "Elective II — To be selected",
+      "description": "TBD",
+      "topics": [
+        "TBD"
+      ],
+      "projects": []
+    },
+    "elective-3": {
+      "title": "Elective III — To be selected",
+      "description": "TBD",
+      "topics": [
+        "TBD"
+      ],
+      "projects": []
+    }
+  },
+  "courseProjects": {
+    "snake-ii": {
+      "title": "Snake II",
+      "description": "A variant of the popular Snake game, with randomized abilities every time you eat an apple (including a chance of restarting your PC)"
+    },
+    "restaurant-order-app": {
+      "title": "Restaurant Order App",
+      "description": "A restaurant app in which you can select and place orders, which update over time. App requirements changed every month, making the software design critical to implement changes smoothly in the source code."
+    },
+    "dental-practice-management-system-sago": {
+      "title": "Dental practice management system (SAGO)",
+      "description": "Comprehensive healthcare management web application for managing patients, medical records, appointments, treatments, billing, and administrative workflows through a centralized digital platform."
+    },
+    "e-commerce-in-java-s-terminal": {
+      "title": "E-Commerce in Java's Terminal",
+      "description": "An E-commerce app that can be used from the java terminal. It features polyglot persistence, using Cassandra, MongoDB, Neo4j and Redis at the same time to save different data models."
+    },
+    "szafrankus-clothing-backend": {
+      "title": "Szafrankus Clothing (Backend)",
+      "description": "The backend code for the E-commerce website. Built with Spring boot (Java), it features multiple endpoints protected with JWT authentication and RBAC, and access to a MySQL Database"
+    },
+    "szafrankus-clothing-frontend": {
+      "title": "Szafrankus Clothing (Frontend)",
+      "description": "The frontend code for the E-commerce website. Using ReactJS and Vite, the webpage features an outfit builder to check how clothes will look in you."
+    },
+    "automaton-machine-codes": {
+      "title": "Automaton machine codes",
+      "description": "Some automaton machine codes I did during the course."
+    },
+    "tic-tac-toe-mobile-app": {
+      "title": "Tic Tac Toe mobile app",
+      "description": "Native Android Tic-Tac-Toe game built with Java, featuring three difficulty levels and a Minimax-based AI opponent with alpha-beta pruning."
+    },
+    "math-reaction-mobile-app": {
+      "title": "Math Reaction mobile app",
+      "description": "Native Android reaction game built with React Native, featuring configurable difficulty and time limits, ViewModel-based state management, and local score persistence."
+    },
+    "vantage-live-auction-app": {
+      "title": "Vantage (Live Auction App)",
+      "description": "Full-stack mobile auction platform built with React Native and Spring Boot, featuring JWT authentication, MySQL persistence, real-time bidding support, and a REST API."
+    },
+    "aerial-pursuit-simulation": {
+      "title": "Aerial Pursuit Simulation",
+      "description": "A computational model that explores the changing positions and outcome of an aerial pursuit scenario."
+    },
+    "uade-city-app-module-ii-citizen-help-frontend": {
+      "title": "UADE City App (Module II - Citizen Help) (Frontend)",
+      "description": "The frontend of one of the UADE City App module that handles everything related to citizen help requests and complaints. The app we develop is based on Jira Service Management and it's ticket system."
+    },
+    "uade-city-app-module-ii-citizen-help-backend": {
+      "title": "UADE City App (Module II - Citizen Help) (Backend)",
+      "description": "The backend of one of the UADE City App module that handles everything related to citizen help requests and complaints. The app we develop is based on Jira Service Management and it's ticket system."
+    },
+    "uade-city-app-module-ii-citizen-help-docker-infrastructure": {
+      "title": "UADE City App (Module II - Citizen Help) (Docker infrastructure)",
+      "description": "The DevOps infrastructure of one of the UADE City App module that handles everything related to citizen help requests and complaints. The app we develop is based on Jira Service Management and it's ticket system."
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+	"statuses": {
+		"current": "Puesto actual",
+		"previous": "Puesto anterior"
+	},
+
+	"workModels": {
+		"remote": "Remoto",
+		"hybrid": "Híbrido"
+	},
+
+	"labels": {
+		"present": "Actualidad",
+		"period": "{{start}} — {{end}}",
+		"location": "{{location}} · {{workModel}}",
+		"tools": "Herramientas",
+		"skills": "Habilidades"
+	},
+
+	"items": {
+		"operations-intern": {
+			"role": "Pasante de Operaciones",
+			"location": "Buenos Aires, Argentina",
+			"period": "Ago 2026 — Actualidad",
+			"summary": "Analista de operaciones dentro del sector de Financial Services de Globant, brindando soporte a la visibilidad operativa, el reporting y el seguimiento de actividades relacionadas con cuentas y delivery.",
+			"homeSummary": "Brindando soporte al análisis operativo, reporting y actividades de delivery de Financial Services mediante datos precisos, seguimiento de procesos y coordinación con stakeholders.",
+			"points": [
+				"Brindo soporte al análisis operativo y al reporting dentro del sector de Financial Services de Globant, ayudando a proporcionar información clara y oportuna para la toma de decisiones relacionadas con cuentas y delivery.",
+				"Realizo seguimiento de indicadores operativos y de negocio, manteniendo datos precisos y monitoreando actividades que afectan las operaciones de cuentas y proyectos.",
+				"Colaboro en procesos operativos recurrentes vinculados con forecasting, administración de proyectos, capacidad, seguimiento financiero y reporting de KPIs.",
+				"Coordino con distintos stakeholders y equipos internos para realizar seguimiento de requerimientos operativos, identificar bloqueos y mantener el avance de las actividades.",
+				"Analizo procesos y datos operativos para identificar inconsistencias, riesgos y oportunidades de mejora en eficiencia o procesos."
+			],
+			"skills": [
+				"Análisis de operaciones",
+				"Reporting de KPIs",
+				"Seguimiento operativo",
+				"Análisis de datos",
+				"Mejora de procesos",
+				"Coordinación con stakeholders",
+				"Financial Services"
+			],
+			"focus": [
+				{
+					"label": "Industria",
+					"value": "Financial Services"
+				},
+				{
+					"label": "Área",
+					"value": "Operaciones"
+				},
+				{
+					"label": "Modalidad",
+					"value": "Remoto"
+				}
+			]
+		},
+
+		"atlassian-engineer-intern": {
+			"role": "Pasante de Ingeniería Atlassian",
+			"location": "Buenos Aires, Argentina",
+			"period": "Dic 2025 — Jul 2026",
+			"summary": "Brindé soporte técnico y administración sobre entornos Atlassian para Globant, resolviendo solicitudes de clientes, gestionando configuraciones y permisos de plataforma, y desarrollando soluciones de automatización para necesidades operativas y de gobernanza.",
+			"homeSummary": "Administré entornos Atlassian, resolví 199 tickets de soporte técnico y desarrollé automatizaciones en Python para reporting de accesos y flujos de gestión de usuarios.",
+			"points": [
+				"Resolví 199 tickets de soporte técnico dentro de la cola de Technical Help de acuerdo con los SLAs, analizando requerimientos y tomando decisiones técnicas para alcanzar resoluciones efectivas.",
+				"Administré usuarios, roles, grupos, permisos y políticas en plataformas Atlassian mediante User Management.",
+				"Creé y administré proyectos de Jira, sitios de Confluence y configuraciones de plataforma, brindando soporte tanto a la administración diaria como a nuevas implementaciones.",
+				"Analicé, modifiqué y probé automatizaciones y workflows de Jira para resolver requerimientos de clientes con mayor complejidad técnica.",
+				"Trabajé con esquemas, objetos y configuraciones de Assets, realizando análisis y modificaciones para dar soporte a requerimientos de negocio.",
+				"Desarrollé User Stories y colaboré con Atlassian Engineers en mejoras de plataforma, implementaciones y solicitudes de clientes.",
+				"Diseñé y desarrollé una herramienta de automatización en Python para exportar datos de membresía de proyectos de Jira y espacios de Confluence, permitiendo generar reportes precisos de accesos para auditorías, gobernanza y procesos operativos en los que no existía una funcionalidad nativa de exportación.",
+				"Reconstruí una automatización existente en Python para reactivar usuarios desactivados mediante las APIs de Atlassian Directory y Administration, trabajando con el ciclo de vida de gestión de usuarios de Atlassian.",
+				"Creé y mantuve documentación técnica en Confluence, registros operativos en Google Sheets y tutoriales técnicos en video mediante Loom, tanto en inglés como en español.",
+				"Brindé soporte a stakeholders locales e internacionales en inglés y español mediante comunicación asincrónica y llamadas en vivo."
+			],
+			"skills": [
+				"Soporte técnico",
+				"Análisis de requerimientos",
+				"Resolución de incidentes",
+				"Gestión de SLAs",
+				"Administración de usuarios y accesos",
+				"Gestión de permisos",
+				"Administración de Jira",
+				"Administración de Confluence",
+				"Análisis de workflows",
+				"Automatización",
+				"Administración de Assets",
+				"Integración de APIs",
+				"Automatización con Python",
+				"Documentación técnica",
+				"Comunicación con stakeholders",
+				"Comunicación bilingüe"
+			],
+			"focus": [
+				{
+					"label": "Soporte",
+					"value": "199 tickets resueltos"
+				},
+				{
+					"label": "Plataformas",
+					"value": "Jira · Confluence · Assets"
+				},
+				{
+					"label": "Automatización",
+					"value": "Python · APIs de Atlassian"
+				}
+			]
+		}
+	}
+}

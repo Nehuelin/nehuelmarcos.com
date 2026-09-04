@@ -1,0 +1,56 @@
+{
+	"hero": {
+		"location": "Buenos Aires, Argentina",
+		"language": "Inglés C1",
+		"introduction": "Hola, soy Nehuel.",
+		"headline": "Construyo sistemas que hacen el trabajo",
+		"headlineEmphasis": "más simple.",
+		"description": "Estudiante de Ingeniería Informática y pasante de Operaciones en Globant, trabajando en desarrollo backend, automatización con Python, datos y sistemas operativos.",
+		"viewSelectedWork": "Ver proyectos seleccionados",
+		"downloadResume": "Descargar currículum",
+		"getInTouch": "Contactarme",
+		"imageAlt": "Yo en el Centro Espacial Kennedy de la NASA",
+		"imageCaption": "En el Centro Espacial Kennedy de la NASA"
+	},
+	"proof": {
+		"ariaLabel": "Perfil profesional de un vistazo",
+		"currentRole": "Puesto actual",
+		"education": "Educación",
+		"experience": "Experiencia",
+		"languages": "Idiomas"
+	},
+	"featuredWork": {
+		"sectionLabel": "01 / Proyectos seleccionados",
+		"heading": "Sistemas creados para flujos de trabajo reales.",
+		"backendSystem": "Sistema backend",
+		"technologiesAriaLabel": "Tecnologías de {{title}}",
+		"viewProject": "Ver proyecto",
+		"viewAllProjects": "Ver todos los proyectos"
+	},
+	"experience": {
+		"sectionLabel": "02 / Experiencia",
+		"heading": "Experiencia en la intersección entre operaciones y tecnología.",
+		"viewExperienceAriaLabel": "Ver la experiencia de {{role}}",
+		"viewFullExperience": "Ver todas las experiencias"
+	},
+	"toolkit": {
+		"sectionLabel": "03 / Herramientas",
+		"heading": "Un conjunto de herramientas centrado en sistemas frontend, backend y automatización.",
+		"description": "Trabajo con tecnologías que me ayudan a modelar problemas de negocio, conectar sistemas y reemplazar procesos repetitivos con herramientas confiables.",
+		"exploreStack": "Explorar mi stack completo"
+	},
+	"beyondWork": {
+		"sectionLabel": "04 / Más allá del trabajo",
+		"description": "Lejos de la pantalla, llevo más de doce años jugando al básquet y suelo ser la persona que mira hacia arriba cuando pasa un avión.",
+		"more": "Más allá del currículum"
+	},
+	"contact": {
+		"sectionLabel": "05 / Contacto",
+		"heading": "¿Tienes un problema que vale la pena",
+		"headingEmphasis": "simplificar?",
+		"description": "Me interesan la ingeniería frontend y backend, la automatización y las oportunidades donde la tecnología pueda mejorar procesos operativos reales.",
+		"linksAriaLabel": "Enlaces de contacto",
+		"letsTalk": "Hablemos",
+		"github": "GitHub"
+	}
+}

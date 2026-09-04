@@ -1,0 +1,16 @@
+{
+  "interests": {
+    "basketball": {
+      "eyebrow": "En la cancha",
+      "highlight": "Más de 12 años",
+      "title": "Jugar al básquet",
+      "description": "El básquet forma parte de mi vida desde hace más de doce años. Disfruto del ritmo del juego, de compartir la experiencia de formar parte de un equipo y del desafío constante de seguir mejorando."
+    },
+    "aviation": {
+      "eyebrow": "Siempre mirando al cielo",
+      "highlight": "Avgeek",
+      "title": "Fascinado por la aviación",
+      "description": "Siempre me fascinó la aviación: los aviones en sí, los sistemas detrás de cada vuelo y la enorme coordinación necesaria para transportar personas de forma segura por todo el mundo."
+    }
+  }
+}

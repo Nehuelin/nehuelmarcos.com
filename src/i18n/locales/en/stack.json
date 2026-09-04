@@ -1,0 +1,66 @@
+{
+  "groups": {
+    "backend": "Backend & APIs",
+    "frontend-mobile": "Frontend & Mobile",
+    "data": "Data & Persistence",
+    "automation-operations": "Automation & Operations",
+    "practices": "Engineering Practices"
+  },
+  "contexts": {
+    "multiple-projects": "Multiple projects",
+    "professional": "Professional use",
+    "academic": "Academic experience",
+    "developing": "Currently developing"
+  },
+  "technologies": {
+    "java": { "name": "Java", "description": "Used to model object-oriented domains and build maintainable backend and Android applications." },
+    "spring-boot": { "name": "Spring Boot", "description": "Used to build layered REST APIs and persistence-backed backend services." },
+    "javascript-backend": { "name": "JavaScript", "description": "Used across component-based web interfaces, mobile applications and Node.js services." },
+    "node-js": { "name": "Node.js", "description": "Used as the runtime for modular APIs and server-side commerce applications." },
+    "express": { "name": "Express", "description": "Used to organize routes, request handling and middleware in Node.js APIs." },
+    "rest-apis": { "name": "REST APIs", "description": "Used to define service contracts and connect frontend, backend and automation workflows." },
+    "jwt": { "name": "JWT", "description": "Used to protect backend endpoints and support role-aware application flows." },
+    "websockets": { "name": "WebSockets", "description": "Used to deliver live operational events and telemetry to interactive dashboards." },
+    "javascript": { "name": "JavaScript", "description": "Used across component-based web interfaces, mobile applications and Node.js services." },
+    "typescript": { "name": "TypeScript", "description": "Used for typed interactive modeling and simulation work." },
+    "react": { "name": "React", "description": "Used to build data-driven interfaces with reusable components and predictable UI state." },
+    "html": { "name": "HTML", "description": "Used to create semantic, accessible structures for responsive web experiences." },
+    "css": { "name": "CSS", "description": "Used to build responsive layouts and distinctive interface systems without a UI framework." },
+    "react-native": { "name": "React Native", "description": "Used to translate reusable React patterns into touch-first mobile experiences." },
+    "expo": { "name": "Expo", "description": "Used to develop and run React Native applications across mobile environments." },
+    "android": { "name": "Android", "description": "Used to build native Java applications with touch interactions and game-state logic." },
+    "sql": { "name": "SQL", "description": "Used to query, validate and reason about structured operational and application data." },
+    "postgresql": { "name": "PostgreSQL", "description": "Used as relational persistence behind Spring Boot application services." },
+    "mongodb": { "name": "MongoDB", "description": "Used for document persistence in Node.js APIs and polyglot data systems." },
+    "firebase": { "name": "Firebase", "description": "Used for hosted application data and cloud-backed web workflows." },
+    "redis": { "name": "Redis", "description": "Used as the key-value component of a polyglot persistence architecture." },
+    "neo4j": { "name": "Neo4j", "description": "Used to represent relationship-oriented data in a polyglot persistence system." },
+    "cassandra": { "name": "Cassandra", "description": "Used to explore wide-column storage within a multi-database application." },
+    "python": { "name": "Python", "description": "Used to automate validation, reporting and Atlassian administration workflows." },
+    "jira": { "name": "Jira", "description": "Used to administer projects, workflows, permissions and technical support requests." },
+    "confluence": { "name": "Confluence", "description": "Used to administer spaces and create durable technical and operational documentation." },
+    "atlassian-apis": { "name": "Atlassian APIs", "description": "Used to automate user-management, governance and reporting tasks that lack native workflows." },
+    "google-sheets": { "name": "Google Sheets", "description": "Used for operational records, collaborative analysis and recurring reporting." },
+    "microsoft-excel": { "name": "Microsoft Excel", "description": "Used to analyze operational data and support financial and KPI follow-up." },
+    "power-bi": { "name": "Power BI", "description": "Used to support data-driven operational reporting and visibility." },
+    "docker": { "name": "Docker", "description": "Used to package services and coordinate application integration environments." },
+    "git-github": { "name": "Git and GitHub", "description": "Used for version control, collaboration and maintaining project history." },
+    "uml": { "name": "UML", "description": "Used to communicate domain structure, responsibilities and object interactions before implementation." },
+    "design-patterns": { "name": "Design patterns", "description": "Used to keep domain models extensible through explicit, reusable object collaborations." },
+    "layered-architecture": { "name": "Layered architecture", "description": "Used to separate API, business and persistence responsibilities in backend services." },
+    "oop": { "name": "Object-oriented programming", "description": "Used to model behavior and responsibilities in Java domains, games and services." },
+    "api-integration": { "name": "API integration", "description": "Used to connect independent services, interfaces and operational automation reliably." }
+  },
+  "focus": {
+    "java-spring": "Java + Spring Boot",
+    "python-automation": "Python automation",
+    "node-apis": "Node.js APIs",
+    "sql-persistence": "SQL and persistence",
+    "docker-integrations": "Docker and integrations"
+  },
+  "workflows": {
+    "backend": { "title": "Backend systems", "path": "Java → Spring Boot → PostgreSQL → Docker" },
+    "automation": { "title": "Automation tools", "path": "Python → APIs → Validation → Reporting" },
+    "interactive": { "title": "Interactive applications", "path": "React → REST APIs / WebSockets → Responsive interfaces" }
+  }
+}

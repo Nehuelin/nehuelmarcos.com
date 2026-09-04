@@ -1,0 +1,85 @@
+{
+  "statuses": {
+    "current": "Current role",
+    "previous": "Previous role"
+  },
+  "workModels": {
+    "remote": "Remote",
+    "hybrid": "Hybrid"
+  },
+  "labels": {
+    "present": "Present",
+    "period": "{{start}} — {{end}}",
+    "location": "{{location}} · {{workModel}}",
+    "tools": "Tools",
+    "skills": "Skills"
+  },
+  "items": {
+    "operations-intern": {
+      "role": "Operations Intern",
+      "location": "Buenos Aires, Argentina",
+      "summary": "Operations analyst within Globant’s Financial Services sector, supporting operational visibility, reporting and follow-up across account and delivery activities.",
+      "homeSummary": "Supporting operational analysis, reporting and Financial Services delivery activities through accurate data, process follow-up and stakeholder coordination.",
+      "points": [
+        "Support operational analysis and reporting within Globant’s Financial Services sector, helping provide clear and timely information for account and delivery decision-making.",
+        "Track operational and business indicators, maintaining accurate data and following up on activities that affect account and project operations."
+      ],
+      "skills": [
+        "Operations analysis",
+        "KPI reporting",
+        "Operational follow-up",
+        "Data analysis",
+        "Process improvement",
+        "Stakeholder coordination",
+        "Financial Services"
+      ],
+      "focus": [
+        {
+          "label": "Industry",
+          "value": "Financial Services"
+        },
+        {
+          "label": "Area",
+          "value": "Operations"
+        },
+        {
+          "label": "Work model",
+          "value": "{{workModel}}"
+        }
+      ]
+    },
+    "atlassian-engineer-intern": {
+      "role": "Atlassian Engineer Intern",
+      "location": "Buenos Aires, Argentina",
+      "summary": "Provided technical support and administration across Atlassian environments for Globant, resolving client requests, managing platform configurations and permissions, and developing automation solutions for operational and governance needs.",
+      "homeSummary": "Administered Atlassian environments, resolved {{ticketsResolved}} technical-support tickets and developed Python automations for access reporting and user-management workflows.",
+      "points": [
+        "Resolved {{ticketsResolved}} technical support tickets within the Technical Help queue in line with SLAs, analyzing requirements and making technical decisions to reach effective resolutions.",
+        "Administered users, roles, groups, permissions and policies across Atlassian platforms through User Management."
+      ],
+      "skills": [
+        "Technical support",
+        "Requirements analysis",
+        "Incident resolution",
+        "SLA management",
+        "User & access administration",
+        "Python automation",
+        "Technical documentation"
+      ],
+      "focus": [
+        {
+          "label": "Support",
+          "value": "{{ticketsResolved}} tickets resolved"
+        },
+        {
+          "label": "Platforms",
+          "value": "Jira · Confluence · Assets"
+        },
+        {
+          "label": "Automation",
+          "value": "Python · Atlassian APIs"
+        }
+      ]
+    }
+  }
+}
