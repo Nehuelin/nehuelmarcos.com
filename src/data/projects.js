@@ -9,6 +9,10 @@ export const projects = [
     slug: 'robot-live-dashboard',
     title: 'Robot Live Dashboard',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Worked on the display layout, live data showcase and the robot API connections.',
+    ],
     associatedTo: 'Application Integration',
     previewImage: 'robodog.jpeg',
     summary: 'A real-time dashboard for observing robot activity, status and telemetry from a focused web interface.',
@@ -21,6 +25,12 @@ export const projects = [
     slug: 'municipal-help-center-frontend',
     title: 'Municipal Help Center Frontend',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Implemented the Ticket Detail agent view',
+      'Helped to improve the Ticket Inbox page with new features and visuals',
+      'Implemented the register/login pages',
+    ],
     associatedTo: 'Application Integration',
     previewImage: 'atencion-ciudadana.png',
     summary: 'A web application that brings independently developed services together behind one cohesive user experience.',
@@ -33,6 +43,11 @@ export const projects = [
     slug: 'municipal-help-center-backend',
     title: 'Municipal Help Center Backend',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Helped in backend tasks to reduce team workload',
+      'Provided SQL queries to quickly find important data or to modify things in tables',
+    ],
     associatedTo: 'Application Integration',
     previewImage: '',
     summary: 'A backend service for managing citizen requests, complaints and reports across a modular municipal platform.',
@@ -45,12 +60,17 @@ export const projects = [
     slug: 'mobile-auctions',
     title: 'Mobile Auctions',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Implemented the register/login screens, the main dashboard screen, the auction detail screen, the live auction screen and the checkout screen',
+      'Implemented WebSockets in backend for actual live auctions',
+    ],
     associatedTo: 'Mobile Application Development',
     previewImage: 'Vantage.png',
     summary: 'A mobile marketplace experience for browsing auctions, viewing listings and participating from a phone.',
     challenge: 'Translate a multi-step auction flow into an interface that remains clear and comfortable on small screens.',
     solution: 'A mobile-first application organizes discovery, item details and bidding into focused, reusable screens.',
-    stack: ['JavaScript', 'React Native', 'Expo', 'Mobile UI'],
+    stack: ['JavaScript', 'React Native', 'Expo', 'Mobile UI', 'Java', 'Spring Boot'],
     sourceUrl: 'https://github.com/SantiMussi/AppMovilSubastas',
   },
   {
@@ -93,6 +113,10 @@ export const projects = [
     slug: 'aerial-pursuit-simulation',
     title: 'Aerial Pursuit Simulation',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      "Worked on the page's frontend to display the simulated data given by the other teams"
+    ],
     associatedTo: 'Modeling and Simulation',
     previewImage: 'air-pursue-sim.png',
     summary: 'A computational model that explores the changing positions and outcome of an aerial pursuit scenario.',
@@ -105,6 +129,11 @@ export const projects = [
     slug: 'szafrankus-store-frontend',
     title: 'Szafrankus Store Frontend',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Worked on the creator/admin screens',
+      'Improved other screens by giving new designs and adding new features'
+    ],
     associatedTo: 'Interactive Applications',
     previewImage: 'szafrankus-front',
     summary: 'A responsive frontend that turns remote API data into an approachable, interactive browsing experience.',
@@ -117,6 +146,11 @@ export const projects = [
     slug: 'szafrankus-store-backend',
     title: 'Szafrankus Store Backend',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Helped with the building of entities',
+      'Worked on the controllers, services and endpoint testing'
+    ],
     associatedTo: 'Interactive Applications',
     previewImage: '',
     summary: 'The service layer for an interactive application, designed to expose structured data through clear endpoints.',
@@ -129,6 +163,10 @@ export const projects = [
     slug: 'polyglot-persistence-system',
     title: 'Polyglot Persistence E-Commerce',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Worked live alongside my team to build the code'
+    ],
     associatedTo: 'Data Engineering II',
     previewImage: 'bdd2.png',
     summary: 'An order and inventory system that assigns each data concern to the database model best suited to it.',
@@ -141,6 +179,11 @@ export const projects = [
     slug: 'sago-dental-management',
     title: 'SAGO Dental Management',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Built most of the frontend myself',
+      'Connected and hosted Firebase DB',
+    ],
     associatedTo: 'Professional Integration Seminar',
     previewImage: 'sago.png',
     summary: 'A dental practice platform for managing patients, appointments and clinical tools from one web application.',
@@ -153,6 +196,11 @@ export const projects = [
     slug: 'restaurant-ordering-system',
     title: 'Restaurant Ordering System',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Main architech of the program by constantly providing updates on the UML',
+      'Worked live alongside my team to build the code'
+    ],
     associatedTo: 'Object-Oriented Design',
     previewImage: 'ood.png',
     summary: 'A Java domain model for a restaurant workflow spanning menus, orders, discounts, payments, notifications and invoicing.',
@@ -165,6 +213,12 @@ export const projects = [
     slug: 'snake-game',
     title: 'Snake Game',
     category: 'Academic project',
+    teamProject: true,
+    contribution: [
+      'Crafted the inicial snake logic',
+      'Implemented the snake visuals',
+      'Implemented special abilites when eating food'
+    ],
     associatedTo: 'Object-Oriented Programming',
     previewImage: 'snake2.png',
     summary: 'A desktop implementation of Snake with scoring, game-state management and persistent score records.',

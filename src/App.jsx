@@ -173,7 +173,7 @@ function App() {
 
       <footer>
         <a className="wordmark wordmark-small" href="#home">NAM<span>.</span></a>
-        <p>Computer Engineering student building thoughtful software.</p>
+        <p>&copy; 2026 Nehuel Adolfo Marcos </p>
         <div className="footer-links">
           <a href="https://www.linkedin.com/in/nehuel-adolfo-marcos-834020254/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href="https://github.com/Nehuelin" target="_blank" rel="noreferrer">GitHub ↗</a>

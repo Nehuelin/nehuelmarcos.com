@@ -19,6 +19,7 @@ function Projects() {
   const [association, setAssociation] = useState('all')
   const [tool, setTool] = useState('all')
   const [category, setCategory] = useState('all')
+  const [collaboration, setCollaboration] = useState('all')
 
   const associations = useMemo(() => [...new Set(projects.map((project) => project.associatedTo))], [])
   const categories = useMemo(() => [...new Set(projects.map((project) => project.category))].sort(), [])
@@ -27,13 +28,14 @@ function Projects() {
     const normalizedQuery = query.trim().toLowerCase()
 
     return projects.filter((project) => {
-      const searchableText = [project.title, project.category, project.associatedTo, project.summary, ...project.stack].join(' ').toLowerCase()
+      const searchableText = [project.title, project.category, project.associatedTo, project.summary, ...project.stack, ...(project.contribution ?? [])].join(' ').toLowerCase()
       return (!normalizedQuery || searchableText.includes(normalizedQuery))
         && (association === 'all' || project.associatedTo === association)
         && (tool === 'all' || project.stack.includes(tool))
-          && (category === 'all' || project.category === category)
+        && (category === 'all' || project.category === category)
+        && (collaboration === 'all' || (collaboration === 'team' && project.teamProject === true) || (collaboration === 'solo' && !project.teamProject))
     })
-  }, [association, category, query, tool])
+  }, [association, category, collaboration, query, tool])
 
   return (
     <section className="content-page projects-page">
@@ -72,6 +74,14 @@ function Projects() {
             {tools.map((item) => <option value={item} key={item}>{item}</option>)}
           </select>
         </label>
+        <label className="project-field">
+          <span>Collaboration</span>
+          <select value={collaboration} onChange={(event) => setCollaboration(event.target.value)}>
+            <option value="all">All projects</option>
+            <option value="team">Team projects</option>
+            <option value="solo">Solo projects</option>
+          </select>
+        </label>
       </div>
 
       <div className="project-results-heading">
@@ -90,7 +100,7 @@ function Projects() {
               <article key={project.slug}>
               <div className="project-visual">
                 <div className="project-aside">
-                  <span>{String(index + 1).padStart(2, '0')} / {project.category}</span>
+                   <span>{String(index + 1).padStart(2, '0')} / {project.category}{project.teamProject ? ' / Team project' : ''}</span>
                   <p>{associatedCourseUrl ? <a href={associatedCourseUrl}>{project.associatedTo} ↗</a> : project.associatedTo}</p>
                 </div>
                 <ProjectPreview project={project} className="project-card-preview" />

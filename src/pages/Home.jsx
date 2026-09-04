@@ -3,6 +3,7 @@ import { education } from '../data/education'
 import { experiences } from '../data/experiences'
 import { featuredProjectSlugs, projects } from '../data/projects'
 import { skillGroups } from '../data/skills'
+import nasaPhoto from '../assets/images/other/nehuel-nasa.jpg'
 
 const Arrow = ({ direction = '↗' }) => <span aria-hidden="true">{direction}</span>
 
@@ -139,9 +140,14 @@ function Home() {
            <p>Computer Engineering student and Operations Intern at Globant, working across backend development, Python automation, data and operational systems.</p>
           <div className="hero-actions">
             <button type="button" className="text-link" onClick={scrollToWork}>View selected work <Arrow direction="→" /></button>
+            <a className="text-link" href="/resume-ed-0926.pdf" download="Nehuel-Marcos-Resume.pdf">Download résumé <Arrow direction="↓" /></a>
             <a className="text-link" href="#contact">Get in touch <Arrow /></a>
           </div>
         </div>
+        <figure className="hero-photo">
+          <img src={nasaPhoto} alt="Nehuel at NASA's Kennedy Space Center" />
+          <figcaption>At NASA’s Kennedy Space Center</figcaption>
+        </figure>
       </section>
 
       <HomeProofStrip />

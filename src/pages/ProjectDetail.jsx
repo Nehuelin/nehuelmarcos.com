@@ -30,7 +30,10 @@ function ProjectDetail({ slug }) {
     <section className="detail-page content-page">
       <a className="back-link" href="#projects">← Projects</a>
       <div className="project-kicker">
-        <p className="section-label">{project.category}</p>
+        <p className="section-label project-category">
+          <span>{project.category}</span>
+          {project.teamProject && <span className="team-project-label">Team project</span>}
+        </p>
         <p className="section-label">Associated to {associatedCourseUrl ? <a href={associatedCourseUrl}>{project.associatedTo} ↗</a> : project.associatedTo}</p>
       </div>
       <h1>{project.title}<em>.</em></h1>
@@ -48,6 +51,14 @@ function ProjectDetail({ slug }) {
               <p>{project.solution}</p>
             </article>
           </div>
+          {project.contribution?.length > 0 && (
+            <div className="detail-block contribution-block">
+              <p className="section-label">My contribution</p>
+              <ul>
+                {project.contribution.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </div>
+          )}
           <div className="detail-block">
             <p className="section-label">Built with</p>
             <div className="tag-list">
