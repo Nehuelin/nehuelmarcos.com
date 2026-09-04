@@ -1,4 +1,4 @@
-import academicContent from '../i18n/locales/en/academic.json'
+import i18n from '../i18n'
 
 const courseDefinitions = [
   {
@@ -770,15 +770,23 @@ const courseDefinitions = [
 
 export const academicCourses = courseDefinitions.map((course) => ({
   ...course,
-  ...academicContent.courses[course.slug],
-  projects: course.projects.map((project) => ({
-    ...project,
-    ...academicContent.courseProjects[project.id],
-  })),
+  get title() { return i18n.t(`academic:courses.${course.slug}.title`, { defaultValue: course.slug }) },
+  get description() { return i18n.t(`academic:courses.${course.slug}.description`, { defaultValue: '' }) },
+  get topics() { return i18n.t(`academic:courses.${course.slug}.topics`, { returnObjects: true, defaultValue: [] }) },
+  get projects() {
+    return course.projects.map((project) => ({
+      ...project,
+      title: i18n.t(`academic:courseProjects.${project.id}.title`, { defaultValue: project.id }),
+      description: i18n.t(`academic:courseProjects.${project.id}.description`, { defaultValue: '' }),
+    }))
+  },
 }))
 
 export const degree = {
-  ...academicContent.degree,
+  get title() { return i18n.t('academic:degree.title') },
+  get university() { return i18n.t('academic:degree.university') },
+  get period() { return i18n.t('academic:degree.period') },
+  get status() { return i18n.t('academic:degree.status') },
   completed: academicCourses.filter((course) => course.status === 'completed').length,
   total: academicCourses.length,
 }

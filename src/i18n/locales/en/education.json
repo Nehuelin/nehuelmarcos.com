@@ -1,4 +1,34 @@
 {
+  "pageIntro": {
+    "label": "Education",
+    "titleLineOne": "Always",
+    "titleLineTwo": "learning.",
+    "description": "Formal engineering foundations, complemented by practical courses that turn concepts into working software."
+  },
+  "courseHeading": {
+    "label": "Additional coursework",
+    "title": "Courses completed."
+  },
+  "courseList": {
+    "certificateAvailable": "Certificate available"
+  },
+  "detail": {
+    "educationBack": "← Education",
+    "back": "← Education",
+    "notFound": "Education item not found.",
+    "certificate": "Certificate",
+    "completionCredential": "Completion credential",
+    "certificateDescription": "Certificate issued by {{provider}} for {{title}}.",
+    "viewCertificate": "View certificate",
+    "capstoneProject": "Course project",
+    "viewOnGitHub": "View on GitHub",
+    "viewDemo": "View demo",
+    "degreeDetails": "Degree details",
+    "whatIStudied": "What I studied"
+  },
+  "cards": {
+    "viewDetails": "View {{title}} details"
+  },
   "types": {
     "bachelors-degree": "Bachelor’s degree"
   },
@@ -38,7 +68,7 @@
     "ai-automation": { "title": "AI Automation", "topics": ["AI automation and autonomous agents with n8n", "Agentic workflows and ReAct reasoning", "System prompt design and LLM selection", "Tool calling, guardrails, and human-in-the-loop workflows", "Multi-agent systems and specialized agents", "Manager-Worker and Planner-Executor architectures", "Sub-workflows and modular agent design", "Memory, context, and persistence", "Semantic search and shared agent memory", "Webhooks and third-party integrations", "RAG and document knowledge bases with LlamaCloud", "Voice AI with Whisper and ElevenLabs", "Industry-specific agentic workflows", "Automated evaluation and AI-as-a-Judge", "Prompt evaluation and continuous improvement", "AI governance, security, and privacy", "Token cost management and optimization", "Observability, logging, and agent auditing", "Production-ready agentic system design"] },
     "backend-i": { "title": "Backend I - Node.js, APIs & Databases", "topics": ["Node.js and server-side JavaScript", "Asynchronous programming", "REST APIs and HTTP", "Express.js and routing", "Controllers and request handling", "Validation and centralized error handling", "Handlebars and server-side rendering", "WebSockets and Socket.IO", "MongoDB and NoSQL data modeling", "CRUD operations", "Mongoose schemas, models, and validation", "Document relationships and population", "Pagination, filtering, and sorting", "MongoDB query optimization", "Data access with DAO patterns", "Environment configuration with dotenv"] },
     "backend-ii": { "title": "Backend II - Design & Architecture", "topics": ["Layered backend architecture", "Controllers, services, repositories, and DAOs", "DTOs and separation of concerns", "Dependency injection and decoupling", "JWT authentication and secure cookies", "Passport.js and OAuth", "Password hashing with bcrypt", "Role-based access control (RBAC)", "Authorization and protected routes", "Business rules and domain validation", "Centralized error handling", "MongoDB and Mongoose", "REST API design", "Secure and maintainable backend development"] },
-    "backend": { "title": "Backend III — Testing & Scalability", "topics": ["TBD"] }
+    "backend-iii": { "title": "Backend III — Testing & Scalability", "topics": ["TBD"] }
   },
   "projects": {
     "react-ecommerce": { "title": "React E-Commerce", "description": "E-commerce SPA built with React, React Router, Context API, and Firebase, featuring product browsing, product details, cart management, and checkout." },

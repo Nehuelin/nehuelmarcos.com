@@ -1,4 +1,4 @@
-import projectContent from '../i18n/locales/en/projects.json'
+import i18n from '../i18n'
 
 export const featuredProjectSlugs = [
   'jira-people-report-generator',
@@ -32,7 +32,11 @@ const projectDefinitions = [
 
 export const projects = projectDefinitions.map((project) => ({
   ...project,
-  category: projectContent.categories[project.category],
-  associatedTo: projectContent.associations[project.associatedTo],
-  ...projectContent.items[project.slug],
+  get category() { return i18n.t(`projects:categories.${project.category}`) },
+  get associatedTo() { return i18n.t(`projects:associations.${project.associatedTo}`) },
+  get title() { return i18n.t(`projects:items.${project.slug}.title`) },
+  get summary() { return i18n.t(`projects:items.${project.slug}.summary`) },
+  get challenge() { return i18n.t(`projects:items.${project.slug}.challenge`) },
+  get solution() { return i18n.t(`projects:items.${project.slug}.solution`) },
+  get contribution() { return i18n.t(`projects:items.${project.slug}.contribution`, { returnObjects: true, defaultValue: [] }) },
 }))

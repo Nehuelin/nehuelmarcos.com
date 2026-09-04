@@ -1,4 +1,17 @@
 {
+  "pageIntro": {
+    "label": "Stack",
+    "titleLineOne": "Tools I use",
+    "titleLineTwo": "to build.",
+    "description": "A practical toolkit that keeps evolving with every problem I solve."
+  },
+  "focusSection": {
+    "label": "Current focus",
+    "heading": "Backend development, process automation and data-driven operational tools."
+  },
+  "group": {
+    "logoAriaLabel": "{{title}} tools with logos"
+  },
   "groups": {
     "backend": "Backend & APIs",
     "frontend-mobile": "Frontend & Mobile",
@@ -62,5 +75,14 @@
     "backend": { "title": "Backend systems", "path": "Java → Spring Boot → PostgreSQL → Docker" },
     "automation": { "title": "Automation tools", "path": "Python → APIs → Validation → Reporting" },
     "interactive": { "title": "Interactive applications", "path": "React → REST APIs / WebSockets → Responsive interfaces" }
+  },
+  "detail": {
+    "close": "Close",
+    "closeAriaLabel": "Close {{name}} details",
+    "relatedProjects": "Related projects",
+    "noProjects": "No directly associated project documented yet.",
+    "professionalExperience": "Professional experience",
+    "relatedEducation": "Related education",
+    "academicJourney": "Academic journey"
   }
 }

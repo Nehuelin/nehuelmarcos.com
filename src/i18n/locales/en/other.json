@@ -1,4 +1,10 @@
 {
+  "pageIntro": {
+    "label": "Other",
+    "titleLineOne": "Things that",
+    "titleLineTwo": "make me, me.",
+    "description": "Not everything worth knowing belongs on a résumé. These are a few things that have shaped who I am beyond work and university."
+  },
   "interests": {
     "basketball": {
       "eyebrow": "On the court",

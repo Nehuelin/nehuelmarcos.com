@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { projects } from '../data/projects'
 import { courses } from '../data/education'
 import { academicCourses } from '../data/academicCourses'
@@ -13,13 +14,14 @@ function getAssociatedCourse(association) {
 }
 
 function ProjectDetail({ slug }) {
+  const { t } = useTranslation('projects')
   const project = projects.find((item) => item.slug === slug)
   
   if (!project) {
     return (
       <section className="content-page">
-        <h1>Project not found.</h1>
-        <a href="#projects">← Back</a>
+        <h1>{t('detail.notFound')}</h1>
+        <a href="#projects">{t('detail.back')}</a>
       </section>
     )
   }
@@ -28,13 +30,13 @@ function ProjectDetail({ slug }) {
 
   return (
     <section className="detail-page content-page">
-      <a className="back-link" href="#projects">← Projects</a>
+      <a className="back-link" href="#projects">{t('detail.projectsBack')}</a>
       <div className="project-kicker">
         <p className="section-label project-category">
           <span>{project.category}</span>
-          {project.teamProject && <span className="team-project-label">Team project</span>}
+          {project.teamProject && <span className="team-project-label">{t('detail.teamProject')}</span>}
         </p>
-        <p className="section-label">Associated to {associatedCourseUrl ? <a href={associatedCourseUrl}>{project.associatedTo} ↗</a> : project.associatedTo}</p>
+        <p className="section-label">{t('detail.associatedTo')} {associatedCourseUrl ? <a href={associatedCourseUrl}>{project.associatedTo} ↗</a> : project.associatedTo}</p>
       </div>
       <h1>{project.title}<em>.</em></h1>
       <div className={`project-detail-layout ${project.previewImage ? '' : 'without-preview'}`}>
@@ -43,24 +45,24 @@ function ProjectDetail({ slug }) {
           <p className="detail-lede">{project.summary}</p>
           <div className="detail-columns">
             <article>
-              <p className="section-label">The challenge</p>
+              <p className="section-label">{t('detail.challenge')}</p>
               <p>{project.challenge}</p>
             </article>
             <article>
-              <p className="section-label">The solution</p>
+              <p className="section-label">{t('detail.solution')}</p>
               <p>{project.solution}</p>
             </article>
           </div>
           {project.contribution?.length > 0 && (
             <div className="detail-block contribution-block">
-              <p className="section-label">My contribution</p>
+              <p className="section-label">{t('detail.contribution')}</p>
               <ul>
                 {project.contribution.map((item) => <li key={item}>{item}</li>)}
               </ul>
             </div>
           )}
           <div className="detail-block">
-            <p className="section-label">Built with</p>
+            <p className="section-label">{t('detail.builtWith')}</p>
             <div className="tag-list">
               {project.stack.map((item) => 
                 <span key={item}>{item}</span>
@@ -70,8 +72,8 @@ function ProjectDetail({ slug }) {
         </div>
       </div>
       <div className="project-source">
-        <p className="section-label">Explore the work</p>
-        <a className="text-link" href={project.sourceUrl} target="_blank" rel="noreferrer">View source on GitHub <span>↗</span></a>
+        <p className="section-label">{t('detail.exploreWork')}</p>
+        <a className="text-link" href={project.sourceUrl} target="_blank" rel="noreferrer">{t('detail.viewSource')} <span>↗</span></a>
       </div>
     </section>
   )

@@ -1,12 +1,16 @@
-function Contact() { 
+import { useTranslation } from 'react-i18next'
+
+function Contact() {
+  const { t } = useTranslation('translation')
+
   return (
-  <section className="contact-page">
-    <p className="section-label">05 / Contact</p>
-    <h1>Have something<br />in mind? <em>Let’s talk.</em></h1>
-    <p>I’m always happy to meet new people, discuss an opportunity or hear about an interesting idea.</p>
-    <a href="mailto:nehuelmarcos2005@gmail.com">nehuelmarcos2005@gmail.com <span>↗</span></a>
-  </section>
-  ) 
+    <section className="contact-page">
+      <p className="section-label">{t('contact.label')}</p>
+      <h1>{t('contact.headingLineOne')}<br />{t('contact.headingLineTwo')} <em>{t('contact.headingEmphasis')}</em></h1>
+      <p>{t('contact.description')}</p>
+      <a href="mailto:nehuelmarcos2005@gmail.com">nehuelmarcos2005@gmail.com <span>↗</span></a>
+    </section>
+  )
 }
 
 export default Contact;

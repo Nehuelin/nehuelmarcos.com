@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import CourseStatusBadge from '../components/academic/CourseStatusBadge'
 import { findAcademicCourse, getUnlockedCourses } from '../data/academicCourses'
 import { projects } from '../data/projects'
@@ -9,9 +10,10 @@ const List = ({ items = [], empty = 'Details ready to be added in academicCourse
 }
 
 export default function AcademicCourseDetail({ slug }) {
+  const { t } = useTranslation('academic')
   const course = findAcademicCourse(slug)
 
-  if (!course) return <section className="content-page"><h1>Course not found.</h1><a href="#education/computer-engineering">← Academic journey</a></section>
+  if (!course) return <section className="content-page"><h1>{t('detail.notFound')}</h1><a href="#education/computer-engineering">{t('detail.back')}</a></section>
 
   const topics = Array.isArray(course.topics) ? course.topics : []
   const technologies = Array.isArray(course.technologies) ? course.technologies : []
@@ -38,42 +40,42 @@ export default function AcademicCourseDetail({ slug }) {
 
   return (
     <section className="detail-page content-page academic-detail">
-      <a className="back-link" href="#education/computer-engineering">← Academic journey</a>
+      <a className="back-link" href="#education/computer-engineering">{t('detail.back')}</a>
       <div className="academic-detail-kicker">
-        <p className="section-label">Year {course.year}{course.semester ? ` · Semester ${course.semester}` : ''}</p>
+        <p className="section-label">{t('detail.year', { year: course.year, semester: course.semester })}{course.semester ? ` · ${t('detail.semester', { semester: course.semester })}` : ''}</p>
         <CourseStatusBadge status={course.status} />
       </div>
       <h1>{course.title}<em>.</em></h1>
       <p className="detail-lede">{course.description}</p>
       <div className="detail-block">
-        <p className="section-label">Main topics</p>
+        <p className="section-label">{t('detail.mainTopics')}</p>
         <List items={topics} />
       </div>
       <div className="detail-block">
-        <p className="section-label">Technologies & tools</p>
+        <p className="section-label">{t('detail.technologies')}</p>
         <div className="academic-detail-tags">
           {technologies.length ? technologies.map((item) => 
-            <span key={item}>{item}</span>) : <p className="academic-empty">No technologies used</p>
+            <span key={item}>{item}</span>) : <p className="academic-empty">{t('detail.noTechnologies')}</p>
           }
         </div>
       </div>
       <div className="detail-block">
-        <p className="section-label">Learning path</p>
+        <p className="section-label">{t('detail.learningPath')}</p>
         <div className="relation-columns">
           <div>
-            <h2>Prerequisites</h2>
-            {prerequisites.length ? prerequisites : <p>None listed</p>}
+            <h2>{t('detail.prerequisites')}</h2>
+            {prerequisites.length ? prerequisites : <p>{t('detail.noneListed')}</p>}
           </div>
           <div>
-            <h2>Unlocks</h2>
+            <h2>{t('detail.unlocks')}</h2>
             {unlocked.length ? unlocked.map((item) => 
-            <a key={item.slug} href={`#education/computer-engineering/${item.slug}`}>{item.title} ↗</a>) : <p>None listed</p>
+            <a key={item.slug} href={`#education/computer-engineering/${item.slug}`}>{item.title} ↗</a>) : <p>{t('detail.noneListed')}</p>
             }
           </div>
         </div>
       </div>
       <div className="detail-block">
-        <p className="section-label">Related projects</p>
+        <p className="section-label">{t('detail.relatedProjects')}</p>
         <div>{relatedProjects.length ? relatedProjects.map((project) => 
           <article className={`related-project ${projects.find((item) => item.sourceUrl === project.url)?.previewImage ? 'has-preview' : 'without-preview'}`} key={project.title}>
             <ProjectPreview project={projects.find((item) => item.sourceUrl === project.url)} className="related-project-preview" />
@@ -83,10 +85,10 @@ export default function AcademicCourseDetail({ slug }) {
               <div className="academic-tags">
                 {project.technologies?.map((item) => <span key={item}>{item}</span>)}
               </div>
-              <a className="text-link" href={project.url} target="_blank" rel="noreferrer">View project ↗</a>
+              <a className="text-link" href={project.url} target="_blank" rel="noreferrer">{t('detail.viewProject')} ↗</a>
             </div>
           </article>
-          ) : <p className="academic-empty">No related project has been added.</p>}
+          ) : <p className="academic-empty">{t('detail.noRelatedProjects')}</p>}
         </div>
       </div>
     </section>

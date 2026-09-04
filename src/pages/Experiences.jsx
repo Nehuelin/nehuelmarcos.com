@@ -1,9 +1,11 @@
 import { useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import PageIntro from '../components/ui/PageIntro'
 import { experiences } from '../data/experiences'
 import globantLogo from '../assets/images/entity-logos//globant-logo.png'
 
 function Experiences() {
+  const { t } = useTranslation('experiences')
   const [query, setQuery] = useState('')
   const [status, setStatus] = useState('all')
   const [tool, setTool] = useState('all')
@@ -28,38 +30,38 @@ function Experiences() {
 
   return (
     <section className="content-page experience-page">
-      <PageIntro number="02" label="Experience" title={<>Where I’ve<br />been working.</>}>
-        Building reliable systems at the intersection of platform operations, technical support and automation.
+      <PageIntro number="02" label={t('pageIntro.label')} title={<>{t('pageIntro.titleLineOne')}<br />{t('pageIntro.titleLineTwo')}</>}>
+        {t('pageIntro.description')}
       </PageIntro>
-      <div className="experience-filters" aria-label="Experience filter controls">
+      <div className="experience-filters" aria-label={t('filters.ariaLabel')}>
         <label className="experience-field experience-search">
-          <span>Search</span>
-          <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Role, skill, tool, company..." />
+          <span>{t('filters.searchLabel')}</span>
+          <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t('filters.searchPlaceholder')} />
         </label>
         <label className="experience-field">
-          <span>Status</span>
+          <span>{t('filters.statusLabel')}</span>
           <select value={status} onChange={(event) => setStatus(event.target.value)}>
-            <option value="all">All statuses</option>
+            <option value="all">{t('filters.statusAll')}</option>
             {[...new Set(experiences.map((item) => item.status))].map((item) => <option value={item} key={item}>{item}</option>)}
           </select>
         </label>
         <label className="experience-field">
-          <span>Tool</span>
+          <span>{t('filters.toolLabel')}</span>
           <select value={tool} onChange={(event) => setTool(event.target.value)}>
-            <option value="all">All tools</option>
+            <option value="all">{t('filters.toolAll')}</option>
             {availableTools.map((item) => <option value={item} key={item}>{item}</option>)}
           </select>
         </label>
         <label className="experience-field">
-          <span>Skill</span>
+          <span>{t('filters.skillLabel')}</span>
           <select value={skill} onChange={(event) => setSkill(event.target.value)}>
-            <option value="all">All skills</option>
+            <option value="all">{t('filters.skillAll')}</option>
             {availableSkills.map((item) => <option value={item} key={item}>{item}</option>)}
           </select>
         </label>
       </div>
       {filteredExperiences.length === 0 ? (
-        <p className="experience-empty">No experiences match this filter combination. Try widening the search or clearing a filter.</p>
+        <p className="experience-empty">{t('filters.empty')}</p>
       ) : null}
       <div className="experience-feature">
         {filteredExperiences.map((item, index) => (
@@ -73,20 +75,20 @@ function Experiences() {
               <p className="section-label">{item.company} · {item.location}</p>
               <h2>{item.role}</h2>
               <p>{item.summary}</p>
-              <div className="experience-tags" aria-label={`${item.role} key skills`}>
+              <div className="experience-tags" aria-label={t('cards.skillsAriaLabel', { role: item.role })}>
                 {item.skills.slice(0, 4).map((skill) => <span key={skill}>{skill}</span>)}
               </div> 
             </div>
-          <a className="round-link" href={`#experience/${item.slug}`} aria-label={`View ${item.role} details`}>↗</a>
+          <a className="round-link" href={`#experience/${item.slug}`} aria-label={t('cards.viewDetails', { role: item.role })}>↗</a>
           </article>
         ))}
       </div>
 
       <div className="experience-toolkit-heading">
-        <p className="section-label">Toolkit</p>
+        <p className="section-label">{t('toolkit.label')}</p>
         <div>
-          <h2>What I work with.</h2>
-          <p>Platforms and technologies I use to support teams, understand systems and remove repetitive work.</p>
+          <h2>{t('toolkit.title')}</h2>
+          <p>{t('toolkit.description')}</p>
         </div>
       </div>
       <div className="experience-toolkit">

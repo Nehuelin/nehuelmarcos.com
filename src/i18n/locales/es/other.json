@@ -1,4 +1,10 @@
 {
+  "pageIntro": {
+    "label": "Otros",
+    "titleLineOne": "Cosas que",
+    "titleLineTwo": "me hacen ser yo.",
+    "description": "No todo lo valioso se queda en un currículum. Estas son algunas cosas que me han definido más allá del trabajo y la universidad."
+  },
   "interests": {
     "basketball": {
       "eyebrow": "En la cancha",

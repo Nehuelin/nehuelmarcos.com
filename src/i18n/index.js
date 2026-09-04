@@ -16,17 +16,19 @@ import educationEn from './locales/en/education.json'
 import educationEs from './locales/es/education.json'
 import experiencesEn from './locales/en/experiences.json'
 import experiencesEs from './locales/es/experiences.json'
+import otherEn from './locales/en/other.json'
+import otherEs from './locales/es/other.json'
 
 const resources = {
-  en: { translation: commonEn, home: homeEn, about: aboutEn, projects: projectsEn, stack: stackEn, academic: academicEn, education: educationEn, experiences: experiencesEn },
-  es: { translation: commonEs, home: homeEs, about: aboutEs, projects: projectsEs, stack: stackEs, academic: academicEs, education: educationEs, experiences: experiencesEs },
+  en: { translation: commonEn, home: homeEn, about: aboutEn, projects: projectsEn, stack: stackEn, academic: academicEn, education: educationEn, experiences: experiencesEn, other: otherEn },
+  es: { translation: commonEs, home: homeEs, about: aboutEs, projects: projectsEs, stack: stackEs, academic: academicEs, education: educationEs, experiences: experiencesEs, other: otherEs },
 }
 
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en',
+    lng: window.localStorage.getItem('language') || (navigator.language.startsWith('es') ? 'es' : 'en'),
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,

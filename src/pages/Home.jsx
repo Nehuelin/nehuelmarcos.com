@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import ProjectPreview from '../components/ui/ProjectPreview'
 import { education } from '../data/education'
 import { experiences } from '../data/experiences'
@@ -17,17 +18,18 @@ const toolkit = toolkitIds
   .filter(Boolean)
 
 function HomeProofStrip() {
+  const { t } = useTranslation('home')
   const degree = education.find((item) => item.slug === 'computer-engineering')
-  const currentRole = experiences.find((item) => item.status === 'Current role')
+  const currentRole = experiences.find((item) => item.statusCode === 'current')
   const facts = [
-    ['Current role', `${currentRole.role} · ${currentRole.company}`],
-    ['Education', `${degree.title} · UADE`],
-    ['Experience', 'Operations · Atlassian · Automation'],
-    ['Languages', 'Spanish · English C1'],
+    [t('proof.currentRole'), `${currentRole.role} · ${currentRole.company}`],
+    [t('proof.education'), `${degree.title} · UADE`],
+    [t('proof.experience'), t('proof.experienceValue')],
+    [t('proof.languages'), t('proof.languagesValue')],
   ]
 
   return (
-    <section className="home-proof" aria-label="Professional profile at a glance">
+    <section className="home-proof" aria-label={t('proof.ariaLabel')}>
       {facts.map(([label, value]) => (
         <div key={label}><span>{label}</span><strong>{value}</strong></div>
       ))}
@@ -36,11 +38,12 @@ function HomeProofStrip() {
 }
 
 function FeaturedProjects() {
+  const { t } = useTranslation('home')
   return (
     <section className="home-section featured-work" id="selected-work">
       <div className="home-section-heading">
-        <p className="section-label">01 / Selected work</p>
-        <h2>Systems built for real workflows.</h2>
+        <p className="section-label">{t('featuredWork.sectionLabel')}</p>
+        <h2>{t('featuredWork.heading')}</h2>
       </div>
       <div className="featured-projects">
         {featuredProjects.map((project, index) => (
@@ -50,7 +53,7 @@ function FeaturedProjects() {
               <p>{project.category}<br />{project.associatedTo}</p>
             </div>
             <div className="featured-project-visual" aria-hidden={!project.previewImage}>
-              {project.previewImage ? <ProjectPreview project={project} /> : <span>Backend<br />system</span>}
+              {project.previewImage ? <ProjectPreview project={project} /> : <span>{t('featuredWork.backendSystem')}<br /></span>}
             </div>
             <div className="featured-project-copy">
               <h3><a href={`#projects/${project.slug}`}>{project.title}</a></h3>
@@ -58,22 +61,23 @@ function FeaturedProjects() {
               <div className="home-tags" aria-label={`${project.title} technologies`}>
                 {project.stack.slice(0, 5).map((technology) => <span key={technology}>{technology}</span>)}
               </div>
-              <a className="text-link" href={`#projects/${project.slug}`}>View project <Arrow /></a>
+              <a className="text-link" href={`#projects/${project.slug}`}>{t('featuredWork.viewProject')} <Arrow /></a>
             </div>
           </article>
         ))}
       </div>
-      <a className="text-link home-more-link" href="#projects">View all projects <Arrow direction="→" /></a>
+      <a className="text-link home-more-link" href="#projects">{t('featuredWork.viewAllProjects')} <Arrow direction="→" /></a>
     </section>
   )
 }
 
 function ExperienceSnapshot() {
+  const { t } = useTranslation('home')
   return (
     <section className="home-section home-experience">
       <div className="home-section-heading">
-        <p className="section-label">02 / Experience</p>
-        <h2>Experience at the intersection of operations and technology.</h2>
+        <p className="section-label">{t('experience.sectionLabel')}</p>
+        <h2>{t('experience.heading')}</h2>
       </div>
       <div className="home-role-list">
         {experiences.map((experience) => {
@@ -91,42 +95,45 @@ function ExperienceSnapshot() {
           )
         })}
       </div>
-      <a className="text-link home-more-link" href="#experience">View full experience <Arrow direction="→" /></a>
+      <a className="text-link home-more-link" href="#experience">{t('experience.viewFullExperience')} <Arrow direction="→" /></a>
     </section>
   )
 }
 
 function HomeToolkit() {
+  const { t } = useTranslation('home')
   return (
     <section className="home-section home-toolkit">
       <div className="home-section-heading">
-        <p className="section-label">03 / Toolkit</p>
+        <p className="section-label">{t('toolkit.sectionLabel')}</p>
         <div>
-          <h2>A toolkit built around backend systems and automation.</h2>
-          <p>I work with technologies that help me model business problems, connect systems and replace repetitive processes with dependable tools.</p>
+          <h2>{t('toolkit.heading')}</h2>
+          <p>{t('toolkit.description')}</p>
         </div>
       </div>
       <ul>{toolkit.map((skill, index) => <li key={skill.id}><span>0{index + 1}</span>{skill.name}</li>)}</ul>
-      <a className="text-link home-more-link" href="#stack">Explore my complete stack <Arrow direction="→" /></a>
+      <a className="text-link home-more-link" href="#stack">{t('toolkit.exploreStack')} <Arrow direction="→" /></a>
     </section>
   )
 }
 
 function HomeContact() {
+  const { t } = useTranslation('home')
   return (
     <section className="home-contact">
-      <p className="section-label">05 / Contact</p>
-      <h2>Have a problem worth <em>simplifying?</em></h2>
-      <p>I’m interested in backend engineering, automation and opportunities where technology can improve real operational processes.</p>
-      <nav aria-label="Contact links">
-        <a href="#contact">Let’s talk <Arrow /></a>
-        <a href="https://github.com/Nehuelin" target="_blank" rel="noreferrer">GitHub <Arrow /></a>
+      <p className="section-label">{t('contact.sectionLabel')}</p>
+      <h2>{t('contact.heading')} <em>{t('contact.headingEmphasis')}</em></h2>
+      <p>{t('contact.description')}</p>
+      <nav aria-label={t('contact.linksAriaLabel')}>
+        <a href="#contact">{t('contact.letsTalk')} <Arrow /></a>
+        <a href="https://github.com/Nehuelin" target="_blank" rel="noreferrer">{t('contact.github')} <Arrow /></a>
       </nav>
     </section>
   )
 }
 
 function Home() {
+  const { t } = useTranslation('home')
   const scrollToWork = () => document.getElementById('selected-work')?.scrollIntoView({
     behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
   })
@@ -134,19 +141,19 @@ function Home() {
   return (
     <>
       <section className="hero-section">
-        <div className="eyebrow"><i /> Buenos Aires, Argentina · English C1 <span>---</span></div>
-        <h1>Hi, I’m Nehuel.<br />I build systems that make work <em>simpler.</em></h1>
+        <div className="eyebrow"><i /> {t('hero.location')} · {t('hero.language')} <span>---</span></div>
+        <h1>{t('hero.introduction')}<br />{t('hero.headline')} <em>{t('hero.headlineEmphasis')}</em></h1>
         <div className="hero-bottom">
-           <p>Computer Engineering student and Operations Intern at Globant, working across backend development, Python automation, data and operational systems.</p>
+          <p>{t('hero.description')}</p>
           <div className="hero-actions">
-            <button type="button" className="text-link" onClick={scrollToWork}>View selected work <Arrow direction="→" /></button>
-            <a className="text-link" href="/resume-ed-0926.pdf" download="Nehuel-Marcos-Resume.pdf">Download résumé <Arrow direction="↓" /></a>
-            <a className="text-link" href="#contact">Get in touch <Arrow /></a>
+            <button type="button" className="text-link" onClick={scrollToWork}>{t('hero.viewSelectedWork')} <Arrow direction="→" /></button>
+            <a className="text-link" href="/resume-ed-0926.pdf" download="Nehuel-Marcos-Resume.pdf">{t('hero.downloadResume')} <Arrow direction="↓" /></a>
+            <a className="text-link" href="#contact">{t('hero.getInTouch')} <Arrow /></a>
           </div>
         </div>
         <figure className="hero-photo">
-          <img src={nasaPhoto} alt="Nehuel at NASA's Kennedy Space Center" />
-          <figcaption>At NASA’s Kennedy Space Center</figcaption>
+          <img src={nasaPhoto} alt={t('hero.imageAlt')} />
+          <figcaption>{t('hero.imageCaption')}</figcaption>
         </figure>
       </section>
 
@@ -155,10 +162,10 @@ function Home() {
       <ExperienceSnapshot />
       <HomeToolkit />
       <section className="home-personal">
-        <p className="section-label">04 / Beyond work</p>
+        <p className="section-label">{t('beyondWork.sectionLabel')}</p>
         <div>
-          <p>Away from the screen, I’ve spent more than twelve years playing basketball—and I’m usually the person looking up when an aircraft passes overhead.</p>
-          <a className="text-link" href="#other">More beyond the résumé <Arrow direction="→" /></a>
+          <p>{t('beyondWork.description')}</p>
+          <a className="text-link" href="#other">{t('beyondWork.more')} <Arrow direction="→" /></a>
         </div>
       </section>
       <HomeContact />

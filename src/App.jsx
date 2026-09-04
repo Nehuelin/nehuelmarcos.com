@@ -17,7 +17,8 @@ import { experiences } from './data/experiences'
 import { projects } from './data/projects'
 import { courses } from './data/education'
 import { academicCourses } from './data/academicCourses'
-import { getPageMetadata } from './utils/pageMetadata' 
+import { getPageMetadata } from './utils/pageMetadata'
+import { useTranslation } from 'react-i18next' 
 
 function NotFound() {
   const goBack = () => {
@@ -68,6 +69,7 @@ function PageContent({ page }) {
 }
 
 function App() {
+  const { t, i18n } = useTranslation()
   const getPage = () => window.location.hash.slice(1) || 'home'
   const getInitialTheme = () => {
     const savedTheme = window.localStorage.getItem('theme')
@@ -79,6 +81,13 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [theme, setTheme] = useState(getInitialTheme)
   const shouldScrollToTop = useRef(false)
+  const language = i18n.resolvedLanguage === 'es' ? 'es' : 'en'
+
+  const toggleLanguage = () => {
+    const nextLanguage = language === 'en' ? 'es' : 'en'
+    window.localStorage.setItem('language', nextLanguage)
+    i18n.changeLanguage(nextLanguage)
+  }
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme
@@ -137,33 +146,34 @@ function App() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Nehuel Marcos, home">
+        <a className="wordmark" href="#home" aria-label={t('navigation.homeAriaLabel')}>
           NAM<span>.</span>
         </a>
         <button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen((open) => !open)}>
-          <span>{menuOpen ? 'Close' : 'Menu'}</span><i aria-hidden="true" />
+          <span>{menuOpen ? t('navigation.close') : t('navigation.menu')}</span><i aria-hidden="true" />
         </button>
-        <nav id="primary-navigation" className={menuOpen ? 'is-open' : ''} aria-label="Primary navigation" onClick={() => setMenuOpen(false)}>
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#stack">Stack</a>
-          <a href="#other">Other</a>
-          <a className="mobile-contact-link" href="#contact">Contact</a>
+        <nav id="primary-navigation" className={menuOpen ? 'is-open' : ''} aria-label={t('navigation.primaryNavigation')} onClick={() => setMenuOpen(false)}>
+          <a href="#about">{t('navigation.about')}</a>
+          <a href="#education">{t('navigation.education')}</a>
+          <a href="#experience">{t('navigation.experience')}</a>
+          <a href="#projects">{t('navigation.projects')}</a>
+          <a href="#stack">{t('navigation.stack')}</a>
+          <a href="#other">{t('navigation.other')}</a>
+          <a className="mobile-contact-link" href="#contact">{t('navigation.contact')}</a>
         </nav>
         <div className="header-actions">
           <button
             className="theme-toggle"
             type="button"
-            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            aria-label={t(theme === 'dark' ? 'navigation.switchToLightMode' : 'navigation.switchToDarkMode')}
+            title={t(theme === 'dark' ? 'navigation.switchToLightMode' : 'navigation.switchToDarkMode')}
             onClick={() => setTheme((currentTheme) => currentTheme === 'dark' ? 'light' : 'dark')}
           >
             <span aria-hidden="true">{theme === 'dark' ? '☀' : '☾'}</span>
-            <span className="theme-label">{theme === 'dark' ? 'Light' : 'Dark'}</span>
+            <span className="theme-label">{t(theme === 'dark' ? 'navigation.light' : 'navigation.dark')}</span>
           </button>
-          <a className="contact-link" href="#contact">Let's talk <span>↗</span></a>
+          <button className="language-toggle" type="button" onClick={toggleLanguage} aria-label={language === 'en' ? 'Cambiar idioma a español' : 'Switch language to English'}>{language === 'en' ? 'ES' : 'EN'}</button>
+          <a className="contact-link" href="#contact">{t('navigation.letsTalk')} <span>↗</span></a>
         </div>
       </header>
 

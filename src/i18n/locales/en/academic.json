@@ -1,9 +1,20 @@
 {
+  "journey": {
+    "back": "← Education",
+    "tabsAriaLabel": "Academic journey views",
+    "curriculum": "Curriculum",
+    "dependencyGraph": "Dependency graph"
+  },
   "degree": {
     "title": "Computer Engineering",
     "university": "Universidad Argentina de la Empresa (UADE)",
     "period": "2023 — Expected December 2027",
     "status": "In progress"
+  },
+  "overview": {
+    "label": "Academic journey",
+    "progress": "{{completed}} of {{total}} courses completed",
+    "progressAriaLabel": "Degree progress"
   },
   "statuses": {
     "completed": "Completed",
@@ -21,6 +32,48 @@
     "noPrerequisites": "No prerequisites",
     "toBeDetermined": "To be determined",
     "minimumCompletedCourses": "Requires {{count}} completed courses"
+  },
+  "filters": {
+    "ariaLabel": "Course filter controls",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Title, topic, technology, dependency...",
+    "yearLabel": "Year",
+    "yearAll": "All years",
+    "yearValue": "Year {{year}}",
+    "statusLabel": "Status",
+    "statusAll": "All statuses",
+    "technologyLabel": "Technology",
+    "technologyAll": "Any technology",
+    "dependenciesOnly": "Only courses with dependencies",
+    "projectsOnly": "Only courses with projects",
+    "empty": "No courses match this filter combination. Try widening the search or clearing the active filters.",
+    "completedSuffix": "completed"
+  },
+  "detail": {
+    "back": "← Academic journey",
+    "notFound": "Course not found.",
+    "year": "Year {{year}}",
+    "semester": "Semester {{semester}}",
+    "mainTopics": "Main topics",
+    "technologies": "Technologies & tools",
+    "learningPath": "Learning path",
+    "prerequisites": "Prerequisites",
+    "unlocks": "Unlocks",
+    "noneListed": "None listed",
+    "relatedProjects": "Related projects",
+    "viewProject": "View project",
+    "noTechnologies": "No technologies used",
+    "noRelatedProjects": "No related project has been added.",
+    "educationBack": "← Education"
+  },
+  "graph": {
+    "title": "Course dependencies",
+    "description": "Select a course to trace everything that leads to it—and what it unlocks.",
+    "filterLabel": "Filter graph",
+    "all": "All",
+    "currentPath": "Current path",
+    "scrollAriaLabel": "Interactive course prerequisite graph",
+    "help": "The graph is horizontally scrollable on smaller screens. Select a node, then open its curriculum card for full details."
   },
   "courses": {
     "fundamentals-of-computer-science": {

@@ -1,18 +1,27 @@
 {
-    "degree": {
+    "journey": {
+    "back": "← Educación",
+    "tabsAriaLabel": "Vistas del recorrido académico",
+    "curriculum": "Currículum",
+    "dependencyGraph": "Gráfico de dependencias"
+  },
+  "degree": {
     "title": "Ingeniería en Informática",
     "university": "Universidad Argentina de la Empresa (UADE)",
     "period": "2023 — Finalización estimada: diciembre de 2027",
     "status": "En curso"
-    },
-
-    "statuses": {
+  },
+  "overview": {
+    "label": "Recorrido académico",
+    "progress": "{{completed}} de {{total}} materias aprobadas",
+    "progressAriaLabel": "Progreso de la carrera"
+  },
+  "statuses": {
     "completed": "Completada",
     "in-progress": "En curso",
     "pending": "Pendiente"
-    },
-
-    "labels": {
+  },
+  "labels": {
     "year": "Año {{year}}",
     "semester": "Cuatrimestre {{semester}}",
     "topics": "Temas abordados",
@@ -23,7 +32,49 @@
     "noPrerequisites": "Sin correlativas",
     "toBeDetermined": "Por definir",
     "minimumCompletedCourses": "Requiere {{count}} materias aprobadas"
-    },
+  },
+  "filters": {
+    "ariaLabel": "Controles de filtro de materias",
+    "searchLabel": "Buscar",
+    "searchPlaceholder": "Título, tema, tecnología, correlativa...",
+    "yearLabel": "Año",
+    "yearAll": "Todos los años",
+    "yearValue": "Año {{year}}",
+    "statusLabel": "Estado",
+    "statusAll": "Todos los estados",
+    "technologyLabel": "Tecnología",
+    "technologyAll": "Cualquier tecnología",
+    "dependenciesOnly": "Solo materias con correlativas",
+    "projectsOnly": "Solo materias con proyectos",
+    "empty": "Ninguna materia coincide con esta combinación de filtros. Intenta ampliar la búsqueda o limpiar los filtros activos.",
+    "completedSuffix": "aprobadas"
+  },
+  "detail": {
+    "back": "← Recorrido académico",
+    "notFound": "No se encontró la materia.",
+    "year": "Año {{year}}",
+    "semester": "Cuatrimestre {{semester}}",
+    "mainTopics": "Temas principales",
+    "technologies": "Tecnologías y herramientas",
+    "learningPath": "Trayecto de aprendizaje",
+    "prerequisites": "Correlativas",
+    "unlocks": "Desbloquea",
+    "noneListed": "No se indica",
+    "relatedProjects": "Proyectos relacionados",
+    "viewProject": "Ver proyecto",
+    "noTechnologies": "No se usaron tecnologías",
+    "noRelatedProjects": "No se agregó ningún proyecto relacionado.",
+    "educationBack": "← Educación"
+  },
+  "graph": {
+    "title": "Dependencias de la carrera",
+    "description": "Selecciona una materia para ver todo lo que lleva a ella y lo que desbloquea.",
+    "filterLabel": "Filtrar gráfico",
+    "all": "Todo",
+    "currentPath": "Trayecto actual",
+    "scrollAriaLabel": "Gráfico interactivo de prerequisitos",
+    "help": "El gráfico se puede desplazar horizontalmente en pantallas pequeñas. Selecciona un nodo y luego abre su ficha curricular para ver más detalles."
+  },
 
     "courses": {
         "fundamentals-of-computer-science": {

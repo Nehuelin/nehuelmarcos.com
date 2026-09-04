@@ -17,7 +17,9 @@
 		"currentRole": "Current role",
 		"education": "Education",
 		"experience": "Experience",
-		"languages": "Languages"
+		"experienceValue": "2+ years",
+		"languages": "Languages",
+		"languagesValue": "English C1 · Spanish native"
 	},
 	"featuredWork": {
 		"sectionLabel": "01 / Selected work",

@@ -10,14 +10,16 @@
 		"downloadResume": "Descargar currículum",
 		"getInTouch": "Contactarme",
 		"imageAlt": "Yo en el Centro Espacial Kennedy de la NASA",
-		"imageCaption": "En el Centro Espacial Kennedy de la NASA"
+		"imageCaption": "En el Kennedy Space Center de la NASA"
 	},
 	"proof": {
 		"ariaLabel": "Perfil profesional de un vistazo",
 		"currentRole": "Puesto actual",
 		"education": "Educación",
 		"experience": "Experiencia",
-		"languages": "Idiomas"
+		"experienceValue": "+10 meses de trabajo en Globant",
+		"languages": "Idiomas",
+		"languagesValue": "Inglés C1 · Español nativo"
 	},
 	"featuredWork": {
 		"sectionLabel": "01 / Proyectos seleccionados",

@@ -611,3 +611,5 @@ footer p { text-align: center; }
 @media (prefers-reduced-motion: reduce) {
   :root { transition: none; }
 }
+.language-toggle { border: 0; background: transparent; color: var(--ink); padding: 8px; font: 700 11px 'DM Sans', sans-serif; letter-spacing: .08em; cursor: pointer; }
+.language-toggle:hover { color: #64831c; }

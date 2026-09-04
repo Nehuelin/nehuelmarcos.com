@@ -1,54 +1,79 @@
 {
-	"types": {
-		"bachelors-degree": "Título de grado"
-	},
-
-	"statuses": {
-		"completed": "Completado",
-		"in-progress": "En curso",
-		"upcoming": "Próximamente"
-	},
-
-	"labels": {
-		"completedIn": "Completado ({{year}})",
-		"startingOn": "Comienza el {{date}}",
-		"period": "{{startYear}} — Finalización estimada: {{graduationDate}}",
-		"intermediateDegree": "Título intermedio: {{degree}}",
-		"courseProgress": "{{completed}} de {{total}} cursos completados ({{percentage}}%)",
-		"gpa": "Promedio actual: {{gpa}}",
+  "pageIntro": {
+    "label": "Educación",
+    "titleLineOne": "Siempre",
+    "titleLineTwo": "aprendiendo.",
+    "description": "Bases formales de ingeniería, complementadas con cursos prácticos que convierten conceptos en software funcional."
+  },
+  "courseHeading": {
+    "label": "Cursos adicionales",
+    "title": "Cursos completados."
+  },
+  "courseList": {
+    "certificateAvailable": "Certificado disponible"
+  },
+	"detail": {
+		"educationBack": "← Educación",
+		"back": "← Educación",
+		"notFound": "No se encontró el elemento educativo.",
+		"certificate": "Certificado",
+		"completionCredential": "Credencial de finalización",
+		"certificateDescription": "Certificado emitido por {{provider}} para {{title}}.",
 		"viewCertificate": "Ver certificado",
-		"viewSource": "Ver código fuente",
+		"capstoneProject": "Proyecto del curso",
+		"viewOnGitHub": "Ver en GitHub",
 		"viewDemo": "Ver demo",
-		"topics": "Temas abordados",
-		"toBeDetermined": "Por definir"
+		"degreeDetails": "Detalles de la carrera",
+		"whatIStudied": "Lo que estudié"
 	},
-
-	"qualifications": {
-		"computer-science-analyst": "Analista en Informática"
-	},
-
-	"degrees": {
-		"computer-engineering": {
-		"title": "Ingeniería en Informática",
-		"summary": "Una carrera de ingeniería integral que abarca software, sistemas informáticos y los fundamentos detrás de la tecnología moderna."
-		}
-	},
-
-	"courses": {
-		"python": {
-			"title": "Python",
-			"topics": [
-			"Fundamentos de Python y estructuras de control",
-			"Estructuras de datos y colecciones",
-			"Funciones y programación modular",
-			"Depuración y manejo de excepciones",
-			"Programación orientada a objetos",
-			"Herencia, encapsulamiento y polimorfismo",
-			"Módulos, paquetes y manejo de archivos",
-			"Procesamiento de datos JSON y CSV",
-			"Flujos de trabajo con Git y GitHub"
-			]
-		},
+  "cards": {
+    "viewDetails": "Ver detalles de {{title}}"
+  },
+  "types": {
+    "bachelors-degree": "Título de grado"
+  },
+  "statuses": {
+    "completed": "Completado",
+    "in-progress": "En curso",
+    "upcoming": "Próximamente"
+  },
+  "labels": {
+    "completedIn": "Completado ({{year}})",
+    "startingOn": "Comienza el {{date}}",
+    "period": "{{startYear}} — Finalización estimada: {{graduationDate}}",
+    "intermediateDegree": "Título intermedio: {{degree}}",
+    "courseProgress": "{{completed}} de {{total}} cursos completados ({{percentage}}%)",
+    "gpa": "Promedio actual: {{gpa}}",
+    "viewCertificate": "Ver certificado",
+    "viewSource": "Ver código fuente",
+    "viewDemo": "Ver demo",
+    "topics": "Temas abordados",
+    "toBeDetermined": "Por definir"
+  },
+  "qualifications": {
+    "computer-science-analyst": "Analista en Informática"
+  },
+  "degrees": {
+    "computer-engineering": {
+      "title": "Ingeniería en Informática",
+      "summary": "Una carrera de ingeniería integral que abarca software, sistemas informáticos y los fundamentos detrás de la tecnología moderna."
+    }
+  },
+  "courses": {
+    "python": {
+      "title": "Python",
+      "topics": [
+        "Fundamentos de Python y estructuras de control",
+        "Estructuras de datos y colecciones",
+        "Funciones y programación modular",
+        "Depuración y manejo de excepciones",
+        "Programación orientada a objetos",
+        "Herencia, encapsulamiento y polimorfismo",
+        "Módulos, paquetes y manejo de archivos",
+        "Procesamiento de datos JSON y CSV",
+        "Flujos de trabajo con Git y GitHub"
+      ]
+    },
 
 
 		"web-development": {

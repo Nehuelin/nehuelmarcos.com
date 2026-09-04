@@ -1,4 +1,31 @@
 {
+  "pageIntro": {
+    "label": "Experience",
+    "titleLineOne": "Where I’ve",
+    "titleLineTwo": "been working.",
+    "description": "Building reliable systems at the intersection of platform operations, technical support and automation."
+  },
+  "filters": {
+    "ariaLabel": "Experience filter controls",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Role, skill, tool, company...",
+    "statusLabel": "Status",
+    "statusAll": "All statuses",
+    "toolLabel": "Tool",
+    "toolAll": "All tools",
+    "skillLabel": "Skill",
+    "skillAll": "All skills",
+    "empty": "No experiences match this filter combination. Try widening the search or clearing a filter."
+  },
+  "cards": {
+    "skillsAriaLabel": "{{role}} key skills",
+    "viewDetails": "View {{role}} details"
+  },
+  "toolkit": {
+    "label": "Toolkit",
+    "title": "What I work with.",
+    "description": "Platforms and technologies I use to support teams, understand systems and remove repetitive work."
+  },
   "statuses": {
     "current": "Current role",
     "previous": "Previous role"

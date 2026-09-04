@@ -1,4 +1,17 @@
 {
+    "pageIntro": {
+        "label": "Stack",
+        "titleLineOne": "Herramientas que uso",
+        "titleLineTwo": "para construir.",
+        "description": "Un conjunto práctico de herramientas que evoluciona junto con cada problema que resuelvo."
+    },
+    "focusSection": {
+        "label": "Enfoque actual",
+        "heading": "Desarrollo backend, automatización de procesos y herramientas operativas impulsadas por datos."
+    },
+    "group": {
+        "logoAriaLabel": "Herramientas de {{title}} con logotipos"
+    },
     "groups": {
         "backend": "Backend y APIs",
         "frontend-mobile": "Frontend y Mobile",
@@ -186,5 +199,14 @@
             "title": "Aplicaciones interactivas",
             "path": "React → APIs REST / WebSockets → Interfaces responsivas"
         }
+    },
+    "detail": {
+        "close": "Cerrar",
+        "closeAriaLabel": "Cerrar detalles de {{name}}",
+        "relatedProjects": "Proyectos relacionados",
+        "noProjects": "Todavía no hay un proyecto asociado documentado.",
+        "professionalExperience": "Experiencia profesional",
+        "relatedEducation": "Educación relacionada",
+        "academicJourney": "Recorrido académico"
     }
 }

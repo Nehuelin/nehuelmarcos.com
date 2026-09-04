@@ -1,4 +1,55 @@
 {
+    "pageIntro": {
+        "label": "Proyectos",
+        "titleLineOne": "Cosas que",
+        "titleLineTwo": "he hecho.",
+        "description": "Trabajo académico, hitos de cursos e iniciativas personales, creados para explorar ideas y resolver problemas reales."
+    },
+    "overview": {
+        "ariaLabel": "Resumen de proyectos",
+        "documented": "Proyectos documentados",
+        "associations": "Cursos e iniciativas",
+        "tools": "Herramientas exploradas"
+    },
+    "filters": {
+        "ariaLabel": "Controles de filtro de proyectos",
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "Proyecto, curso, herramienta...",
+        "categoryLabel": "Categoría",
+        "categoryAll": "Todas las categorías",
+        "associatedLabel": "Relacionado con",
+        "associationAll": "Todas las asociaciones",
+        "toolLabel": "Herramienta",
+        "toolAll": "Todas las herramientas",
+        "collaborationLabel": "Colaboración",
+        "collaborationAll": "Todos los proyectos",
+        "collaborationTeam": "Proyectos en equipo",
+        "collaborationSolo": "Proyectos individuales"
+    },
+    "results": {
+        "heading": "Índice de proyectos",
+        "count": "{{count}} de {{total}} proyectos",
+        "empty": "Ningún proyecto coincide con esta combinación de filtros. Intenta ampliar la búsqueda o limpiar un filtro."
+    },
+    "card": {
+        "teamProject": "Proyecto en equipo",
+        "associatedTo": "Relacionado con",
+        "toolsAriaLabel": "herramientas",
+        "viewDetails": "Ver detalles de {{title}}"
+    },
+    "detail": {
+        "projectsBack": "← Proyectos",
+        "back": "← Proyectos",
+        "teamProject": "Proyecto en equipo",
+        "associatedTo": "Relacionado con",
+        "challenge": "Desafío",
+        "solution": "Solución",
+        "contribution": "Contribución",
+        "builtWith": "Construido con",
+        "exploreWork": "Explorar el trabajo",
+        "viewSource": "Ver código fuente",
+        "notFound": "No se encontró el proyecto."
+    },
     "categories": {
         "academic": "Proyecto académico",
         "course": "Proyecto de curso",

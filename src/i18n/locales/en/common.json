@@ -17,5 +17,12 @@
 		"switchToDarkMode": "Switch to dark mode",
 		"light": "Light",
 		"dark": "Dark"
+	},
+	"contact": {
+		"label": "05 / Contact",
+		"headingLineOne": "Have something",
+		"headingLineTwo": "in mind?",
+		"headingEmphasis": "Let’s talk.",
+		"description": "I’m always happy to meet new people, discuss an opportunity or hear about an interesting idea."
 	}
 }

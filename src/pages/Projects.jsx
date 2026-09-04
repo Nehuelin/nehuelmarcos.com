@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import PageIntro from '../components/ui/PageIntro'
 import { projects } from '../data/projects'
 import { courses } from '../data/education'
@@ -15,6 +16,7 @@ function getAssociatedCourseUrl(association) {
 }
 
 function Projects() {
+  const { t } = useTranslation('projects')
   const [query, setQuery] = useState('')
   const [association, setAssociation] = useState('all')
   const [tool, setTool] = useState('all')
@@ -39,58 +41,58 @@ function Projects() {
 
   return (
     <section className="content-page projects-page">
-      <PageIntro number="04" label="Projects" title={<>Things I’ve<br /><em>made.</em></>}>
-        Academic work, course milestones and personal initiatives—built to explore ideas and solve real problems.
+      <PageIntro number="04" label={t('pageIntro.label')} title={<>{t('pageIntro.titleLineOne')}<br /><em>{t('pageIntro.titleLineTwo')}</em></>}>
+        {t('pageIntro.description')}
       </PageIntro>
 
-      <div className="project-overview" aria-label="Project overview">
-        <div><strong>{projects.length}</strong><span>Projects documented</span></div>
-        <div><strong>{associations.length}</strong><span>Courses & initiatives</span></div>
-        <div><strong>{tools.length}</strong><span>Tools explored</span></div>
+      <div className="project-overview" aria-label={t('overview.ariaLabel')}>
+        <div><strong>{projects.length}</strong><span>{t('overview.documented')}</span></div>
+        <div><strong>{associations.length}</strong><span>{t('overview.associations')}</span></div>
+        <div><strong>{tools.length}</strong><span>{t('overview.tools')}</span></div>
       </div>
-      <div className="project-filters" aria-label="Project filter controls">
+      <div className="project-filters" aria-label={t('filters.ariaLabel')}>
         <label className="project-field project-search">
-          <span>Search</span>
-          <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Project, course, tool..." />
+          <span>{t('filters.searchLabel')}</span>
+          <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t('filters.searchPlaceholder')} />
         </label>
         <label className="project-field">
-          <span>Category</span>
+          <span>{t('filters.categoryLabel')}</span>
           <select value={category} onChange={(event) => setCategory(event.target.value)}>
-            <option value="all">All categories</option>
+            <option value="all">{t('filters.categoryAll')}</option>
             {categories.map((item) => <option value={item} key={item}>{item}</option>)}
           </select>
         </label>
         <label className="project-field">
-          <span>Associated to</span>
+          <span>{t('filters.associatedLabel')}</span>
           <select value={association} onChange={(event) => setAssociation(event.target.value)}>
-            <option value="all">All associations</option>
+            <option value="all">{t('filters.associationAll')}</option>
             {associations.map((item) => <option value={item} key={item}>{item}</option>)}
           </select>
         </label>
         <label className="project-field">
-          <span>Tool</span>
+          <span>{t('filters.toolLabel')}</span>
           <select value={tool} onChange={(event) => setTool(event.target.value)}>
-            <option value="all">All tools</option>
+            <option value="all">{t('filters.toolAll')}</option>
             {tools.map((item) => <option value={item} key={item}>{item}</option>)}
           </select>
         </label>
         <label className="project-field">
-          <span>Collaboration</span>
+          <span>{t('filters.collaborationLabel')}</span>
           <select value={collaboration} onChange={(event) => setCollaboration(event.target.value)}>
-            <option value="all">All projects</option>
-            <option value="team">Team projects</option>
-            <option value="solo">Solo projects</option>
+            <option value="all">{t('filters.collaborationAll')}</option>
+            <option value="team">{t('filters.collaborationTeam')}</option>
+            <option value="solo">{t('filters.collaborationSolo')}</option>
           </select>
         </label>
       </div>
 
       <div className="project-results-heading">
-        <p className="section-label">Project index</p>
-        <p>{filteredProjects.length} of {projects.length} projects</p>
+        <p className="section-label">{t('results.heading')}</p>
+        <p>{t('results.count', { count: filteredProjects.length, total: projects.length })}</p>
       </div>
 
       {filteredProjects.length === 0 ? (
-        <p className="project-empty">No projects match this filter combination. Try widening the search or clearing a filter.</p>
+        <p className="project-empty">{t('results.empty')}</p>
       ) : (
         <div className="project-feature">
           {filteredProjects.map((project, index) => {
@@ -100,20 +102,20 @@ function Projects() {
               <article key={project.slug}>
               <div className="project-visual">
                 <div className="project-aside">
-                   <span>{String(index + 1).padStart(2, '0')} / {project.category}{project.teamProject ? ' / Team project' : ''}</span>
+                   <span>{String(index + 1).padStart(2, '0')} / {project.category}{project.teamProject ? ` / ${t('card.teamProject')}` : ''}</span>
                   <p>{associatedCourseUrl ? <a href={associatedCourseUrl}>{project.associatedTo} ↗</a> : project.associatedTo}</p>
                 </div>
                 <ProjectPreview project={project} className="project-card-preview" />
               </div>
               <div className="project-copy">
-                <p className="section-label">Associated to · {associatedCourseUrl ? <a href={associatedCourseUrl}>{project.associatedTo} ↗</a> : project.associatedTo}</p>
+                <p className="section-label">{t('card.associatedTo')} · {associatedCourseUrl ? <a href={associatedCourseUrl}>{project.associatedTo} ↗</a> : project.associatedTo}</p>
                 <h2>{project.title}</h2>
                 <p>{project.summary}</p>
-                <div className="project-tags" aria-label={`${project.title} tools`}>
+                <div className="project-tags" aria-label={`${project.title} ${t('card.toolsAriaLabel')}`}>
                   {project.stack.map((item) => <span key={item}>{item}</span>)}
                 </div>
               </div>
-              <a className="round-link" href={`#projects/${project.slug}`} aria-label={`View ${project.title} details`}>↗</a>
+              <a className="round-link" href={`#projects/${project.slug}`} aria-label={t('card.viewDetails', { title: project.title })}>↗</a>
               </article>
             )
           })}

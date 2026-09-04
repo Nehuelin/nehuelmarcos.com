@@ -1,4 +1,4 @@
-import experienceContent from '../i18n/locales/en/experiences.json'
+import i18n from '../i18n'
 
 const experienceDefinitions = [
   {
@@ -54,9 +54,14 @@ const experienceDefinitions = [
 
 export const experiences = experienceDefinitions.map((experience) => ({
   ...experience,
-  ...experienceContent.items[experience.slug],
-  status: experienceContent.statuses[experience.status],
-  location: experienceContent.labels.location
-    .replace('{{location}}', experienceContent.items[experience.slug].location)
-    .replace('{{workModel}}', experienceContent.workModels[experience.workModel]),
+  statusCode: experience.status,
+  get role() { return i18n.t(`experiences:items.${experience.slug}.role`) },
+  get period() { return i18n.t(`experiences:items.${experience.slug}.period`) },
+  get summary() { return i18n.t(`experiences:items.${experience.slug}.summary`) },
+  get homeSummary() { return i18n.t(`experiences:items.${experience.slug}.homeSummary`, experience.metrics) },
+  get points() { return i18n.t(`experiences:items.${experience.slug}.points`, { ...experience.metrics, returnObjects: true }) },
+  get skills() { return i18n.t(`experiences:items.${experience.slug}.skills`, { returnObjects: true }) },
+  get focus() { return i18n.t(`experiences:items.${experience.slug}.focus`, { ...experience.metrics, workModel: i18n.t(`experiences:workModels.${experience.workModel}`), returnObjects: true }) },
+  get status() { return i18n.t(`experiences:statuses.${experience.status}`) },
+  get location() { return i18n.t('experiences:labels.location', { location: i18n.t(`experiences:items.${experience.slug}.location`), workModel: i18n.t(`experiences:workModels.${experience.workModel}`) }) },
 }))

@@ -1,4 +1,55 @@
 {
+	"pageIntro": {
+		"label": "Projects",
+		"titleLineOne": "Things I’ve",
+		"titleLineTwo": "made.",
+		"description": "Academic work, course milestones and personal initiatives—built to explore ideas and solve real problems."
+	},
+	"overview": {
+		"ariaLabel": "Project overview",
+		"documented": "Projects documented",
+		"associations": "Courses & initiatives",
+		"tools": "Tools explored"
+	},
+	"filters": {
+		"ariaLabel": "Project filter controls",
+		"searchLabel": "Search",
+		"searchPlaceholder": "Project, course, tool...",
+		"categoryLabel": "Category",
+		"categoryAll": "All categories",
+		"associatedLabel": "Associated to",
+		"associationAll": "All associations",
+		"toolLabel": "Tool",
+		"toolAll": "All tools",
+		"collaborationLabel": "Collaboration",
+		"collaborationAll": "All projects",
+		"collaborationTeam": "Team projects",
+		"collaborationSolo": "Solo projects"
+	},
+	"results": {
+		"heading": "Project index",
+		"count": "{{count}} of {{total}} projects",
+		"empty": "No projects match this filter combination. Try widening the search or clearing a filter."
+	},
+	"card": {
+		"teamProject": "Team project",
+		"associatedTo": "Associated to",
+		"toolsAriaLabel": "tools",
+		"viewDetails": "View {{title}} details"
+	},
+	"detail": {
+		"projectsBack": "← Projects",
+		"back": "← Projects",
+		"teamProject": "Team project",
+		"associatedTo": "Associated to",
+		"challenge": "Challenge",
+		"solution": "Solution",
+		"contribution": "Contribution",
+		"builtWith": "Built with",
+		"exploreWork": "Explore the work",
+		"viewSource": "View source code",
+		"notFound": "Project not found."
+	},
 	"categories": {
 		"academic": "Academic project",
 		"course": "Course project",

@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import PageIntro from '../components/ui/PageIntro'
 import TechnologyDetail from '../components/ui/TechnologyDetail'
 import { experiences } from '../data/experiences'
@@ -20,6 +21,7 @@ const getRelatedProjects = (technology) => {
 const getToolLogo = (filename) => filename ? toolLogos[`../assets/images/tool-logos/${filename}`] : null
 
 function Stack() {
+  const { t } = useTranslation('stack')
   const [selectedId, setSelectedId] = useState(null)
   const technologyButtonRefs = useRef(new Map())
 
@@ -30,13 +32,13 @@ function Stack() {
 
   return (
     <section className="content-page stack-page">
-      <PageIntro number="03" label="Stack" title={<>Tools I use<br />to build.</>}>
-        A practical toolkit that keeps evolving with every problem I solve.
+      <PageIntro number="03" label={t('pageIntro.label')} title={<>{t('pageIntro.titleLineOne')}<br />{t('pageIntro.titleLineTwo')}</>}>
+        {t('pageIntro.description')}
       </PageIntro>
       <section className="current-focus" aria-labelledby="current-focus-title">
-        <p className="section-label">Current focus</p>
+        <p className="section-label">{t('focusSection.label')}</p>
         <div>
-          <h2 id="current-focus-title">Backend development, process automation and data-driven operational tools.</h2>
+          <h2 id="current-focus-title">{t('focusSection.heading')}</h2>
           <ul>{currentFocus.map((item) => <li key={item}>{item}</li>)}</ul>
         </div>
       </section>
@@ -47,7 +49,7 @@ function Stack() {
             <span>{String(index + 1).padStart(2, '0')}</span>
             <div className="skill-heading">
               <h2>{group.title}</h2>
-              <div className="skill-logos" aria-label={`${group.title} tools with logos`}>
+              <div className="skill-logos" aria-label={t('group.logoAriaLabel', { title: group.title })}>
                 {group.items.filter((item) => item.logo).map((item) => (
                   <img key={item.id} src={getToolLogo(item.logo)} alt={item.name} aria-hidden="true"/>
                 ))}

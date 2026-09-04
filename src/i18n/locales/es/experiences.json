@@ -1,4 +1,31 @@
 {
+	"pageIntro": {
+		"label": "Experiencia",
+		"titleLineOne": "Dónde he",
+		"titleLineTwo": "estado trabajando.",
+		"description": "Construyendo sistemas confiables en la intersección entre operaciones de plataformas, soporte técnico y automatización."
+	},
+	"filters": {
+		"ariaLabel": "Controles de filtro de experiencia",
+		"searchLabel": "Buscar",
+		"searchPlaceholder": "Rol, habilidad, herramienta, empresa...",
+		"statusLabel": "Estado",
+		"statusAll": "Todos los estados",
+		"toolLabel": "Herramienta",
+		"toolAll": "Todas las herramientas",
+		"skillLabel": "Habilidad",
+		"skillAll": "Todas las habilidades",
+		"empty": "Ninguna experiencia coincide con esta combinación de filtros. Intenta ampliar la búsqueda o limpiar un filtro."
+	},
+	"cards": {
+		"skillsAriaLabel": "Habilidades clave de {{role}}",
+		"viewDetails": "Ver detalles de {{role}}"
+	},
+	"toolkit": {
+		"label": "Herramientas",
+		"title": "Con qué trabajo.",
+		"description": "Plataformas y tecnologías que uso para apoyar equipos, comprender sistemas y eliminar trabajo repetitivo."
+	},
 	"statuses": {
 		"current": "Puesto actual",
 		"previous": "Puesto anterior"

@@ -17,5 +17,12 @@
 		"switchToDarkMode": "Cambiar al modo oscuro",
 		"light": "Claro",
 		"dark": "Oscuro"
+	},
+	"contact": {
+		"label": "05 / Contacto",
+		"headingLineOne": "¿Tienes algo",
+		"headingLineTwo": "en mente?",
+		"headingEmphasis": "Hablemos.",
+		"description": "Siempre me gusta conocer gente nueva, hablar de una oportunidad o escuchar una idea interesante."
 	}
 }
