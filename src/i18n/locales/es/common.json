@@ -16,7 +16,8 @@
 		"switchToLightMode": "Cambiar al modo claro",
 		"switchToDarkMode": "Cambiar al modo oscuro",
 		"light": "Claro",
-		"dark": "Oscuro"
+		"dark": "Oscuro",
+		"chooseLanguage": "Seleccionar idioma"
 	},
 	"contact": {
 		"label": "05 / Contacto",

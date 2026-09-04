@@ -18,7 +18,42 @@ import { projects } from './data/projects'
 import { courses } from './data/education'
 import { academicCourses } from './data/academicCourses'
 import { getPageMetadata } from './utils/pageMetadata'
-import { useTranslation } from 'react-i18next' 
+import { useTranslation } from 'react-i18next'
+import usFlag from './assets/images/other/us-flag.png'
+import argFlag from './assets/images/other/argentina-flag.png'
+
+const languages = [
+  { code: 'en', label: 'English', flag: usFlag },
+  { code: 'es', label: 'Español', flag: argFlag },
+]
+
+function LanguageFlag({ language }) {
+  const option = languages.find(({ code }) => code === language) || languages[0]
+  return <img src={option.flag} alt="" aria-hidden="true" />
+}
+
+function LanguageWelcome({ onSelect }) {
+  return (
+    <main className="language-welcome">
+      <section className="language-welcome-card" aria-labelledby="language-welcome-title">
+        <a className="wordmark" href="#home" aria-label="Nehuel Marcos">NAM<span>.</span></a>
+        <div className="language-welcome-copy">
+          <p className="section-label">Welcome · Bienvenido</p>
+          <h1 id="language-welcome-title">Choose your language<em>Selecciona tu idioma.</em></h1>
+        </div>
+        <div className="language-welcome-options">
+          {languages.map((option) => (
+            <button key={option.code} type="button" onClick={() => onSelect(option.code)} lang={option.code}>
+              <LanguageFlag language={option.code} />
+              <span>{option.label}</span>
+              <i aria-hidden="true">↗</i>
+            </button>
+          ))}
+        </div>
+      </section>
+    </main>
+  )
+}
 
 function NotFound() {
   const goBack = () => {
@@ -78,15 +113,23 @@ function App() {
   }
   
   const [page, setPage] = useState(getPage)
+  const [languageMenuOpen, setLanguageMenuOpen] = useState(false)
+  const [hasSelectedLanguage, setHasSelectedLanguage] = useState(() => ['en', 'es'].includes(window.localStorage.getItem('language')))
   const [menuOpen, setMenuOpen] = useState(false)
   const [theme, setTheme] = useState(getInitialTheme)
   const shouldScrollToTop = useRef(false)
+  const languageMenuRef = useRef(null)
   const language = i18n.resolvedLanguage === 'es' ? 'es' : 'en'
 
-  const toggleLanguage = () => {
-    const nextLanguage = language === 'en' ? 'es' : 'en'
+  const selectLanguage = (nextLanguage, goHome = false) => {
     window.localStorage.setItem('language', nextLanguage)
     i18n.changeLanguage(nextLanguage)
+    setHasSelectedLanguage(true)
+    setLanguageMenuOpen(false)
+    if (goHome) {
+      window.history.replaceState(null, '', '#home')
+      setPage('home')
+    }
   }
 
   useEffect(() => {
@@ -94,6 +137,17 @@ function App() {
     document.documentElement.style.colorScheme = theme
     window.localStorage.setItem('theme', theme)
   }, [theme])
+
+  useEffect(() => {
+    const shouldLockScroll = !hasSelectedLanguage
+    document.body.style.overflow = shouldLockScroll ? 'hidden' : ''
+    document.documentElement.style.overflow = shouldLockScroll ? 'hidden' : ''
+
+    return () => {
+      document.body.style.overflow = ''
+      document.documentElement.style.overflow = ''
+    }
+  }, [hasSelectedLanguage])
 
   useEffect(() => {
     const metadata = getPageMetadata(page)
@@ -143,6 +197,21 @@ function App() {
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [menuOpen])
 
+  useEffect(() => {
+    if (!languageMenuOpen) return undefined
+    const closeLanguageMenu = (event) => {
+      if (event.key === 'Escape' || !languageMenuRef.current?.contains(event.target)) setLanguageMenuOpen(false)
+    }
+    window.addEventListener('keydown', closeLanguageMenu)
+    document.addEventListener('pointerdown', closeLanguageMenu)
+    return () => {
+      window.removeEventListener('keydown', closeLanguageMenu)
+      document.removeEventListener('pointerdown', closeLanguageMenu)
+    }
+  }, [languageMenuOpen])
+
+  if (!hasSelectedLanguage) return <LanguageWelcome onSelect={(nextLanguage) => selectLanguage(nextLanguage, true)} />
+
   return (
     <div className="site-shell">
       <header className="site-header">
@@ -172,7 +241,20 @@ function App() {
             <span aria-hidden="true">{theme === 'dark' ? '☀' : '☾'}</span>
             <span className="theme-label">{t(theme === 'dark' ? 'navigation.light' : 'navigation.dark')}</span>
           </button>
-          <button className="language-toggle" type="button" onClick={toggleLanguage} aria-label={language === 'en' ? 'Cambiar idioma a español' : 'Switch language to English'}>{language === 'en' ? 'ES' : 'EN'}</button>
+          <div className="language-selector" ref={languageMenuRef}>
+            <button className="language-toggle" type="button" aria-expanded={languageMenuOpen} aria-haspopup="menu" aria-label={t('navigation.chooseLanguage')} onClick={() => setLanguageMenuOpen((open) => !open)}>
+              <LanguageFlag language={language} /><span>{language.toUpperCase()}</span><i aria-hidden="true">⌄</i>
+            </button>
+            {languageMenuOpen && (
+              <div className="language-menu" role="menu" aria-label={t('navigation.chooseLanguage')}>
+                {languages.map((option) => (
+                  <button key={option.code} type="button" role="menuitemradio" aria-checked={language === option.code} onClick={() => selectLanguage(option.code)} lang={option.code}>
+                    <LanguageFlag language={option.code} /><span>{option.label}</span>{language === option.code && <i aria-hidden="true">✓</i>}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           <a className="contact-link" href="#contact">{t('navigation.letsTalk')} <span>↗</span></a>
         </div>
       </header>

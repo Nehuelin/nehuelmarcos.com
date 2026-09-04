@@ -611,5 +611,88 @@ footer p { text-align: center; }
 @media (prefers-reduced-motion: reduce) {
   :root { transition: none; }
 }
-.language-toggle { border: 0; background: transparent; color: var(--ink); padding: 8px; font: 700 11px 'DM Sans', sans-serif; letter-spacing: .08em; cursor: pointer; }
+.language-selector { position: relative; }
+.language-toggle { display: flex; align-items: center; gap: 7px; border: 0; background: transparent; color: var(--ink); padding: 8px; font: 700 11px 'DM Sans', sans-serif; letter-spacing: .08em; cursor: pointer; }
 .language-toggle:hover { color: #64831c; }
+.language-toggle img, .language-menu img { width: 24px; height: 16px; border: 1px solid var(--line); object-fit: cover; }
+.language-toggle i { margin-left: 2px; font-style: normal; transition: transform .18s; }
+.language-toggle[aria-expanded='true'] i { transform: rotate(180deg); }
+.language-menu { position: absolute; z-index: 30; top: calc(100% + 9px); right: 0; width: 170px; padding: 7px; border: 1px solid var(--line); background: var(--paper); box-shadow: 0 16px 35px rgba(24, 32, 25, .14); }
+.language-menu button { width: 100%; display: grid; grid-template-columns: 24px 1fr auto; align-items: center; gap: 11px; border: 0; padding: 11px 10px; background: transparent; color: var(--ink); font: 600 12px 'DM Sans', sans-serif; text-align: left; cursor: pointer; }
+.language-menu button:hover { background: var(--surface); }
+.language-menu i { color: #64831c; font-style: normal; }
+
+.language-welcome { width: 100vw; height: 100vh; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 0; overflow: hidden; }
+.language-welcome-card { width: min(1180px, calc(100vw - 140px)); height: min(760px, calc(100vh - 120px)); display: grid; grid-template-columns: 1fr 2fr; grid-template-rows: auto 1fr auto; gap: 40px 7vw; padding: clamp(30px, 6vw, 80px); border: 1px solid var(--line); background: var(--paper); }
+.language-welcome-copy { grid-column: 1 / -1; align-self: center; justify-self: center; width: 100%; text-align: center; }
+.language-welcome-copy h1 { display: flex; flex-direction: column; align-items: center; max-width: 720px; margin: 26px auto; font-size: clamp(48px, 6.5vw, 86px); font-weight: 500; line-height: .86; letter-spacing: -.065em; }
+.language-welcome-copy h1 em {
+  display: block;
+  margin-top: .4em;
+  color: #a2b75a;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.08em;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -.055em;
+  line-height: .8;
+  transform: translateX(.08em);
+}
+.language-welcome-copy .section-label { margin-inline: auto; }
+.language-welcome-options { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.language-welcome-options button { min-height: 110px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 20px; padding: 22px; border: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); font: 500 clamp(20px, 2.2vw, 30px) 'DM Sans', sans-serif; text-align: left; cursor: pointer; transition: background .18s; }
+.language-welcome-options button:hover { background: var(--acid-hover); }
+.language-welcome-options img { width: clamp(42px, 5vw, 68px); aspect-ratio: 3 / 2; border: 1px solid var(--line); object-fit: cover; }
+.language-welcome-options i { color: #64831c; font-style: normal; }
+@media (max-width: 600px) {
+  .language-welcome {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 18px;
+    overflow: hidden;
+  }
+
+  .language-welcome-card {
+    width: 100%;
+    height: min(100%, calc(100vh - 36px));
+    min-height: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px 0;
+    padding: 22px 18px 18px;
+  }
+
+  .language-welcome-copy { grid-column: 1; width: 100%; }
+
+  .language-welcome-copy h1 {
+    max-width: 100%;
+    margin: 8px auto 0;
+    font-size: clamp(44px, 16vw, 74px);
+    line-height: .85;
+    letter-spacing: -.05em;
+  }
+
+  .language-welcome-copy h1 em {
+    margin-top: .12em;
+    font-size: 1.06em;
+    transform: none;
+  }
+
+  .language-welcome-options {
+    grid-template-columns: 1fr;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+  }
+
+  .language-welcome-options button {
+    min-height: 78px;
+    gap: 12px;
+    padding: 16px 18px;
+    font-size: clamp(18px, 5vw, 28px);
+  }
+
+  .language-welcome-options img {
+    width: clamp(34px, 8vw, 48px);
+  }
+}
